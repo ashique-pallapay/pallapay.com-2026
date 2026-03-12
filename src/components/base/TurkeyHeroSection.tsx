@@ -45,7 +45,7 @@ const TurkeyHeroSection = ({
             <span className="border flex w-8 items-center justify-center rounded-full h-8">
               <Phone />
             </span>
-            <span>+90 +90 501 355 55 43</span>
+            <span>+90 5013555543</span>
           </div>
 
           <div className="flex gap-1 md:gap-3 justify-center items-center">
@@ -55,7 +55,7 @@ const TurkeyHeroSection = ({
               width={35}
               height={35}
             />
-            <span>+90 +90 501 355 55 43</span>
+            <span>+90 5013555543</span>
           </div>
         </div>
 
