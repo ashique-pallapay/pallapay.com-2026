@@ -15,7 +15,7 @@ export interface MetaData {
   og_url?: string;
 }
 
-export const META_CONFIG: Record<string, MetaData> = {
+export const META_CONFIG_EN: Record<string, MetaData> = {
   home: {
     title: "Pallapay - Cryptocurrency Payment Solutions",
     keywords: "crypto payments, bitcoin, ethereum, USDT",
@@ -415,6 +415,161 @@ export const META_CONFIG: Record<string, MetaData> = {
   },
 };
 
-export function getMetaData(key: string): MetaData {
-  return META_CONFIG[key] || META_CONFIG.home;
+export const META_CONFIG_AR: Record<string, MetaData> = {
+  home: {
+    title: "بالاباي - حلول دفع العملات الرقمية",
+    keywords: "مدفوعات الكريبتو، بيتكوين، إيثيريوم، USDT",
+    description: "بالاباي هي بوابتك لمدفوعات العملات الرقمية السلسة",
+    og_image: "/images/home-og.jpg",
+    og_type: "website",
+    canonical: "/ar",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "بالاباي",
+      description: "بالاباي هي بوابتك لمدفوعات العملات الرقمية السلسة",
+      url: "/ar",
+    },
+  },
+  faq: {
+    title: "الأسئلة الشائعة - بالاباي",
+    keywords: "الأسئلة الشائعة، مساعدة، دعم",
+    description: "احصل على أجوبة للأسئلة الشائعة حول بالاباي",
+    og_image: "/images/faq-og.jpg",
+    og_type: "website",
+    canonical: "/ar/faq",
+  },
+  wallet: {
+    title: "المحفظة - بالاباي",
+    keywords: "محفظة كريبتو، إيثيريوم، بيتكوين",
+    description: "حلول محفظة العملات الرقمية الآمنة",
+    og_image: "/images/wallet-og.jpg",
+    og_type: "website",
+    canonical: "/ar/wallet",
+  },
+  pricing: {
+    title: "الأسعار - بالاباي",
+    keywords: "الأسعار، الرسوم، التكاليف",
+    description: "تحقق من أسعارنا التنافسية لمدفوعات الكريبتو",
+    og_image: "/images/pricing-og.jpg",
+    og_type: "website",
+    canonical: "/ar/pricing",
+  },
+  about: {
+    title: "حولنا - بالاباي",
+    keywords: "حول، شركة، مهمة",
+    description: "تعرف على بالاباي ومهمتنا",
+    og_image: "/images/about-og.jpg",
+    og_type: "website",
+    canonical: "/ar/about-us",
+  },
+  "buy-bitcoin-in-dubai": {
+    title: "شراء بيتكوين في دبي - بالاباي",
+    keywords: "شراء بيتكوين، دبي، الإمارات",
+    description: "اشترِ بيتكوين بسهولة في دبي",
+    og_image: "/images/buy-bitcoin-og.jpg",
+    og_type: "website",
+    canonical: "/ar/buy-bitcoin-in-dubai",
+  },
+  "buy-bitcoin-dubai": {
+    title: "شراء بيتكوين في دبي - بالاباي",
+    keywords: "شراء بيتكوين، دبي، أسعار",
+    description: "تحقق من أسعار البيتكوين واشترِ في دبي",
+    og_image: "/images/buy-bitcoin-og.jpg",
+    og_type: "website",
+    canonical: "/ar/buy-bitcoin-dubai",
+  },
+  "sell-usdt-in-dubai": {
+    title: "بيع USDT في دبي - بالاباي",
+    keywords: "بيع USDT، تيثر، دبي",
+    description: "بيع USDT في دبي بسهولة",
+    og_image: "/images/sell-usdt-og.jpg",
+    og_type: "website",
+    canonical: "/ar/sell-usdt-in-dubai",
+  },
+  "sell-bitcoin-in-dubai": {
+    title: "بيع بيتكوين في دبي - بالاباي",
+    keywords: "بيع بيتكوين، BTC، دبي",
+    description: "بيع بيتكوين في دبي",
+    og_image: "/images/sell-bitcoin-og.jpg",
+    og_type: "website",
+    canonical: "/ar/sell-bitcoin-in-dubai",
+  },
+  "buy-usdt-in-dubai": {
+    title: "شراء USDT في دبي - بالاباي",
+    keywords: "شراء USDT، تيثر، دبي",
+    description: "شراء USDT في دبي",
+    og_image: "/images/buy-usdt-og.jpg",
+    og_type: "website",
+    canonical: "/ar/buy-usdt-in-dubai",
+  },
+  "buy-ethereum-in-dubai": {
+    title: "شراء إيثيريوم في دبي - بالاباي",
+    keywords: "شراء إيثيريوم، ETH، دبي",
+    description: "شراء إيثيريوم في دبي",
+    og_image: "/images/buy-ethereum-og.jpg",
+    og_type: "website",
+    canonical: "/ar/buy-ethereum-in-dubai",
+  },
+  "sell-ethereum-in-dubai": {
+    title: "بيع إيثيريوم في دبي - بالاباي",
+    keywords: "بيع إيثيريوم، ETH، دبي",
+    description: "بيع إيثيريوم في دبي",
+    og_image: "/images/sell-ethereum-og.jpg",
+    og_type: "website",
+    canonical: "/ar/sell-ethereum-in-dubai",
+  },
+  "buy-bitcoin-turkey": {
+    title: "شراء بيتكوين في تركيا - بالاباي",
+    keywords: "شراء بيتكوين، تركيا، إسطنبول",
+    description: "شراء بيتكوين بسهولة في تركيا مع بالاباي",
+    og_image: "/images/buy-bitcoin-og.jpg",
+    og_type: "website",
+    canonical: "/ar/buy-bitcoin-turkey",
+  },
+  "buy-bitcoin-in-istanbul": {
+    title: "شراء بيتكوين في إسطنبول - بالاباي",
+    keywords: "شراء بيتكوين، إسطنبول، تركيا",
+    description: "شراء بيتكوين بسهولة في إسطنبول مع بالاباي",
+    og_image: "/images/buy-bitcoin-og.jpg",
+    og_type: "website",
+    canonical: "/ar/buy-bitcoin-in-istanbul",
+  },
+  "sell-usdt-in-istanbul": {
+    title: "بيع USDT في إسطنبول - بالاباي",
+    keywords: "بيع USDT، تيثر، إسطنبول",
+    description: "بيع USDT في إسطنبول",
+    og_image: "/images/sell-usdt-og.jpg",
+    og_type: "website",
+    canonical: "/ar/sell-usdt-in-istanbul",
+  },
+  contact: {
+    title: "اتصل بنا - بالاباي",
+    keywords: "اتصال، دعم، مساعدة",
+    description: "تواصل مع بالاباي",
+    og_image: "/images/contact-og.jpg",
+    og_type: "website",
+    canonical: "/ar/contact-us",
+  },
+  privacy: {
+    title: "سياسة الخصوصية - بالاباي",
+    keywords: "الخصوصية، السياسة، حماية البيانات",
+    description: "سياسة الخصوصية لبالاباي",
+    og_image: "/images/privacy-og.jpg",
+    og_type: "website",
+    canonical: "/ar/privacy",
+  },
+  agreement: {
+    title: "شروط الخدمة - بالاباي",
+    keywords: "الشروط، الاتفاقية، قانوني",
+    description: "شروط الخدمة لبالاباي",
+    og_image: "/images/agreement-og.jpg",
+    og_type: "website",
+    canonical: "/ar/agreement",
+  },
+};
+
+export function getMetaData(key: string, locale: string = "en"): MetaData {
+  const config = locale === "ar" ? META_CONFIG_AR : META_CONFIG_EN;
+  return config[key] || config.home;
 }
