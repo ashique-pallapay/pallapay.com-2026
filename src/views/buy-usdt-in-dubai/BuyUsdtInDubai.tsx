@@ -71,7 +71,7 @@ export function BuyUsdtInDubai({prices}: {prices: any}) {
                                        href="https://api.whatsapp.com/send?phone=971588971652">
                                         <div
                                             className="w-7 h-7 bg-[url(/images/icons/social/whatsapp-icon.svg)] bg-no-repeat bg-cover"></div>
-                                        WhatsApp
+                                        {te('whatsapp')}
                                     </a>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ export function BuyUsdtInDubai({prices}: {prices: any}) {
                             <div
                                 className="bg-[url(/images/benefits/wallet.png)] bg-contain bg-no-repeat bg-center w-[150px] h-[150px] mx-auto"></div>
                             <h5 className="text-xl font-semibold mt-9">{te('features.f2.title')}</h5>
-                            <p className="mt-2">{t('features.f2.desc')}</p>
+                            <p className="mt-2">{te('features.f2.desc')}</p>
                         </InteractiveGradientCard>
                         <InteractiveGradientCard className="bg-neutral-300 flex items-center justify-center pb-4 pt-1">
                             <div
@@ -141,7 +141,7 @@ export function BuyUsdtInDubai({prices}: {prices: any}) {
                             <div
                                 className="bg-[url(/images/benefits/earth.png)] bg-contain bg-no-repeat bg-center w-[150px] h-[150px] mx-auto"></div>
                             <h5 className="text-xl font-semibold mt-9">{te('features.f4.title')}</h5>
-                            <p className="mt-2">{t('features.f4.desc')}</p>
+                            <p className="mt-2">{te('features.f4.desc')}</p>
                         </InteractiveGradientCard>
                         <InteractiveGradientCard className="bg-neutral-300 flex items-center justify-center pb-4 pt-1">
                             <div

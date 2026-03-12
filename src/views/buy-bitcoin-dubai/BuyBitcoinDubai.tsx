@@ -22,6 +22,8 @@ export function BuyBitcoinDubai({prices = {}}: {prices?: {[key: string]: {
     const t = useTranslations('buyBitcoinDubai');
 
             console.log('Prices in BuyBitcoinDubai:', prices);
+    const te = useTranslations('commonExchange');
+
     return (
         <>
             <div className="relative mb-5 bg-black overflow-hidden">
@@ -76,7 +78,7 @@ export function BuyBitcoinDubai({prices = {}}: {prices?: {[key: string]: {
                                        href="https://api.whatsapp.com/send?phone=971588971652">
                                         <div
                                             className="w-7 h-7 bg-[url(/images/icons/social/whatsapp-icon.svg)] bg-no-repeat bg-cover"></div>
-                                        WhatsApp
+                                        {te('whatsapp')}
                                     </a>
                                 </div>
                             </div>

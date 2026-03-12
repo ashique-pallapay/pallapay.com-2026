@@ -17,6 +17,7 @@ const TurkeyHeroSection = ({
   purpose = "Buy",
 }: TurkeyHeroSectionProps) => {
   const t = useTranslations("turkeyPage.hero");
+  const tc = useTranslations("coins");
 
   return (
     <div className="container py-14 relative">
@@ -31,10 +32,10 @@ const TurkeyHeroSection = ({
       <div className="text-center relative z-10">
         <div className="text-3xl leading-[2.5rem] lg:text-4xl lg:leading-[3rem] font-semibold">
           <h1 className=" text-xl md:text-3xl">
-            {purpose === "Buy" ? t("buy") || "Buy" : t("sell") || "Sell"} {crypto} {shortForm}{" "}
+            {purpose === "Buy" ? t("buy") || "Buy" : t("sell") || "Sell"}{" "}
+            {tc(crypto) || crypto} {shortForm}{" "}
             {purpose === "Buy" ? t("with") : t("andGet")}{" "}
-            US Dollars or <br />
-            Turkish Lira in
+            {t("usDollarsOrLira")} {t("in")}
             <span className="text-(--primary-orange)"> {t("istanbul")}</span>
           </h1>
         </div>
@@ -44,7 +45,7 @@ const TurkeyHeroSection = ({
             <span className="border flex w-8 items-center justify-center rounded-full h-8">
               <Phone />
             </span>
-            <span>+90 1234567890</span>
+            <span>+90 +90 501 355 55 43</span>
           </div>
 
           <div className="flex gap-1 md:gap-3 justify-center items-center">
@@ -54,7 +55,7 @@ const TurkeyHeroSection = ({
               width={35}
               height={35}
             />
-            <span>+90 1234567890</span>
+            <span>+90 +90 501 355 55 43</span>
           </div>
         </div>
 

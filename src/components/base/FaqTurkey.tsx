@@ -29,6 +29,7 @@ export function FaqTurkey({ crypto, shortForm, faqs, purpose = "Buy" }: FaqTurke
   const [openItem, setOpenItem] = useState<any>(null);
   const t = useTranslations("turkeyPage.faq");
   const tHero = useTranslations("turkeyPage.hero");
+  const tc = useTranslations("coins");
 
   const translatedPurpose =
     purpose.toLowerCase() === "buy" ? tHero("buy") : tHero("sell");
@@ -47,7 +48,7 @@ export function FaqTurkey({ crypto, shortForm, faqs, purpose = "Buy" }: FaqTurke
             <div className="flex flex-col">
               <span>{t("about")}</span>
               <span>{translatedPurpose}{t("ing")}</span>
-              <span className="text-yellow-500">{crypto}</span>
+              <span className="text-yellow-500">{tc(crypto) || crypto}</span>
               <span className="text-yellow-500">{shortForm}</span>
               <span>{t("inPallapay")}</span>
               <span>{t("istanbul")}</span>

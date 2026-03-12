@@ -26,9 +26,12 @@ const HowtoBuyBitcoinTurkey = ({
 }: HowtoBuyBitcoinTurkeyProps) => {
   const t = useTranslations("turkeyPage.howToBuy");
   const tHero = useTranslations("turkeyPage.hero");
+  const tc = useTranslations("coins");
 
   const translatedPurpose =
     purpose.toLowerCase() === "buy" ? tHero("buy") : tHero("sell");
+
+  const translatedCrypto = tc(crypto) || crypto;
 
   const defaultSteps =
     purpose.toLowerCase() === "buy"
@@ -36,21 +39,21 @@ const HowtoBuyBitcoinTurkey = ({
           {
             id: 1,
             title: t("steps.visit.title"),
-            description: t("steps.visit.desc", { crypto }),
+            description: t("steps.visit.desc", { crypto: translatedCrypto }),
             image: "/images/turkey/holding-location-hand.png",
             alt: "Location Icon",
           },
           {
             id: 2,
-            title: t("steps.pay.title", { crypto }),
+            title: t("steps.pay.title", { crypto: translatedCrypto }),
             description: t("steps.pay.desc"),
             image: "/images/turkey/secure-mobile-payment.png",
             alt: "Payment Icon",
           },
           {
             id: 3,
-            title: t("steps.get.title", { crypto }),
-            description: t("steps.get.desc", { crypto }),
+            title: t("steps.get.title", { crypto: translatedCrypto }),
+            description: t("steps.get.desc", { crypto: translatedCrypto }),
             image: "/images/turkey/crypto-hold-bitcoin.png",
             alt: "Bitcoin Icon",
           },
@@ -59,14 +62,14 @@ const HowtoBuyBitcoinTurkey = ({
           {
             id: 1,
             title: t("steps.visit.title"),
-            description: t("steps.visit.desc", { crypto }),
+            description: t("steps.visit.desc", { crypto: translatedCrypto }),
             image: "/images/turkey/holding-location-hand.png",
             alt: "Location Icon",
           },
           {
             id: 2,
-            title: t("steps.transfer.title", { crypto }),
-            description: t("steps.transfer.desc", { crypto }),
+            title: t("steps.transfer.title", { crypto: translatedCrypto }),
+            description: t("steps.transfer.desc", { crypto: translatedCrypto }),
             image: "/images/turkey/crypto-exchange-3d-icon-illustration1.png",
             alt: "Transfer Icon",
           },
@@ -84,7 +87,7 @@ const HowtoBuyBitcoinTurkey = ({
   return (
     <div className="">
       <h2 className="text-3xl md:text-4xl font-semibold text-center mb-16">
-        {t("title", { purpose: translatedPurpose, crypto: `${crypto} ${shortForm || ""}` })}
+        {t("title", { purpose: translatedPurpose, crypto: `${translatedCrypto} ${shortForm || ""}` })}
       </h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">

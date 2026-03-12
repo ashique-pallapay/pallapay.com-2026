@@ -8,7 +8,7 @@ export default async function SellXrpInDubaiPage() {
   return (
     <>
       <SeoHead meta={meta} />
-      <div className="overflow-hidden">
+      <div className="overflow-hidden bg-white!">
         <SellXrpInDubai />
       </div>
     </>

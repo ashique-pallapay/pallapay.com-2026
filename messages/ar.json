@@ -10,6 +10,24 @@
     "createAccount": "إنشاء حساب",
     "yourEmailAddress": "عنوان بريدك الإلكتروني"
   },
+
+  "calculator": {
+    "youSpend": "إنفاقك",
+    "youReceive": "ستحصل على",
+    "enterAmount": "أدخل المبلغ",
+    "select": "اختر",
+    "loading": "جاري التحميل..."
+  },
+
+  "coins": {
+    "Bitcoin": "بيتكوين",
+    "Ethereum": "إيثيريوم",
+    "Tether": "تيثر",
+    "USDT": "USDT",
+    "Shiba Inu": "شيبا إينو",
+    "BNB": "بي إن بي",
+    "XRP": "إكس آر بي"
+  },
   "nav": {
     "solutions": "الحلول",
     "industries": "الصناعات",
@@ -896,6 +914,8 @@
       "bestPlaceUsdt": "بالاباي هي أفضل مكان لشراء وبيع USDT والعملات المشفرة الأخرى فوراً. يمكنك الآن التداول بطريقة سريعة وسهلة وآمنة مع بالاباي.",
       "with": "بـ",
       "andGet": "واحصل على",
+      "usDollarsOrLira": "الدولار الأمريكي أو الليرة التركية",
+      "in": "في",
       "buyOnline": "اشتري عبر الإنترنت الآن",
       "visitOffice": "زر مكتبنا",
       "istanbul": "إسطنبول"
@@ -1800,6 +1820,12 @@
     }
   },
   "commonExchange": {
+    "whatsapp": "واتساب",
+    "buttons": {
+      "buyOnline": "اشتري أونلاين الآن",
+      "visitOffice": "قم بزيارة مكتبنا",
+      "visitStore": "قم بزيارة متجرنا"
+    },
     "features": {
       "title": "مميزاتنا",
       "f1": {

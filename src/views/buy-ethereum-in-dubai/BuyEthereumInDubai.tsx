@@ -107,7 +107,7 @@ export function BuyEthereumInDubai({
                     href="https://api.whatsapp.com/send?phone=971588971652"
                   >
                     <div className="w-7 h-7 bg-[url(/images/icons/social/whatsapp-icon.svg)] bg-no-repeat bg-cover"></div>
-                    WhatsApp
+                    {te('whatsapp')}
                   </a>
                 </div>
               </div>

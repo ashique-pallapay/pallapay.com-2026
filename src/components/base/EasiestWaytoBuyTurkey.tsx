@@ -13,11 +13,13 @@ const EasiestWayToBuy = ({
 }) => {
   const t = useTranslations("turkeyPage.easiestWay");
   const tHero = useTranslations("turkeyPage.hero");
+  const tc = useTranslations("coins");
 
   const translatedPurpose =
     purpose.toLowerCase() === "buy" ? tHero("buy") : tHero("sell");
 
-  const cryptoWithSymbol = `${crypto} ${shortForm || ""}`;
+  const translatedCrypto = tc(crypto) || crypto;
+  const cryptoWithSymbol = `${translatedCrypto} ${shortForm || ""}`;
 
   return (
     <div className="relative  w-full bg-(--primary-orange)/10 border border-(--primary-orange) rounded-[40px] shadow-2xl p-8 md:p-16">
@@ -47,35 +49,35 @@ const EasiestWayToBuy = ({
           <ul className="space-y-2 ml-4">
             <li className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-[#7a6431] rounded-full"></span>
-              {t("buy", { crypto })}
+              {t("buy", { crypto: translatedCrypto })}
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-[#7a6431] rounded-full"></span>
-              {t("sell", { crypto })}
+              {t("sell", { crypto: translatedCrypto })}
             </li>
             {crypto != "USDT" && (
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#7a6431] rounded-full"></span>
-                {t("trade", { crypto })}
+                {t("trade", { crypto: translatedCrypto })}
               </li>
             )}
           </ul>
         </div>
 
-        <p className="italic">{t("firstStep", { crypto })}</p>
+        <p className="italic">{t("firstStep", { crypto: translatedCrypto })}</p>
 
         <h2 className="text-lg font-semibold text-white pt-2 border-b border-[#7a6431]/20 pb-1 inline-block">
-          {t("subTitle", { purpose: translatedPurpose, crypto })}
+          {t("subTitle", { purpose: translatedPurpose, crypto: translatedCrypto })}
         </h2>
 
         <p className="leading-relaxed">
-          {t("para3", { purpose: translatedPurpose, crypto })}
+          {t("para3", { purpose: translatedPurpose, crypto: translatedCrypto })}
         </p>
 
         <p className="leading-relaxed">
           {t.rich("para4", {
             purpose: translatedPurpose,
-            crypto,
+            crypto: translatedCrypto,
             pallapay: (chunks) => (
               <span className="text-white font-bold underline decoration-[#7a6431]">
                 {chunks}

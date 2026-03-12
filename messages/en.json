@@ -11,6 +11,24 @@
     "yourEmailAddress": "Your Email Address"
   },
 
+  "calculator": {
+    "youSpend": "You Spend",
+    "youReceive": "You Receive",
+    "enterAmount": "Enter amount",
+    "select": "Select",
+    "loading": "Loading..."
+  },
+
+  "coins": {
+    "Bitcoin": "Bitcoin",
+    "Ethereum": "Ethereum",
+    "Tether": "Tether",
+    "USDT": "USDT",
+    "Shiba Inu": "Shiba Inu",
+    "BNB": "BNB",
+    "XRP": "XRP"
+  },
+
   "nav": {
     "solutions": "Solutions",
     "industries": "Industries",
@@ -739,6 +757,8 @@
       "bestPlaceUsdt": "Pallapay is the best place to buy and sell USDT and other cryptocurrencies instantly. You can now trade in a fast, easy, and secure way with Pallapay.",
       "with": "with",
       "andGet": "and Get",
+      "usDollarsOrLira": "US Dollars or Turkish Lira",
+      "in": "in",
       "buyOnline": "Buy online now",
       "visitOffice": "Visit our office",
       "istanbul": "Istanbul"
@@ -1571,9 +1591,7 @@
   },
   "sellShibaDubai": {
     "hero": {
-      "title": "Sell Shiba Inu in Dubai\nGet Cash or Bank Transfer",
-      "buyOnline": "Buy online now",
-      "visitOffice": "Visit our office"
+      "title": "Sell Shiba Inu in Dubai\nGet Cash or Bank Transfer"
     },
     "calculator": {
       "title": "Calculate Shiba to Cash"
@@ -1648,9 +1666,7 @@
   },
   "sellBnbDubai": {
     "hero": {
-      "title": "Sell BNB in Dubai\nGet Cash or Bank Transfer",
-      "buyOnline": "Buy online now",
-      "visitOffice": "Visit our office"
+      "title": "Sell BNB in Dubai\nGet Cash or Bank Transfer"
     },
     "calculator": {
       "title": "Calculate BNB to Cash"
@@ -1800,7 +1816,14 @@
       }
     }
   },
+
   "commonExchange": {
+    "whatsapp": "WhatsApp",
+    "buttons": {
+      "buyOnline": "Buy online now",
+      "visitOffice": "Visit our office",
+      "visitStore": "Visit our store"
+    },
     "features": {
       "title": "Our Features",
       "f1": {

@@ -4,18 +4,8 @@ import * as React from "react";
 import Image from "next/image";
 // import { MainFooter } from '@/components/base/MainFooter';
 import { MainNav } from "@/components/base/MainNav";
-import { ArrowRightLeft, Check, Phone } from "lucide-react";
+import { Check, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import InteractiveGradientCard from "@/components/base/InteractiveGradientCard";
 // import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -105,7 +95,7 @@ export function SellUsdtInDubai({prices = {}}: {prices?: {[key: string]: {
                     href="https://api.whatsapp.com/send?phone=971588971652"
                   >
                     <div className="w-7 h-7 bg-[url(/images/icons/social/whatsapp-icon.svg)] bg-no-repeat bg-cover"></div>
-                    WhatsApp
+                    {te('whatsapp')}
                   </a>
                 </div>
               </div>

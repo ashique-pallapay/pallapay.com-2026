@@ -15,6 +15,8 @@ import * as React from "react";
 import { ChangeEvent, useEffect, useState } from "react";
 import { clsx } from "clsx";
 
+import { useTranslations } from "next-intl";
+
 export const Calculator = ({
   symbol,
   title,
@@ -36,6 +38,7 @@ export const Calculator = ({
     };
   };
 }): any => {
+  const t = useTranslations("calculator");
   const [amount, setAmount] = useState("");
   const [destinationAmount, setDestinationAmount] = useState("");
   const [baseCurrency, setBaseCurrency] = useState(symbol);
@@ -43,7 +46,12 @@ export const Calculator = ({
 
   // Calculate destination amount whenever amount, base, or destination currency changes
   useEffect(() => {
-    if (!amount || !baseCurrency || !destinationCurrency || !prices[baseCurrency]) {
+    if (
+      !amount ||
+      !baseCurrency ||
+      !destinationCurrency ||
+      !prices[baseCurrency]
+    ) {
       setDestinationAmount("");
       return;
     }
@@ -76,6 +84,7 @@ export const Calculator = ({
           src="/images/cryptocurrency/calculator.png"
           width={140}
           className="hidden lg:block"
+          alt="Calculator"
         />
         <div
           className={clsx(
@@ -89,8 +98,8 @@ export const Calculator = ({
             )}
           >
             <div className="grid w-full items-center gap-1.5">
-              <Label className="font-semibold text-base" htmlFor="email">
-                I want to sell
+              <Label className="font-semibold text-base" htmlFor="amount-input">
+                {t("youSpend")}
               </Label>
               <Input
                 value={amount}
@@ -100,7 +109,7 @@ export const Calculator = ({
                 className="h-12"
                 type="number"
                 id="amount-input"
-                placeholder="Enter amount"
+                placeholder={t("enterAmount")}
               />
             </div>
             <Select
@@ -108,7 +117,7 @@ export const Calculator = ({
               onValueChange={(value) => setBaseCurrency(value)}
             >
               <SelectTrigger className="w-[220px] h-12 mt-7 bg-amber-400 border-none">
-                <SelectValue placeholder="Select" />
+                <SelectValue placeholder={t("select")} />
               </SelectTrigger>
               <SelectContent className="bg-black border-none">
                 <SelectGroup>
@@ -128,7 +137,7 @@ export const Calculator = ({
                     ))
                   ) : (
                     <SelectItem value="BTC" disabled>
-                      Loading...
+                      {t("loading")}
                     </SelectItem>
                   )}
                 </SelectGroup>
@@ -144,15 +153,16 @@ export const Calculator = ({
           )}
           <div className="lg:col-span-3 gap-3 flex items-center justify-center">
             <div className="grid w-full items-center gap-1.5">
-              <Label className="font-semibold text-base" htmlFor="email">
-                You Receive
+              <Label className="font-semibold text-base" htmlFor="receive-input">
+                {t("youReceive")}
               </Label>
               <Input
                 value={destinationAmount}
                 className="h-12 cursor-default"
-                type="email"
-                id="email"
-                placeholder="Enter amount"
+                type="text"
+                id="receive-input"
+                placeholder={t("enterAmount")}
+                readOnly
               />
             </div>
             <Select
@@ -160,7 +170,7 @@ export const Calculator = ({
               onValueChange={(value) => setDestinationCurrency(value)}
             >
               <SelectTrigger className="w-[220px] h-12 mt-7 bg-amber-400 border-none">
-                <SelectValue placeholder="Select a fruit" />
+                <SelectValue placeholder={t("select")} />
               </SelectTrigger>
               <SelectContent className="bg-black">
                 <SelectGroup>
