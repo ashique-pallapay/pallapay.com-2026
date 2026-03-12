@@ -261,7 +261,7 @@ export function GiftCard() {
               className="max-h-44 sm:p-2 mx-auto"
               alt="Sell Any Cryptocurrency via Pallapay Crypto Gift Card"
             />
-            <h3 className="text-xl sm:text-2xl font-semibold mt-4 sm:mt-5 text-primaryOrange">
+            <h3 className="text-xl sm:text-2xl font-semibold mt-4 sm:mt-5 text-(--primary-orange)">
               Sell Any Cryptocurrency via Pallapay Crypto Gift Card
             </h3>
             <p className="mt-3 sm:mt-6 text-white">
@@ -721,9 +721,8 @@ export function GiftCard() {
                       </AccordionTrigger>
 
                       <ChevronDown
-                        className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${
-                          isOpen ? "rotate-180" : ""
-                        }`}
+                        className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                          }`}
                       />
                     </div>
 

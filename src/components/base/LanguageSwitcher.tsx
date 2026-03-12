@@ -2,6 +2,7 @@
 
 import { useLocale } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
+import { useRouter as useNextRouter } from "next/navigation";
 import { useTransition } from "react";
 import { Globe } from "lucide-react";
 
@@ -9,12 +10,27 @@ export function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+  const nextRouter = useNextRouter();
   const [isPending, startTransition] = useTransition();
 
   const toggleLocale = () => {
     const nextLocale = locale === "en" ? "ar" : "en";
+    
+    // Explicitly set the cookie for the middleware
+    document.cookie = `NEXT_LOCALE=${nextLocale}; path=/; max-age=31536000; SameSite=Lax`;
+    
+    // Construct the new path natively
+    const isDefaultNext = nextLocale === "en";
+    let newPath = pathname;
+    
+    // Using window.location.href forces a full page reload and bypasses
+    // Next.js client cache. This prevents the "URL changes but content remains constant" bug.
     startTransition(() => {
-      router.replace(pathname, { locale: nextLocale });
+      if (isDefaultNext) {
+        window.location.href = newPath;
+      } else {
+        window.location.href = `/${nextLocale}${newPath === '/' ? '' : newPath}`;
+      }
     });
   };
 

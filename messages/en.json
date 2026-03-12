@@ -10,6 +10,7 @@
     "createAccount": "Create Account",
     "yourEmailAddress": "Your Email Address"
   },
+
   "nav": {
     "solutions": "Solutions",
     "industries": "Industries",
@@ -157,7 +158,9 @@
   },
   "aboutUs": {
     "breadcrumbHome": "Home",
-    "breadcrumbAbout": "About Us"
+    "breadcrumbAbout": "About Us",
+    "title": "About Us",
+    "subtitle": "What the world has to say about Pallapay"
   },
   "buyAndSellUSDT": {
     "title": "Buy & Sell USDT (Tether) in Istanbul,",
@@ -555,8 +558,8 @@
     "breadcrumbHome": "Home",
     "breadcrumbGiftCard": "Gift Card"
   },
-  "media":{
-    "yahooContent" : "Pallapay Establishes Itself as a Mega Company in Dubai Pallapay has positioned itself as a leading fintech force in the Middle East, officially establishing itself as a “Mega Company” in Dubai’s rapidly growing digital asset sector. Known for its innovative cryptocurrency payment solutions, Pallapay provides businesses and users with secure platforms for buying, selling, and ...",
-    "einPresswire"  :"Pallapay has launched the world’s first crypto-to-fiat POS machine system in the UAE, allowing businesses to accept cryptocurrencies like Bitcoin, USDT, Ethereum, and more—while receiving settlements directly in AED, USD, EUR, or GBP. No crypto handling or technical knowledge required. The system handles the full conversion process, making it simple, secure, and seamless for merchants."
+  "media": {
+    "yahooContent": "Pallapay Establishes Itself as a Mega Company in Dubai Pallapay has positioned itself as a leading fintech force in the Middle East, officially establishing itself as a “Mega Company” in Dubai’s rapidly growing digital asset sector. Known for its innovative cryptocurrency payment solutions, Pallapay provides businesses and users with secure platforms for buying, selling, and ...",
+    "einContent": "Pallapay has launched the world’s first crypto-to-fiat POS machine system in the UAE, allowing businesses to accept cryptocurrencies like Bitcoin, USDT, Ethereum, and more—while receiving settlements directly in AED, USD, EUR, or GBP. No crypto handling or technical knowledge required. The system handles the full conversion process, making it simple, secure, and seamless for merchants."
   }
 }

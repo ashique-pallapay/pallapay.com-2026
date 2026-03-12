@@ -16,17 +16,21 @@ export function AboutUsSection({ className, ...props }: VideoSectionProps) {
   const mediaItems = [
     {
       logo: "/images/in-media/yahoo-finance.png",
-      source: t("media.yahooFinance"),
+      // source: t("media.yahooFinance"),
+      source: "Yahoo Finance",
       content: t("media.yahooContent"),
       link: "https://finance.yahoo.com/news/pallapay-establishes-itself-mega-company-050000714.html",
     },
     {
       logo: "/images/in-media/einpresswire.png",
-      source: t("media.einPresswire"),
+      // source: t("media.einPresswire"),
+      source: "EIN Presswire",
       content: t("media.einContent"),
       link: "https://www.einpresswire.com/article/575325873/with-pallapay-crypto-pos-machine-system-businesses-can-accept-crypto-and-get-fiat-in-their-bank-account-in-uae",
     },
   ];
+
+
 
   return (
     <div
@@ -38,10 +42,10 @@ export function AboutUsSection({ className, ...props }: VideoSectionProps) {
     >
       <div className="container">
         <div className="text-3xl md:text-5xl font-semibold mt-28 text-center">
-          {t("title")}
+          {t("aboutUs.title")}
         </div>
         <div className="text-lg md:text-xl font-semibold mt-5 text-center">
-          {t("subtitle")}
+          {t("aboutUs.subtitle")}
         </div>
 
         <div className="mt-10 relative">
