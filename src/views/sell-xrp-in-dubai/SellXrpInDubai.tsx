@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import Image from 'next/image';
-import { MainFooter } from '@/components/base/MainFooter';
 import { MainNav } from '@/components/base/MainNav';
 import { ArrowRightLeft, Check, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
