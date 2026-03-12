@@ -1,0 +1,513 @@
+@import "@fontsource/exo-2";
+@import "tailwindcss";
+
+html {
+  font-size: 18px;
+}
+
+body {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family:
+    "Exo 2",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+  scrollbar-width: thin;
+  scrollbar-color: #cccccc #1a1a1a; /* thumb track */
+}
+
+.container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.background-dark-gradient {
+  background: linear-gradient(to bottom, #111111 0%, #000000 50%, #3a3a3a 100%);
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+
+:root {
+  --primary-grey: #353c45;
+  --primary-orange: #fbb904;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.particle-move-1 {
+  animation: particle-animation-1 20s infinite;
+}
+
+.particle-move-2 {
+  animation: particle-animation-2 18s infinite;
+}
+
+.particle-move-3 {
+  animation: particle-animation-3 17s infinite;
+}
+
+.particle-move-4 {
+  animation: particle-animation-4 15s infinite;
+}
+
+@keyframes particle-animation-1 {
+  0% {
+    width: 55px;
+    height: 50px;
+    filter: blur(1px);
+    transform: rotate(0deg);
+    top: 12%;
+    left: -3%;
+  }
+  50% {
+    width: 60px;
+    height: 60px;
+    filter: blur(6px);
+    transform: rotate(-45deg);
+    top: 18%;
+    left: -7%;
+  }
+  100% {
+    width: 55px;
+    height: 50px;
+    filter: blur(1px);
+    transform: rotate(0deg);
+    top: 12%;
+    left: -3%;
+  }
+}
+
+@keyframes particle-animation-2 {
+  0% {
+    width: 236px;
+    height: 227px;
+    filter: blur(10px);
+    transform: rotate(-16deg);
+    top: 4%;
+    right: 4.5%;
+  }
+  50% {
+    width: 220px;
+    height: 210px;
+    filter: blur(3px);
+    transform: rotate(-50deg);
+    top: 15%;
+    right: 2%;
+  }
+  100% {
+    width: 236px;
+    height: 227px;
+    filter: blur(10px);
+    transform: rotate(-16deg);
+    top: 4%;
+    right: 4.5%;
+  }
+}
+
+@keyframes particle-animation-3 {
+  0% {
+    width: 162px;
+    height: 170px;
+    filter: blur(5px);
+    transform: rotate(-112deg);
+    bottom: 7%;
+    left: -12.5%;
+  }
+  50% {
+    width: 140px;
+    height: 150px;
+    filter: blur(11px);
+    transform: rotate(0deg);
+    bottom: 3%;
+    left: -5%;
+  }
+  100% {
+    width: 162px;
+    height: 170px;
+    filter: blur(5px);
+    transform: rotate(-112deg);
+    bottom: 7%;
+    left: -12.5%;
+  }
+}
+
+@keyframes particle-animation-4 {
+  0% {
+    width: 153px;
+    height: 148px;
+    filter: blur(2px);
+    transform: rotate(-42deg);
+    bottom: -50px;
+    right: -90px;
+  }
+  50% {
+    width: 170px;
+    height: 158px;
+    filter: blur(8px);
+    transform: rotate(10deg);
+    bottom: -20px;
+    right: -70px;
+  }
+  100% {
+    width: 153px;
+    height: 148px;
+    filter: blur(2px);
+    transform: rotate(-42deg);
+    bottom: -50px;
+    right: -90px;
+  }
+}
+
+.corner-rounded-card {
+  opacity: 0.4;
+  --card-color: #353c45;
+  --pillar-size: 100px;
+  --big-circle-r: 20px;
+  --circle-r: 20px;
+  --circle-d: calc(var(--circle-r) * 2);
+  --circles-space: calc(var(--big-circle-r) + var(--pillar-size));
+  --circle-extend-inset: calc(var(--circle-r) + var(--circles-space));
+
+  background:
+    radial-gradient(
+        circle at 100% 100%,
+        transparent var(--big-circle-r),
+        var(--card-color) calc(var(--big-circle-r) + 1px)
+      )
+      0px 0px / calc(100% - var(--pillar-size)) calc(100% - var(--pillar-size))
+      no-repeat,
+    radial-gradient(
+        circle closest-side,
+        var(--card-color) 100%,
+        transparent calc(100% + 1px)
+      )
+      calc(100% - var(--circles-space)) calc(100%) / var(--circle-d)
+      var(--circle-d) no-repeat no-repeat,
+    radial-gradient(
+        circle closest-side,
+        var(--card-color) 100%,
+        transparent calc(100% + 1px)
+      )
+      100% calc(100% - var(--circles-space)) / var(--circle-d) var(--circle-d)
+      no-repeat no-repeat,
+    linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 0px
+      var(--circle-r) / calc(100% - var(--circle-extend-inset))
+      calc(100% - var(--circle-r)) no-repeat no-repeat,
+    linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 0px
+      var(--circle-r) / calc(100% - var(--circle-r))
+      calc(100% - var(--circle-extend-inset)) no-repeat no-repeat,
+    linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 100%
+      calc(100% - var(--circle-extend-inset)) /
+      calc(100% - var(--circle-extend-inset)) 100% no-repeat no-repeat,
+    linear-gradient(0deg, var(--card-color) 100%, var(--card-color) 100%) 0px
+      calc(0px - var(--circle-r)) / calc(100% - var(--circles-space)) 100%
+      no-repeat no-repeat;
+}
+
+@keyframes float-gentle-1 {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) translateX(4px) rotate(2deg);
+  }
+}
+
+@keyframes float-gentle-2 {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes float-gentle-3 {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) translateX(5px) rotate(3deg);
+  }
+}
+
+@keyframes float-gentle-4 {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) translateX(3px) rotate(5deg);
+  }
+}
+
+@keyframes float-gentle-5 {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) translateX(-4px) rotate(-3deg);
+  }
+}
+
+@keyframes float-gentle-6 {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) translateX(2px) rotate(4deg);
+  }
+}
+
+.animate-float-1 {
+  animation: float-gentle-1 4s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-gentle-2 5s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float-gentle-3 4.5s ease-in-out infinite;
+}
+
+.animate-float-4 {
+  animation: float-gentle-4 3.5s ease-in-out infinite;
+}
+
+.animate-float-5 {
+  animation: float-gentle-5 5.5s ease-in-out infinite;
+}
+
+.animate-float-6 {
+  animation: float-gentle-6 4s ease-in-out infinite;
+}
+
+@keyframes gradient-move-1 {
+  0% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.6;
+  }
+  33% {
+    transform: translate(60%, -40%) scale(1.2);
+    opacity: 0.8;
+  }
+  66% {
+    transform: translate(-40%, 50%) scale(0.9);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.6;
+  }
+}
+
+@keyframes gradient-move-2 {
+  0% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.5;
+  }
+  33% {
+    transform: translate(-50%, 45%) scale(1.1);
+    opacity: 0.7;
+  }
+  66% {
+    transform: translate(45%, -35%) scale(0.95);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes gradient-move-3 {
+  0% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.4;
+  }
+  33% {
+    transform: translate(50%, 55%) scale(1.15);
+    opacity: 0.6;
+  }
+  66% {
+    transform: translate(-55%, -30%) scale(0.85);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.4;
+  }
+}
+
+.animate-gradient-1 {
+  animation: gradient-move-1 30s ease-in-out infinite;
+}
+
+.animate-gradient-2 {
+  animation: gradient-move-2 35s ease-in-out infinite;
+}
+
+.animate-gradient-3 {
+  animation: gradient-move-3 40s ease-in-out infinite;
+}
+
+@keyframes image-move-1 {
+  0%,
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  50% {
+    transform: translate(20%, -12%) rotate(5deg);
+  }
+}
+
+@keyframes image-move-2 {
+  0%,
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-18%, 18%) rotate(-6deg);
+  }
+}
+
+@keyframes image-move-3 {
+  0%,
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  50% {
+    transform: translate(28%, 32%) rotate(12deg);
+  }
+}
+
+.animate-image-1 {
+  animation: image-move-1 15s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-image-2 {
+  animation: image-move-2 18s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-image-3 {
+  animation: image-move-3 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+.animate-marquee-infinite {
+  animation: marquee-infinite 20s linear infinite;
+  will-change: transform;
+  width: fit-content;
+}
+
+@keyframes marquee-seamless {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+.animate-marquee-seamless {
+  animation: marquee-seamless 15s linear infinite;
+  will-change: transform;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .animate-marquee-seamless {
+    animation: marquee-seamless 10s linear infinite;
+  }
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(4px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1),
+    filter 0.8s ease-out;
+}
+
+.scroll-animate-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 12px; /* horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; /* dark track */
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fbb904; /* light handle */
+  border-radius: 1px;
+  border: 3px solid #000000; /* padding around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffdc7c;
+}
+
+.dark-map {
+  filter: invert(95%) hue-rotate(200deg);
+}

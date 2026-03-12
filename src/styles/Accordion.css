@@ -1,0 +1,4 @@
+/* Hide any SVG inside the AccordionTrigger */
+.AccordionTrigger svg {
+  display: none !important;
+}

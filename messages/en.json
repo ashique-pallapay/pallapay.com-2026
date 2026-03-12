@@ -1,0 +1,562 @@
+{
+  "common": {
+    "login": "Login",
+    "signUp": "Sign up",
+    "getStarted": "Get Started",
+    "getHelp": "Get Help",
+    "subscribe": "Subscribe",
+    "seeMore": "See More",
+    "tryItNow": "Try It Now!",
+    "createAccount": "Create Account",
+    "yourEmailAddress": "Your Email Address"
+  },
+  "nav": {
+    "solutions": "Solutions",
+    "industries": "Industries",
+    "blog": "Blog",
+    "help": "Help",
+    "items": {
+      "cryptoWallet": {
+        "title": "Crypto Wallet",
+        "description": "Buy, Sell, Convert & Accept Crypto, All in One Platform."
+      },
+      "cryptoPaymentApi": {
+        "title": "Crypto Payment API",
+        "description": "Accept crypto payments by integrating Pallapay API."
+      },
+      "cryptoPaymentLink": {
+        "title": "Crypto Payment Link",
+        "description": "Accept crypto payments by sending payment links."
+      },
+      "cryptoPosMachine": {
+        "title": "Crypto POS Machine",
+        "description": "Accept crypto payments in your store using Pallapay POS machine."
+      },
+      "fiatSettlement": {
+        "title": "Fiat Settlement",
+        "description": "Get paid in crypto and receive fiat instantly."
+      },
+      "cryptoGiftCard": {
+        "title": "Crypto Gift Card",
+        "description": "Buy crypto gift cards with cash or sell them for cash."
+      },
+      "gaming": {
+        "title": "Gaming",
+        "description": "Accept crypto payments on your gaming platform with Pallapay."
+      },
+      "hotels": {
+        "title": "Hotels",
+        "description": "Accept crypto payments at your hotel for reservation, checkins, etc."
+      },
+      "tradingPlatforms": {
+        "title": "Trading Platforms",
+        "description": "Start accepting crypto payments on your trading platform."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "description": "Start accepting crypto payments at your E-commerce website."
+      },
+      "retailSector": {
+        "title": "Retail Sector",
+        "description": "Get started with accepting crypto payments at your retail store."
+      }
+    }
+  },
+  "hero": {
+    "title": "Buy, Sell, Convert & Accept Crypto",
+    "subtitle1": "All in One Platform",
+    "subtitle2": "Accept Crypto, Settle in Fiat",
+    "cta": "Get Started"
+  },
+  "howItWorks": {
+    "walletBanner": "Pallapay Wallet",
+    "walletTitle1": "Pallapay Crypto Wallet",
+    "walletTitle2": "Is Now",
+    "walletHighlight": "Live!",
+    "walletDescription": "Buy, sell, exchange, and accept crypto, all with the Pallapay Wallet. Experience fast, secure, and global digital payments. Instantly convert crypto to fiat and manage all your assets in one simple app.",
+    "walletCta": "Try It Now!",
+    "paymentGatewayBanner": "Pallapay Payment Gateway"
+  },
+  "bestSuitedFor": {
+    "title": "Best Suited For:",
+    "industries": {
+      "gaming": "Gaming",
+      "hotels": "Hotels",
+      "tradingPlatforms": "Trading Platforms",
+      "ecommerce": "E-commerce",
+      "retailSector": "Retail Sector"
+    }
+  },
+  "whyPallapay": {
+    "title": "Why Pallapay ?",
+    "quickSetup": {
+      "title": "Quick Setup",
+      "description": "Create an account in under a minute and gain instant access to Pallapay's full suite of payment solutions POS, online payments, and payment links. Set up your preferred method easily using our API or intuitive partner dashboard."
+    },
+    "transactionControl": {
+      "title": "Complete Transaction Control",
+      "description": "With Pallapay, you have complete control over your transactions chargebacks are only processed when you choose to initiate them. This empowers your business to stay protected against disputes and chargeback fraud."
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "Our dedicated support team is available 24/7 to assist you every step of the way. Whether you need technical help or account guidance, we're always here to ensure your payments run smoothly."
+    }
+  },
+  "solutions": {
+    "title": "Crypto Payment Solutions",
+    "items": {
+      "paymentLinks": "Payment Links",
+      "cryptoPosMachine": "Crypto POS Machine",
+      "apiIntegration": "API Integration",
+      "fiatSettlement": "Fiat Settlement",
+      "cryptoGiftCard": "Crypto Gift Card"
+    }
+  },
+  "instantSettlement": {
+    "title": "Instant Settlements",
+    "description": "We guarantee that when you sell an item and accept cryptocurrency using Pallapay crypto payment gateway, you'll receive the full fiat amount instantly."
+  },
+  "scrollText": "No crypto knowledge required! Pallapay lets you charge in fiat and settle in fiat, while we handle the crypto behind the scenes.",
+  "faq": {
+    "title": "Frequently",
+    "titleLine2": "Asked",
+    "titleLine3": "Questions",
+    "items": {
+      "item1": {
+        "question": "What is Pallapay?",
+        "answer1": "Pallapay is a leading crypto payment gateway provider, enabling businesses of all sizes to accept cryptocurrency payments effortlessly. Our secure platform allows merchants to charge in fiat currency while customers pay with USDT, Ethereum, USDC, and other cryptocurrencies. Pallapay ensures seamless, real-time crypto-to-fiat conversions and instant fiat settlements, making payment processing fast and reliable.",
+        "answer2": "Trusted across industries like retail, hospitality, e-commerce, gaming, and trading platforms, Pallapay offers easy integration with no crypto knowledge required. Start accepting crypto payments today with Pallapay's innovative crypto payment gateway solutions designed to grow your business globally."
+      },
+      "item2": {
+        "question": "Who can use Pallapay crypto payment gateway?",
+        "answer": "Pallapay provides a comprehensive crypto payment gateway for businesses and individuals alike. Whether you're a large enterprise, small business owner, or freelancer, Pallapay offers flexible cryptocurrency payment solutions tailored to your needs. Accept crypto payments easily through secure payment links, seamless API integration, or Pallapay's reliable Crypto POS machines with no crypto knowledge required."
+      },
+      "item3": {
+        "question": "How to get started with Pallapay",
+        "answer1": "To begin using Pallapay's crypto payment services, you'll first need to create an account by signing up",
+        "answerLink": "here",
+        "answer2": ". Setting up a personal account requires only a valid physical ID—once submitted, you'll be able to access your dashboard and start exploring our services right away.",
+        "answer3": "For businesses, Pallapay offers a streamlined business verification process. After creating your account, you can register your business by uploading the necessary documentation, such as your trade license, company registration, and proof of ownership. Once verified, you'll gain access to our full suite of business tools, including payment links, API integration, and the Pallapay Crypto POS system.",
+        "answer4": "Whether you're an individual or a business, our onboarding process is designed to be fast, transparent, and fully compliant with regulatory standards."
+      },
+      "item4": {
+        "question": "What cryptocurrencies does Pallapay support?",
+        "answer1": "Pallapay supports a wide range of popular cryptocurrencies to provide maximum flexibility for both businesses and their customers. Accepted digital assets include leading stablecoins like USDT, USDC, and DAI, along with widely-used cryptocurrencies such as Ethereum (ETH), Tron (TRX), BNB, and many more.",
+        "answer2": "By offering support for multiple crypto options, Pallapay enables your customers to pay with their preferred cryptocurrencies, ensuring a faster, more inclusive checkout experience. Whether you're accepting crypto online, in-store, or via API integration, Pallapay guarantees secure, real-time transactions with instant crypto-to-fiat settlement."
+      },
+      "item5": {
+        "question": "How can I get the Pallapay crypto POS machine?",
+        "answer1": "To order your Pallapay Crypto POS machine, your business must first complete the verification process. Once verified, simply log in to your dashboard and navigate to the POS Devices section. Click Request for POS and follow the on-screen instructions to place your order.",
+        "answer2": "Pallapay's secure POS terminals allow you to accept crypto payments in-store, with real-time crypto-to-fiat conversion and instant settlement—perfect for retail, hospitality, and on-location businesses."
+      },
+      "item6": {
+        "question": "Can customers pay in crypto while I receive fiat?",
+        "answer": "Yes. With Pallapay, your customers can pay in cryptocurrency, while you receive the equivalent amount in fiat currency instantly. Pallapay handles the crypto-to-fiat conversion in real time."
+      }
+    }
+  },
+  "aboutUs": {
+    "breadcrumbHome": "Home",
+    "breadcrumbAbout": "About Us"
+  },
+  "buyAndSellUSDT": {
+    "title": "Buy & Sell USDT (Tether) in Istanbul,",
+    "titleLine2": "Secure OTC Office",
+    "paragraph1": "Our Istanbul OTC desk offers a secure and efficient way to buy USDT with cash in US Dollars (USD) or Turkish Lira (TRY). Whether you are investing in cryptocurrency, sending funds internationally, or entering the crypto market for the first time, we make the process fast and straightforward.",
+    "paragraph2": "Looking to buy USDT in Turkey quickly and securely? Our OTC crypto office provides fast and reliable USDT (Tether) buying and selling services with competitive rates.",
+    "paragraph3": "We specialize in large-volume USDT transactions for individuals, investors, traders, and businesses who prefer face-to-face OTC trading instead of online exchanges."
+  },
+  "footer": {
+    "solutions": "Solutions",
+    "apiIntegration": "API Integration",
+    "paymentLink": "Payment Link",
+    "fiatSettlement": "Fiat Settlement",
+    "posMachine": "POS Machine",
+    "cryptoGiftCard": "Crypto Gift Card",
+    "pallapayWallet": "Pallapay Crypto Wallet",
+    "exchange": "Exchange",
+    "resources": "Resources",
+    "apiDocs": "API Docs",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms Of Use",
+    "amlKyc": "AML & KYC/KYB Policy",
+    "lawEnforcement": "Law Enforcement",
+    "becomePartner": "Become a Partner",
+    "pricing": "Pricing",
+    "contactUs": "Contact Us",
+    "needHelp": "Need Help?",
+    "contactUsShort": "Contact Us",
+    "helpDescription": "We are here to answer your questions and help you get started.",
+    "createAccountTitle": "Start Accepting Crypto Payments with Pallapay Today.",
+    "createAccountDesc": "Pallapay handles the entire process for you: charge your customers in fiat, let them pay in crypto, and receive seamless settlements directly in fiat. No crypto knowledge required.",
+    "subscribeConsent": "By submitting this form, you consent to receive updates from Pallapay, including marketing and product news. You can unsubscribe at any time. For more information, view our",
+    "privacyPolicyLink": "Privacy Policy",
+    "msbDescription": "Pallapay LLC is registered with the FinCEN as a Money Services Business (MSB) under Registration Number 31000315326622 and is authorized to provide money transmission and virtual currency services across all U.S. States and Territories.",
+    "msbDescription2": "In addition, our Canadian entity, Pallapay Ltd., is registered with FINTRAC as a Money Services Business (MSB) (Registration Number: M23088601) and is authorized to conduct foreign exchange transactions, money transferring, and dealings in virtual currencies.",
+    "copyright": "Copyright © 2025 Pallapay. All rights reserved.",
+    "exchangeLinks": {
+      "buyBitcoin": "Buy Bitcoin",
+      "sellBitcoin": "Sell Bitcoin",
+      "buyEthereum": "Buy Ethereum",
+      "sellEthereum": "Sell Ethereum",
+      "buyTether": "Buy Tether",
+      "sellTether": "Sell Tether",
+      "buyUsdt": "Buy USDT",
+      "sellUsdt": "Sell USDT",
+      "sellShiba": "Sell Shiba",
+      "sellBnb": "Sell BNB",
+      "sellRipple": "Sell Ripple",
+      "dubai": "Dubai",
+      "istanbul": "Istanbul"
+    }
+  },
+  "aboutPage": {
+    "heroTitle": "PALLAPAY",
+    "heroSubtitle": "Buy, Sell, Convert & Accept Crypto.",
+    "heroText1": "Pallapay operates as a regulated financial technology provider in both the United States and Canada, offering compliant virtual currency and money services under officially registered MSB entities.",
+    "heroText2": "In the United States, Pallapay LLC is registered as a Money Services Business (MSB) with FinCEN under Registration Number 31000315326622. This registration authorizes the company to conduct money transmission and virtual currency-related activities across all U.S. States and Territories.",
+    "heroText3": "In Canada, Pallapay Ltd. is registered with FINTRAC as a Money Services Business (MSB) under Registration Number M23088601. The Canadian registration includes authorization for foreign exchange dealing, money transferring, and dealing in virtual currencies.",
+    "heroText4": "Through these regulated entities, Pallapay provides secure and compliant cryptocurrency services, including buying, selling, exchanging, settlement, crypto POS infrastructure, and OTC desk operations. All virtual asset services offered on pallapay.com operate strictly within the regulatory frameworks of the jurisdictions in which we serve.",
+    "awardTitle": "Pallapay is proudly awarded The Most Trusted Crypto Project 2021 in Crypto Expo Dubai",
+    "trustedTitle": "We Honored To Be Trusted For Widest Companies :",
+    "videoText1": "At Pallapay, we make it simple for users and businesses to buy, sell, and exchange cryptocurrency with speed and security. As a trusted crypto payment gateway, we also enable merchants to accept digital assets and receive settlements in fiat, combining flexibility with seamless integration.",
+    "videoText2": "Our platform supports everything from instant crypto transactions to merchant payment tools, including POS systems, online checkouts, and payment links built for businesses of every size. With a strong focus on reliability and innovation, Pallapay delivers efficient digital asset services backed by 24/7 support.",
+    "videoText3": "Whether you're managing personal crypto transactions or scaling your business, Pallapay provides the tools you need to operate confidently in the world of digital payments.",
+    "officesTitle": "Pallapay Offices",
+    "hqTitle": "Pallapay Headquarters",
+    "customerSupportTitle": "Pallapay Customer Support",
+    "branchTitle": "Pallapay Branch"
+  },
+  "contactPage": {
+    "home": "Home",
+    "contactUs": "Contact Us",
+    "title": "Get in Touch with Us",
+    "paragraph1": "Whether you have a question, need assistance, or want to learn more about our services, we’re here to help. Fill out the form below with your inquiry and contact details, and one of our team members will get back to you as soon as possible. We’re committed to providing you with the support you need to succeed.",
+    "paragraph2": "Let’s get in touch and explore how Pallapay can help grow your business",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "interests": "interests",
+    "digitalProducts": "Digital Products / Software",
+    "onlineServices": "Online Services",
+    "retailPos": "Retail / Crypto POS Machine",
+    "send": "Send",
+    "agreementText1": "By clicking “Send” in this form, you agree to Pallapay ",
+    "termsOfUse": "Terms of Use",
+    "agreementText2": ", ",
+    "privacyPolicy": "Privacy Policy",
+    "agreementText3": " and ",
+    "prohibitedList": "Prohibited Product List"
+  },
+  "gaming": {
+    "heroTitle": "Accept Crypto Payments in Games with Pallapay",
+    "heroDesc": "Pallapay offers secure and seamless crypto payment solutions for the gaming industry, allowing your platform to accept cryptocurrency for in-game purchases and subscriptions. Enhance user experience, expand global reach, and boost revenue with fast, flexible, and secure crypto payments.",
+    "getStarted": "Get Started",
+    "perfectMatch": "Your Perfect Match",
+    "sectionTitle": "Crypto Payments in Gaming",
+    "sectionDesc1": "Level up your users' gaming experience with crypto payment solutions for gaming platforms. Pallapay makes it easy to accept cryptocurrency for in-game purchases, subscriptions, and digital assets, giving players the speed, security, and freedom they expect. Whether you're running a web-based platform or a mobile game, Pallapay crypto payment gateway for gaming ensures fast and seamless transactions with support for Ethereum, USDT, USDC and more.",
+    "sectionDesc2": "With low fees, real-time confirmations, and easy API integration, Pallapay helps you accept crypto payments in games while expanding your global reach. Say goodbye to chargebacks and slow settlements, and hello to the future of crypto payments for gaming.",
+    "startIntegration": "Start Integration",
+    "checkApiDocs": "Check API Docs",
+    "achievementUnlocked": "Achievement Unlocked",
+    "inGamePurchasesTitle": "In-Game Purchases",
+    "inGamePurchasesDesc": "Pallapay crypto payment gateway allows your players to make in-game purchases using their preferred cryptocurrency, while you receive the full payment amount in fiat currency, instantly and without any crypto knowledge required.",
+    "subscriptionsTitle": "Subscriptions",
+    "subscriptionsDesc": "Pallapay crypto payment gateway enables your customers to pay for subscriptions using cryptocurrency, while you receive the full amount in fiat, instantly and without dealing with crypto complexities.",
+    "fiatSettlementTitle": "Fiat Settlement",
+    "fiatSettlementDesc": "Enjoy real-time transaction notifications and seamless fiat settlements with no exposure to crypto price volatility. You receive the full fiat amount for every sale instantly. Crypto payments are settled directly to your account with no delays or hidden fees. Fast, secure, and hassle-free.",
+    "multiCryptoTitle": "Multiple Crypto Support",
+    "multiCryptoDesc": "Pallapay crypto payment gateway supports a wide range of cryptocurrencies, giving your customers the flexibility to pay with their preferred digital assets like Ethereum, USDT, USDC and many more.",
+    "benefits": {
+      "support247": "24/7 Support",
+      "fiatSettlement": "Fiat Settlement",
+      "lowestFees": "Lowest Fees",
+      "fastTransactions": "Fast Transactions"
+    }
+  },
+  "hotels": {
+    "heroTitle": "Accept Crypto Payments at Your Hotel",
+    "heroDesc": "Pallapay enables hotels to accept cryptocurrency payments for reservations, check-ins, dining, and hotel services, providing guests with fast, secure, and flexible crypto payment options. Integrate Pallapay to attract crypto guests, boost convenience, and stay ahead in hospitality.",
+    "getStarted": "Get Started",
+    "benefits": "Benefits",
+    "highestSecurity": "Highest Security",
+    "fiatSettlement": "Fiat Settlement",
+    "multipleCryptoSupport": "Multiple Crypto Support",
+    "flexibleFees": "Flexible Fees",
+    "sectionTitle": "Accept Crypto Payments at Your Hotel",
+    "sectionDesc1": "Pallapay empowers hotels to accept crypto payments with ease—whether at the front desk, in restaurants, spas, or through online bookings. Guests can pay using popular cryptocurrencies like Ethereum, USDC and USDT, enjoying a fast, secure, and convenient experience. With our easy-to-use POS machines, in-person payments are seamless, while payment links allow you to request crypto payments remotely for reservations, upgrades, and services.",
+    "sectionDesc2": "Our crypto payment solution for hotels supports a wide range of digital currencies with zero merchant fees, instant confirmations, and no chargebacks—offering a modern and efficient way to serve global, crypto-savvy travelers. Accepting crypto in your hotel has never been easier, giving guests the flexibility they expect while simplifying operations for your team.",
+    "register": "Register",
+    "getPosMachine": "Get POS Machine",
+    "solutionsTitle": "Crypto Payment Solutions for Hotels",
+    "posMachineTitle": "Pallapay Crypto POS Machine",
+    "posMachineDesc": "Pallapay crypto POS machines make it easy for hotels to accept cryptocurrency payments at any location within the property—from the front desk and concierge to restaurants, spas, and gift shops. Guests can pay using major cryptocurrencies like USDT, Ethereum, and USDC, enjoying a fast, contactless, and secure checkout experience.",
+    "paymentLinkTitle": "Pallapay Payment Link",
+    "paymentLinkDesc1": "Pallapay crypto payment links make it simple for hotels to accept cryptocurrency remotely—perfect for reservations, room upgrades, event bookings, or any additional services. With just a few clicks, you can generate a secure payment link and send it directly to your guest via email or messaging platforms. Guests can pay using major cryptocurrencies like USDT, Ethereum, and USDC, without needing an app or login.",
+    "paymentLinkDesc2": "This flexible solution is ideal for contactless transactions and international guests, offering fast confirmations, zero merchant fees on transactions, and a smooth user experience. Whether you're handling advance bookings or special requests, crypto payment links help modernize your hotel's payment system and expand your reach to a global audience."
+  },
+  "ecommerce": {
+    "heroTitle": "Accept Crypto Payments on Your E-commerce Store",
+    "heroDesc": "Pallapay enables e-commerce businesses to accept cryptocurrency payments easily and securely. With support for USDT, Ethereum, USDC, and more, enjoy zero chargebacks, no merchant fees on transactions, and fast integration with your online store.",
+    "getStarted": "Get Started",
+    "benefits": "Benefits",
+    "fastTransactions": "Fast Transactions",
+    "highestSecurity": "Highest Security",
+    "support247": "24/7 Support",
+    "limitlessTransactions": "Limitless Transactions",
+    "sectionTitle": "Crypto Payments For Shopping",
+    "sectionDesc": "Pallapay offers a seamless crypto payment gateway for E-commerce businesses and online shops, enabling you to accept popular cryptocurrencies like USDT, Ethereum, USDC, and more. Whether you're running a Shopify store, WooCommerce, Magento, or a custom E-Commerce platform, Pallapay's easy-to-integrate API and ready-to-use plugins make it simple to start accepting crypto payments.",
+    "startIntegration": "Start Integration",
+    "checkApiDocs": "Check API Docs",
+    "bottomDesc": "With zero merchant fees on transactions, instant transaction confirmations, and no charge-backs, you can reduce operational costs, eliminate fraud, and offer your customers a secure, flexible payment option. Expand your reach to the global crypto user community and enhance your checkout process with a friction-less, secure payment experience that boosts customer satisfaction and conversions. Pallapay makes it easy for your online shop or E-commerce store to stay ahead with innovative crypto payment solutions."
+  },
+  "paymentApi": {
+    "heroTitle": "API Integration",
+    "heroDesc": "Accept crypto payments on your website by integrating our developer-friendly API, compatible with any tech stack and easy to implement. You can also run tests safely in our secure sandbox environment.",
+    "createAccount": "Create Account",
+    "checkApiDocs": "Check API Docs",
+    "ultimateApiTitle": "The Ultimate Crypto Payment API",
+    "easyIntegration": "Easy integration",
+    "userFriendlyApi": "User-friendly API",
+    "allCheckouts": "For all your online checkouts",
+    "noHiddenFees": "No hidden fees or extra charges",
+    "noCryptoExperience": "No cryptocurrency experience required",
+    "industriesTitle": "Industries Leveraging Pallapay Crypto Payment API",
+    "pluginsTitle": "Plugins and API Integrations:",
+    "pluginsDesc": "Pallapay offers plugins for WooCommerce, Magento 2, OpenCart, WHMCS, and more, making it easy to integrate cryptocurrency payments into your platform.",
+    "apiForBusinessTitle": "API for All Online Businesses:",
+    "apiForBusinessDesc": "The Pallapay API offers instant payment notification (IPN) and multi-crypto payment support, enabling customers to pay using their preferred cryptocurrency with ease and flexibility.",
+    "moreIntegrations": "More Integrations Coming Soon ...",
+    "morePaymentSolutions": "More Crypto Payment Solutions for Businesses",
+    "paymentLinks": "Payment Links",
+    "fiatSettlement": "Fiat Settlement",
+    "posMachine": "POS Machine"
+  },
+  "paymentLink": {
+    "heroTitle": "Pallapay Payment Link",
+    "heroSubtitle": "Accept Cryptocurrency Payments with Payment Links and Receive Fiat Directly in Your Bank Account",
+    "createPaymentLink": "Create Payment Link",
+    "simplePaymentsTitle": "Simple and Seamless Payments",
+    "noCodeSolution": "No-Code Solution",
+    "automaticConversion": "Automatic Conversion",
+    "widestCrypto": "Widest Crypto",
+    "highSecurity": "High Security",
+    "supportedCryptosTitle": "Supported Cryptocurrencies",
+    "andMore": "And More ...",
+    "acceptCryptoTitle": "Accept Crypto with Payment Links",
+    "acceptCryptoDesc": "With Pallapay, you can easily create invoices in fiat currencies like AED or USD and send them to your customers using secure payment links. Your customers can pay using cryptocurrencies such as USDT, Ethereum, USDC, and more. You receive the full amount settled directly in your bank account in AED or USD—no crypto handling required.",
+    "howItWorksTitle": "How Pallapay Payment Link Works",
+    "morePaymentSolutions": "More Crypto Payment Solutions for Businesses",
+    "paymentLinks": "Payment Links",
+    "apiIntegration": "API Integration",
+    "fiatSettlement": "Fiat Settlement",
+    "posMachine": "POS Machine"
+  },
+  "posMachine": {
+    "heroTitle": "Pallapay Crypto POS Machine",
+    "heroDesc": "Accept cryptocurrency payments in your store using pallapay crypto pos machine and receive settlements in fiat, seamlessly and securely.",
+    "getStarted": "Get Started",
+    "preConfiguredPos": "Pre-configured POS Machine",
+    "contactlessPayments": "Contactless Payments",
+    "builtInPrinter": "Built-in Receipt Printer",
+    "preInstalledApp": "Pre-installed and User-friendly App",
+    "mainDesc": "Pallapay Crypto POS Machine is a powerful solution for physical, in-person transactions, enabling retail businesses to accept cryptocurrency payments with ease. Customers can pay using popular cryptocurrencies such as USDT, USDC, and Ethereum, while merchants receive settlements in fiat currencies like AED or USD, ensuring fast, secure, and convenient crypto payment processing at the point of sale.",
+    "supportedCryptosTitle": "Supported Cryptocurrencies",
+    "andMore": "And More ...",
+    "cryptoPosDeviceTitle": "Crypto POS Device",
+    "cryptoPosDeviceDesc": "Ready-to-use POS terminal featuring a pre-installed Pallapay App, built-in receipt printer, 2D scanner, and support for contactless crypto payments.",
+    "talkToSales": "Talk to Sales",
+    "dashboardTitle": "Dashboard",
+    "dashboardDesc": "A user-friendly application that lets you manage transactions and balances in real time, making it simple and secure to accept cryptocurrency in your store, with zero risk of fraud.",
+    "multiCryptoTitle": "Multiple Crypto Support",
+    "multiCryptoDesc": "Empower your clients to pay with a wide range of cryptocurrencies, including UDST, Ethereum, USDC, and more.",
+    "fiatSettlementTitle": "Fiat Settlement",
+    "fiatSettlementDesc": "With Pallapay, you don't need to handle cryptocurrency directly, we manage the process for you. Accept crypto payments and receive secure fiat settlements in AED, USD, and more.",
+    "instantSettlementsTitle": "Instant Settlements",
+    "instantSettlementsDesc": "We guarantee that when you sell an item and accept cryptocurrency with Pallapay, you'll receive the full fiat amount instantly.",
+    "howPosMachineWorks": "How Pallapay Crypto POS Machine Works",
+    "orderYourPos": "Order Your Pallapay Crypto POS Machine",
+    "orderDesc": "Start accepting cryptocurrency payments with Pallapay crypto POS machine at your store effortlessly. No crypto knowledge needed—just enter the invoice amount in AED or USD, let your customer pay with popular cryptocurrencies like USDT, Ethereum, or USDC, and receive your fiat directly in your account."
+  },
+  "pricingPage": {
+    "heroTitle": "Simple Pricing For All Businesses",
+    "heroSubtitle": "Transparent pricing for businesses of all sizes with unlimited monthly transactions.",
+    "feeStructure": "Fee Structure",
+    "wallet": "Wallet",
+    "giftCard": "Gift Card",
+    "paymentGateway": "Payment Gateway",
+    "depositWithdrawal": "Deposit/Withdrawal",
+    "convert": "Convert",
+    "fiatWithdrawal": "Fiat Withdrawal",
+    "convertToGiftCard": "Convert to Gift Card",
+    "withdrawal": "Withdrawal",
+    "api": "API",
+    "pos": "POS",
+    "paymentLink": "Payment Link",
+    "paymentPage": "Payment Page",
+    "cryptoSettlement": "Crypto Settlement",
+    "comingSoon": "Coming Soon !",
+    "coinToken": "Coin/Token",
+    "minimumDeposit": "Minimum Deposit",
+    "minimumWithdrawal": "Minimum Withdrawal",
+    "depositFee": "Deposit Fee",
+    "withdrawalFee": "Withdrawal Fee",
+    "symbol": "Symbol",
+    "minimumConversion": "Minimum Conversion",
+    "conversionFee": "Conversion Fee",
+    "minimumAmount": "Minimum Amount*",
+    "maximumAmount": "Maximum Amount*",
+    "transactionFee": "Transaction Fee**",
+    "footnote1": "Minimum and maximum transaction limits are adjustable upon request. Requests must be submitted through the Support button in the Pallapay dashboard and are subject to review and approval.",
+    "footnote2": "Transaction fees are adjustable upon request. Requests must be submitted through the Support button in the Pallapay dashboard and are subject to review and approval."
+  },
+  "faqPage": {
+    "searchPlaceholder": "Search",
+    "searchLabel": "Search:",
+    "allQuestions": "All Questions",
+    "withdrawal": "Withdrawal",
+    "giftCard": "Gift Card",
+    "account": "Account",
+    "technical": "Technical"
+  },
+  "casinos": {
+    "heroTitle": "Crypto Payment Gateway for Casinos",
+    "heroDesc": "Whether you run a land-based casino or an online gambling platform, Pallapay makes it easy to accept cryptocurrency payments for deposits, withdrawals, and in-game transactions. Our secure and fast crypto payment gateway for casinos delivers a seamless experience for players worldwide, supporting popular cryptocurrencies like USDT, Ethereum, USDC and more.",
+    "getStarted": "Get Started",
+    "benefits": "Benefits",
+    "readyToUseSolutions": "Ready to Use Solutions",
+    "limitlessTransactions": "Limitless Transactions",
+    "fiatSettlement": "Fiat Settlement",
+    "saveOnNetworkFees": "Save on Network Fees",
+    "scrollText": "Step into the Future of Casino Payments",
+    "sectionTitle": "Crypto Payment in Casinos",
+    "sectionDesc1": "Pallapay provides a powerful crypto payment solution for both online and land-based casinos, allowing you to accept popular cryptocurrencies like USDT, Ethereum, and USDC with ease. Whether you operate a digital platform or a traditional gaming venue, our secure and fast crypto payment gateway for casinos helps streamline transactions and eliminate chargebacks.",
+    "sectionDesc2": "With Pallapay crypto POS machines for physical casinos and API integration for online platforms, Pallapay ensures seamless cryptocurrency payment processing tailored to the gambling industry. Empower your players with flexible, borderless payment options while enjoying zero merchant fees on transactions, real-time settlements, and enhanced fraud protection.",
+    "startIntegration": "Start Integration",
+    "checkApiDocs": "Check API Docs",
+    "acceptCryptoTitle": "Accept Crypto in Casinos",
+    "acceptCryptoDesc1": "Pallapay crypto payment gateway for casinos makes it easy to accept crypto payments both in-person and online. For traditional casinos, Pallapay crypto POS machines enable guests to pay quickly and securely using cryptocurrencies like USDT, Ethereum, and USDC, right at the cashier, gaming tables, or hospitality areas. For online casinos, our simple API integration allows you to accept cryptocurrency for deposits, withdrawals, and in-game transactions with instant confirmations.",
+    "acceptCryptoDesc2": "With support for a wide range of digital currencies and zero merchant fees on transactions, Pallapay offers casinos a secure, cost-effective way to enhance payment flexibility, attract crypto-savvy players, and improve overall user experience. Start accepting crypto at your casino today and give your guests the modern payment options they expect."
+  },
+  "fiatSettlement": {
+    "heroTitle": "Pallapay Fiat Settlement",
+    "heroSubtitle": "Accept Cryptocurrency and Receive Fiat Directly in Your Bank Account.",
+    "createAccount": "Create Account",
+    "checkApiDocs": "Check API Docs",
+    "guaranteedPayoutsTitle": "Guaranteed Payouts",
+    "guaranteedPayoutsDesc": "With Pallapay, you receive the full fiat amount for every sale, instantly and without volatility. Crypto payments are settled directly to your account with no delays or hidden fees. Fast, secure, and hassle-free.",
+    "supportedCryptosTitle": "Supported Cryptocurrencies",
+    "andMore": "And More ...",
+    "marketVolatilityTitle": "Market Volatility",
+    "marketVolatilityDesc": "Pallapay safeguards businesses from the fluctuations in cryptocurrency values.",
+    "cryptoEcosystemTitle": "Complete Crypto Ecosystem",
+    "cryptoEcosystemDesc": "Pallapay works alongside on-ramps to provide a full system for both buying and selling cryptos.",
+    "fastSecureTitle": "Fast, Secure, and Compliant Transactions",
+    "fastSecureDesc": "Pallapay ensures transactions are processed quickly and in compliance with regulatory standards.",
+    "morePaymentSolutions": "More Crypto Payment Solutions for Businesses",
+    "apiIntegration": "API Integration",
+    "paymentLinks": "Payment Links",
+    "posMachine": "POS Machine"
+  },
+  "tradingPlatforms": {
+    "heroTitle": "Accept Crypto Payments on Your Trading Platform",
+    "heroDesc": "Pallapay enables trading platforms to accept cryptocurrency payments for deposits, subscriptions, and service fees. With support for USDT, Ethereum, USDC, and more, Pallapay offers fast, secure transactions, zero merchant fees on transactions, and seamless integration, perfect for trading platforms.",
+    "getStarted": "Get Started",
+    "benefits": "Benefits",
+    "highestSecurity": "Highest Security",
+    "fiatSettlement": "Fiat Settlement",
+    "multipleCryptoSupport": "Multiple Crypto Support",
+    "flexibleFees": "Flexible Fees",
+    "sectionTitle": "Accept Crypto Payments on Your Trading Platform",
+    "sectionDesc1": "Pallapay's crypto payment gateway for trading platforms enables you to accept cryptocurrency payments securely and efficiently. Whether you offer forex, commodities, or digital asset trading, Pallapay supports fast, reliable transactions in USDT, Ethereum, USDC, and other major cryptocurrencies.",
+    "sectionDesc2": "Designed for seamless integration, our solution includes API support for automated processing and crypto payment links for manual deposits or service payments. With zero merchant fees on transactions, instant confirmations, and no chargebacks, Pallapay delivers a frictionless payment experience that boosts trust and convenience.",
+    "register": "Register",
+    "getPosMachine": "Get Pos Machine",
+    "desc1": "Pallapay's powerful API integration allows trading platforms to seamlessly accept cryptocurrency payments online for deposits, subscriptions, and service fees. With our flexible and secure API, you can automate the entire payment flow—enabling fast, real-time transactions in USDT, Ethereum, USDC, and other leading cryptocurrencies.",
+    "desc2": "Designed for easy implementation, Pallapay's API provides detailed documentation, robust security, and customizable options to fit your platform's unique needs. Give your users a smooth and trusted payment experience while eliminating chargebacks and reducing operational costs."
+  },
+  "retailStore": {
+    "heroTitle": "Crypto Payment in Stores",
+    "heroDesc": "Accept cryptocurrency payments at your retail store with Pallapay. Provide fast, reliable, and convenient cryptocurrency transactions in-store, enhancing customer satisfaction and boosting sales.",
+    "getStarted": "Get Started",
+    "perfectMatch": "Your Perfect Match",
+    "support247": "24/7 Support",
+    "multipleCryptoSupport": "Multiple Crypto Support",
+    "lowestFees": "Lowest Fees",
+    "fastTransactions": "Fast Transactions",
+    "sectionTitle": "Crypto Payments in Stores!",
+    "sectionDesc": "Pallapay enables physical retail stores to accept cryptocurrency payments with ease using Pallapay crypto POS machines. Whether you're operating a fashion boutique, electronics store, or specialty shop, you can accept USDT, Ethereum, USDC, and other major cryptocurrencies at the counter—providing a fast, secure, and modern payment experience for your customers.",
+    "startIntegration": "Start Integration",
+    "checkApiDocs": "Check API Docs",
+    "bottomDesc": "With zero merchant fees on transactions, instant transaction confirmations, and no charge-backs, Pallapay crypto payment gateway helps retail shops reduce fraud, cut costs, and attract crypto-savvy buyers. Pallapay crypto POS machines are easy to set up and use, enabling seamless in-store crypto transactions. For added flexibility, you can accept cryptocurrency payments by sending payment links to customers for remote or contactless payments."
+  },
+  "buyBitcoinDubai": {
+    "heroTitle": "Buy Bitcoin in Dubai UAE With Cash",
+    "buyOnline": "Buy online now",
+    "visitOffice": "Visit our office",
+    "calculatorTitle": "Calculate Bitcoin to Cash",
+    "ourFeatures": "Our Features",
+    "bestRateTitle": "We guarantee the best rate",
+    "bestRateDesc": "We price match all local dealer competitors (including their online prices).",
+    "fastPayoutsTitle": "Fast Payouts",
+    "fastPayoutsDesc": "Fast cryptocurrency payouts - no more waiting time",
+    "bestCommissionsTitle": "Best commissions available",
+    "bestCommissionsDesc": "Great commission structure for all transactions with no hidden fees.",
+    "globalPaymentsTitle": "Global payments",
+    "globalPaymentsDesc": "We accept payments from nearly anywhere, as we support 180+ countries",
+    "insuranceTitle": "$100,000 Insurance",
+    "insuranceDesc": "Secure Checkout with coverage up to $100,000 Identity Protection.",
+    "supportTitle": "Live 24/7 support",
+    "supportDesc": "Our dedicated, multilingual support team is ready to help you out via email or live chat",
+    "howToBuyTitle": "How to Buy Bitcoin in Dubai with Cash or Card",
+    "whyTrustTitle": "Why people trust Pallapay",
+    "step1title": "Getting Started",
+    "step2title": "What is Bitcoin and How Does it Work?",
+    "step3title": "Why use pallapay to Buy Bitcoin in Dubai?",
+    "step4title": "Choosing a Bitcoin Wallet",
+    "whyBuyTitle": "Why you should buy bitcoin in the trustable exchange?",
+    "howWorkTitle": "How does this buy bitcoin work in Dubai?",
+    "getRateStep": "1. Get Rate",
+    "getRateDesc": "Calculate the best exchange rate for your Bitcoin.",
+    "buyBitcoinStep": "2. Buy Bitcoin",
+    "buyBitcoinDesc": "Visit on of our VIP branches in Dubai and make the payment.",
+    "getCoinStep": "3. Get your Coin",
+    "getCoinDesc": "You will receive your Bitcoin or other crypto at the same time after payment completed.",
+    "trustItems": {
+      "noHiddenFees": "No hidden fees",
+      "verification": "Verification in less than 5 minutes",
+      "licenses": "Licenses Payment Service Providers",
+      "support": "24/7/365 live customer support",
+      "team": "40-person team with expertise and experience",
+      "transactions": "More than $170,000,000 in annual transactions",
+      "instantPayouts": "Instant cryptocurrency payouts",
+      "lowestFees": "Lowest fees on the market",
+      "beginners": "Excellent option for beginners and pros",
+      "countries": "Serving 180+ countries"
+    }
+  },
+  "mobileApps": {
+    "title": "Mobile Apps",
+    "description": "Links and info about our mobile applications."
+  },
+  "dashboardPage": {
+    "heroTitle": "Pallapay Dashboard",
+    "heroDesc": "Manage all your crypto payments in one place."
+  },
+  "allSolutions": {
+    "heroTitle": "All Solutions",
+    "heroDesc": "Explore all payment solutions offered by Pallapay."
+  },
+  "giftCard": {
+    "breadcrumbHome": "Home",
+    "breadcrumbGiftCard": "Gift Card"
+  },
+  "media":{
+    "yahooContent" : "Pallapay Establishes Itself as a Mega Company in Dubai Pallapay has positioned itself as a leading fintech force in the Middle East, officially establishing itself as a “Mega Company” in Dubai’s rapidly growing digital asset sector. Known for its innovative cryptocurrency payment solutions, Pallapay provides businesses and users with secure platforms for buying, selling, and ...",
+    "einPresswire"  :"Pallapay has launched the world’s first crypto-to-fiat POS machine system in the UAE, allowing businesses to accept cryptocurrencies like Bitcoin, USDT, Ethereum, and more—while receiving settlements directly in AED, USD, EUR, or GBP. No crypto handling or technical knowledge required. The system handles the full conversion process, making it simple, secure, and seamless for merchants."
+  }
+}

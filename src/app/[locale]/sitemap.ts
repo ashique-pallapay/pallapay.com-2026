@@ -1,0 +1,62 @@
+import { MetadataRoute } from 'next';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://www.pallapay.com';
+
+  const routes = [
+    '/',
+    '/faq',
+    '/wallet',
+    '/pricing',
+    '/about-us',
+    '/contact-us',
+    '/official-wallet-addresses',
+    '/industries/gaming',
+    '/industries/casinos',
+    '/industries/hotels',
+    '/industries/trading-platforms',
+    '/industries/ecommerce',
+    '/industries/retail-store',
+    '/industries/all',
+    '/products/fiat-settlement',
+    '/products/payment-api',
+    '/products/payment-link',
+    '/products/gift-card',
+    '/crypto-pos-machine',
+    '/buy-bitcoin-in-dubai',
+    '/buy-bitcoin-dubai',
+    '/buy-bitcoin-in-istanbul',
+    '/buy-ethereum-in-istanbul',
+    '/buy-usdt-in-istanbul',
+    '/buy-sell-bitcoin-tether-dubai',
+    '/sell-usdt-in-dubai',
+    '/sell-bnb-in-dubai',
+    '/sell-shiba-in-dubai',
+    '/sell-xrp-in-dubai',
+    '/sell-ethereum-in-dubai',
+    '/sell-bitcoin-in-dubai',
+    '/sell-bitcoin-in-istanbul',
+    '/sell-usdt-in-dubai',
+    '/sell-usdt-in-istanbul',
+    '/sell-ethereum-in-dubai',
+    '/sell-ethereum-in-istanbul',
+    '/buy-usdt-in-dubai',
+    '/buy-ethereum-in-dubai',
+    '/privacy',
+    '/kyc-policy',
+    '/prohibited-use',
+    '/prohibited-countries',
+    '/gift-card-intro',
+    '/gift-card-terms',
+    '/general-risk-warning',
+    '/terms-of-service',
+    '/mobile-apps',
+  ];
+
+  return routes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
+}
