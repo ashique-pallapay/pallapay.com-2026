@@ -1,52 +1,31 @@
 import Image from "next/image";
 import React from "react";
 import InteractiveGradientCard from "./InteractiveGradientCard";
+import { useTranslations } from "next-intl";
 
 const WhyChooseTurkey = () => {
-  const features = [
-    {
-      title: "Bank-Level Security",
-      description:
-        "Your assets are protected with multi-layer security protocols and cold wallet storage.",
-      image: "/images/turkey/bank-level-security.png",
-    },
-    {
-      title: "Instant Transactions",
-      description:
-        "Your crypto trades complete in 30 seconds. TRY transfers appear instantly in your account.",
-      image: "/images/turkey/instant-secure.png",
-    },
-    {
-      title: "KYC & Compliance",
-      description:
-        "Full compliance with Turkish regulations, MASAK approved and secure trading environment.",
-      image: "/images/turkey/kyc.png",
-    },
-    {
-      title: "24/7 Live Support",
-      description:
-        "Our expert team is always by your side. Instant help via WhatsApp, phone and live chat.",
-      image: "/images/turkey/24hr-support.png",
-    },
-    {
-      title: "Low Commission",
-      description:
-        "Industry's lowest transaction fees, 0.1% trading commission, free TRY withdrawals.",
-      image: "/images/turkey/low-commission.png",
-    },
-    {
-      title: "Fast Approval Process",
-      description:
-        "Open account in 15 minutes, complete identity verification and start trading.",
-      image: "/images/turkey/fast-approvel-process.png",
-    },
+  const t = useTranslations("turkeyPage.whyChoose");
+
+  const images = [
+    "/images/turkey/bank-level-security.png",
+    "/images/turkey/instant-secure.png",
+    "/images/turkey/kyc.png",
+    "/images/turkey/24hr-support.png",
+    "/images/turkey/low-commission.png",
+    "/images/turkey/fast-approvel-process.png",
   ];
+
+  const features = (t.raw("items") as any[]).map((item, index) => ({
+    title: item.title,
+    description: item.desc,
+    image: images[index] || images[0],
+  }));
 
   return (
     <section>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
-          Why choose Pallapay?
+          {t("title")}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

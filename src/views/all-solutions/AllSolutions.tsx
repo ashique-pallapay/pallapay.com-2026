@@ -9,11 +9,21 @@ import { Button } from "@/components/ui/button";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { AboutUsSection } from "@/components/base/AboutUsSection";
 import { Link } from "@/lib/inertia-shims";
+import { useTranslations } from "next-intl";
 
 export function AllSolutions() {
   return (
     <div className="bg-black">
       <MainNav hasBackground={true} />
+      <AllSolutionsContent />
+    </div>
+  );
+}
+
+function AllSolutionsContent() {
+  const t = useTranslations("allSolutionsPage");
+  return (
+    <>
       <div className="container pt-14 pb-20 sm:py-28">
         <div className="grid sm:grid-cols-10">
           <div className="relative sm:col-span-2">
@@ -33,18 +43,15 @@ export function AllSolutions() {
           </div>
           <div className="sm:col-span-6 relative z-2">
             <h1 className="text-2xl md:text-4xl lg:text-5xl leading-[2rem] md:leading-[3rem] lg:leading-[4rem] font-semibold">
-              Accept Accept Crypto Payments for Any Business with Pallapay
+              {t("heroTitle")}
             </h1>
             <div className="text-lg md:text-xl mt-7">
-              Pallapay provides fast, secure crypto payment solutions for
-              businesses of all sizes. Accept cryptocurrency payments online or
-              in-store with zero merchant fees on transactions and seamless
-              integration.
+              {t("heroDesc")}
             </div>
             <div className="flex gap-3 mt-7 justify-center">
               <a href="https://dashboard.pallapay.com/auth/register">
                 <Button className="bg-amber-400 hover:bg-amber-500 cursor-pointer">
-                  Create Account
+                  {t("createAccount")}
                 </Button>
               </a>
               <Link href="/contact-us">
@@ -52,7 +59,7 @@ export function AllSolutions() {
                   variant="outline"
                   className="bg-transparent text-amber-400 hover:text-amber-400 hover:bg-amber-400/10 border-amber-400 cursor-pointer"
                 >
-                  Contact Us
+                  {t("contactUs")}
                 </Button>
               </Link>
             </div>
@@ -82,16 +89,14 @@ export function AllSolutions() {
           <div className="grid md:grid-cols-12 grid-cols-1">
             <div className="md:col-span-6 flex items-center row-start-2 md:row-start-1 pb-14 md:pb-0">
               <div className="sm:py-5">
-                <h3 className="text-4xl md:text-5xl font-semibold">Gaming</h3>
+                <h3 className="text-4xl md:text-5xl font-semibold">{t("gaming.title")}</h3>
                 <div className="mt-8 text-xl">
-                  Power your gaming platform with Pallapay. accept
-                  cryptocurrency for in-game purchases, subscriptions, boost
-                  player engagement, and expand your reach.
+                  {t("gaming.desc")}
                 </div>
                 <div className="mt-7">
                   <Link href="/industries/gaming">
                     <Button className="bg-amber-400 hover:bg-amber-500 cursor-pointer">
-                      Learn More
+                      {t("learnMore")}
                     </Button>
                   </Link>
                 </div>
@@ -187,16 +192,14 @@ export function AllSolutions() {
           <div className="hidden md:block"></div>
           <div className="col-span-6 flex items-center pb-14 md:pb-0">
             <div className="sm:py-5">
-              <h3 className="text-4xl md:text-5xl font-semibold">Casinos</h3>
+              <h3 className="text-4xl md:text-5xl font-semibold">{t("casinos.title")}</h3>
               <div className="mt-8 text-xl">
-                Accept crypto payments at your casino with Pallapay. whether
-                online or in-person, offer secure deposits and withdrawals with
-                ease.
+                {t("casinos.desc")}
               </div>
               <div className="mt-7">
                 <Link href="/industries/casinos">
                   <Button className="bg-amber-400 hover:bg-amber-500 cursor-pointer">
-                    Learn More
+                    {t("learnMore")}
                   </Button>
                 </Link>
               </div>
@@ -209,17 +212,14 @@ export function AllSolutions() {
           <div className="grid md:grid-cols-12 grid-cols-1">
             <div className="md:col-span-6 flex items-center row-start-2 md:row-start-1 pb-14 md:pb-0">
               <div className="sm:py-5">
-                <h3 className="text-4xl md:text-5xl font-semibold">Hotels</h3>
+                <h3 className="text-4xl md:text-5xl font-semibold">{t("hotels.title")}</h3>
                 <div className="mt-8 text-xl">
-                  Enhance your hotel experience with Pallapay. accept
-                  cryptocurrency for reservations, check-ins, dining, and more.
-                  Offer guests fast, secure, and flexible crypto payment options
-                  that set your property apart.
+                  {t("hotels.desc")}
                 </div>
                 <div className="mt-7">
                   <Link href="/industries/hotels">
                     <Button className="bg-amber-400 hover:bg-amber-500 cursor-pointer">
-                      Learn More
+                      {t("learnMore")}
                     </Button>
                   </Link>
                 </div>
@@ -285,18 +285,15 @@ export function AllSolutions() {
           <div className="col-span-6 flex items-center pb-14 md:pb-0">
             <div className="sm:py-5">
               <h3 className="text-4xl md:text-5xl font-semibold">
-                Trading Platforms
+                {t("tradingPlatforms.title")}
               </h3>
               <div className="mt-8 text-xl">
-                Power your trading platform with Pallapay. accept cryptocurrency
-                payments and deposits instantly, securely, and without
-                complications. Give your users the speed and confidence they
-                need to trade without limits.
+                {t("tradingPlatforms.desc")}
               </div>
               <div className="mt-7">
                 <Link href="/industries/trading-platforms">
                   <Button className="bg-amber-400 hover:bg-amber-500 cursor-pointer">
-                    Learn More
+                    {t("learnMore")}
                   </Button>
                 </Link>
               </div>
@@ -310,17 +307,15 @@ export function AllSolutions() {
             <div className="md:col-span-6 flex items-center row-start-2 md:row-start-1 pb-14 md:pb-0">
               <div className="sm:py-5">
                 <h3 className="text-4xl md:text-5xl font-semibold">
-                  E-commerce
+                  {t("ecommerce.title")}
                 </h3>
                 <div className="mt-8 text-xl">
-                  Power your online store with Pallapay. accept crypto payments
-                  easily by integrating our API and offer your customers a
-                  seamless, secure, and modern checkout experience.
+                  {t("ecommerce.desc")}
                 </div>
                 <div className="mt-7">
                   <Link href="/industries/ecommerce">
                     <Button className="bg-amber-400 hover:bg-amber-500 cursor-pointer">
-                      Learn More
+                      {t("learnMore")}
                     </Button>
                   </Link>
                 </div>
@@ -407,17 +402,15 @@ export function AllSolutions() {
           <div className="col-span-6 flex items-center pb-14 md:pb-0">
             <div className="sm:py-5">
               <h3 className="text-4xl md:text-5xl font-semibold">
-                Retail Sector
+                {t("retailSector.title")}
               </h3>
               <div className="mt-8 text-xl">
-                Bring crypto to your retail store with Pallapay. accept
-                cryptocurrency at your point of sale with secure, real-time
-                transactions.
+                {t("retailSector.desc")}
               </div>
               <div className="mt-7">
                 <Link href="/industries/retail-store">
                   <Button className="bg-amber-400 hover:bg-amber-500 cursor-pointer">
-                    Learn More
+                    {t("learnMore")}
                   </Button>
                 </Link>
               </div>
@@ -432,6 +425,6 @@ export function AllSolutions() {
         hasCreateAccountSection={true}
         createAccountSectionType="SOLID"
       />
-    </div>
+    </>
   );
 }

@@ -2,6 +2,7 @@ import { Phone } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
+import { useTranslations } from "next-intl";
 
 interface TurkeyHeroSectionProps {
   crypto: string;
@@ -15,6 +16,8 @@ const TurkeyHeroSection = ({
   image,
   purpose = "Buy",
 }: TurkeyHeroSectionProps) => {
+  const t = useTranslations("turkeyPage.hero");
+
   return (
     <div className="container py-14 relative">
       <Image
@@ -28,30 +31,31 @@ const TurkeyHeroSection = ({
       <div className="text-center relative z-10">
         <div className="text-3xl leading-[2.5rem] lg:text-4xl lg:leading-[3rem] font-semibold">
           <h1 className=" text-xl md:text-3xl">
-            {purpose} {crypto} {shortForm}{" "}
-            {purpose === "Buy" ? "with" : "and Get"} US Dollars or <br />
+            {purpose === "Buy" ? t("buy") || "Buy" : t("sell") || "Sell"} {crypto} {shortForm}{" "}
+            {purpose === "Buy" ? t("with") : t("andGet")}{" "}
+            US Dollars or <br />
             Turkish Lira in
-            <span className="text-(--primary-orange)"> Istanbul</span>
+            <span className="text-(--primary-orange)"> {t("istanbul")}</span>
           </h1>
         </div>
 
         <div className="flex justify-center items-center mt-5 gap-5 text-(--primary-orange) flex-wrap">
           <div className="flex gap-1 md:gap-3 justify-center items-center">
-          <span className="border flex w-8 items-center justify-center rounded-full h-8">
-            <Phone />
-          </span>
-          <span>+90 1234567890</span>
+            <span className="border flex w-8 items-center justify-center rounded-full h-8">
+              <Phone />
+            </span>
+            <span>+90 1234567890</span>
           </div>
 
           <div className="flex gap-1 md:gap-3 justify-center items-center">
-          <Image
-            src="/images/icons/social/Whatsapp.png"
-            alt="WhatsApp"
-            width={35}
-            height={35}
-          />
-          <span>+90 1234567890</span>
-        </div>
+            <Image
+              src="/images/icons/social/Whatsapp.png"
+              alt="WhatsApp"
+              width={35}
+              height={35}
+            />
+            <span>+90 1234567890</span>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:flex justify-center gap-3 mt-5">
@@ -60,20 +64,17 @@ const TurkeyHeroSection = ({
               size="xl"
               className="text-black bg-amber-400 hover:bg-amber-500 cursor-pointer"
             >
-              Buy online now
+              {t("buyOnline")}
             </Button>
           </a>
 
-          <a
-            href="https://dashboard.pallapay.com/auth/register"
-            target="_blank"
-          >
+          <a href="https://dashboard.pallapay.com/auth/register" target="_blank">
             <Button
               size="xl"
               variant="outline"
               className="bg-transparent text-amber-400 hover:text-amber-400 hover:bg-amber-400/10 border-amber-400 cursor-pointer"
             >
-              Visit our office
+              {t("visitOffice")}
             </Button>
           </a>
         </div>

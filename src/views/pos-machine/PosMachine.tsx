@@ -27,8 +27,11 @@ import {
 // import { Link } from '@/lib/inertia-shims';
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export function PosMachine() {
+  const t = useTranslations("posMachinePage");
+
   return (
     <div className="bg-black">
       <MainNav hasBackground={true} />
@@ -48,17 +51,15 @@ export function PosMachine() {
             <div className="md:col-span-5 pt-8 md:pt-28 relative row-start-2 md:row-start-1">
               <div className="relative z-2">
                 <h1 className="text-2xl leading-[2.4rem] sm:text-4xl sm:leading-[3rem] lg:text-5xl lg:leading-[3.5rem] font-semibold">
-                  Pallapay Crypto POS Machine
+                  {t("hero.title")}
                 </h1>
                 <div className="mt-4! text-lg md:text-xl">
-                  Accept cryptocurrency payments in your store using pallapay
-                  crypto pos machine and receive settlements in fiat, seamlessly
-                  and securely.
+                  {t("hero.subtitle")}
                 </div>
                 <div className="mt-5!">
                   <a href="https://dashboard.pallapay.com/auth/register">
                     <Button className="text-black bg-amber-400 hover:bg-amber-500 cursor-pointer flex gap-1 items-center">
-                      Get Started
+                      {t("hero.getStarted")}
                       <ArrowRight />
                     </Button>
                   </a>
@@ -68,25 +69,25 @@ export function PosMachine() {
                     <div className="text-black bg-amber-400 rounded-full flex w-7 h-7 items-center justify-center">
                       <Check size={20} strokeWidth={2.8} />
                     </div>
-                    <div>Pre-conﬁgured POS Machine</div>
+                    <div>{t("hero.features.preConfigured")}</div>
                   </div>
                   <div className="flex gap-4 items-center">
                     <div className="text-black bg-amber-400 rounded-full flex w-7 h-7 items-center justify-center">
                       <Check size={20} strokeWidth={2.8} />
                     </div>
-                    <div>Contactless Payments</div>
+                    <div>{t("hero.features.contactless")}</div>
                   </div>
                   <div className="flex gap-4 items-center">
                     <div className="text-black bg-amber-400 rounded-full flex w-7 h-7 items-center justify-center">
                       <Check size={20} strokeWidth={2.8} />
                     </div>
-                    <div>Built-in Receipt Printer</div>
+                    <div>{t("hero.features.builtInPrinter")}</div>
                   </div>
                   <div className="flex gap-4 items-center">
                     <div className="text-black bg-amber-400 rounded-full flex w-7 h-7 items-center justify-center">
                       <Check size={20} strokeWidth={2.8} />
                     </div>
-                    <div>Pre-installed and User-friendly App</div>
+                    <div>{t("hero.features.userFriendlyApp")}</div>
                   </div>
                 </div>
               </div>
@@ -143,13 +144,7 @@ export function PosMachine() {
       <div className="container mt-20! sm:mt-32!">
         <div className="grid grid-cols-1 md:grid-cols-12">
           <div className="md:col-span-5 text-lg lg:text-2xl flex items-center pt-10 row-start-2 md:row-start-1">
-            Pallapay Crypto POS Machine is a powerful solution for physical,
-            in-person transactions, enabling retail businesses to accept
-            cryptocurrency payments with ease. Customers can pay using popular
-            cryptocurrencies such as USDT, USDC, and Ethereum, while merchants
-            receive settlements in fiat currencies like AED or USD, ensuring
-            fast, secure, and convenient crypto payment processing at the point
-            of sale.
+            {t("intro")}
           </div>
           <div className="md:col-span-7 px-5 md:pr-0 md:pl-12 row-start-1">
             <Image
@@ -162,7 +157,7 @@ export function PosMachine() {
         </div>
       </div>
       <div className="container text-center mt-20! sm:mt-28!">
-        <h3 className="text-3xl font-semibold">Supported Cryptocurrencies</h3>
+        <h3 className="text-3xl font-semibold">{t("supportedCrypto")}</h3>
         <div className="grid grid-cols-3 sm:grid-cols-4 gap-10 md:gap-0 md:grid-cols-none md:flex md:justify-between mt-10">
           <div>
             <Image
@@ -236,7 +231,7 @@ export function PosMachine() {
           </div>
           <div className="col-span-2 sm:col-span-1 md:hidden text-lg mt-2! w-full h-full pb-7 text-left">
             <div className="h-full content-center font-semibold">
-              And More ...
+              {t("andMore")}
             </div>
           </div>
         </div>
@@ -247,12 +242,10 @@ export function PosMachine() {
             <div className="bg-[#292B31] rounded-2xl sm:flex h-full overflow-hidden">
               <div className="w-full px-5 py-5 sm:pr-0 sm:pl-9 sm:py-8">
                 <h2 className="text-xl font-semibold text-amber-400">
-                  Crypto POS Device
+                  {t("blocks.posDevice.title")}
                 </h2>
                 <div className="mt-3">
-                  Ready-to-use POS terminal featuring a pre-installed Pallapay
-                  App, built-in receipt printer, 2D scanner, and support for
-                  contactless crypto payments.
+                  {t("blocks.posDevice.description")}
                 </div>
                 <div className="mt-5">
                   <TooltipProvider>
@@ -263,10 +256,10 @@ export function PosMachine() {
                         </TooltipTrigger>
                         <TooltipContent className="text-sm">
                           <h6 className="font-semibold mb-1">
-                            Built-in 58mm thermal printer
+                            {t("blocks.posDevice.tooltips.thermalPrinter.title")}
                           </h6>
-                          <p>Print speed: 70mm/s</p>
-                          <p>Paper roll: 40mm</p>
+                          <p>{t("blocks.posDevice.tooltips.thermalPrinter.speed")}</p>
+                          <p>{t("blocks.posDevice.tooltips.thermalPrinter.roll")}</p>
                         </TooltipContent>
                       </Tooltip>
                       <Tooltip>
@@ -274,8 +267,8 @@ export function PosMachine() {
                           <QrCode size={28} strokeWidth={1.5} />
                         </TooltipTrigger>
                         <TooltipContent className="text-sm">
-                          <h6 className="font-semibold mb-1">Scanner</h6>
-                          <p>2D barcode scan engine</p>
+                          <h6 className="font-semibold mb-1">{t("blocks.posDevice.tooltips.scanner.title")}</h6>
+                          <p>{t("blocks.posDevice.tooltips.scanner.specs")}</p>
                         </TooltipContent>
                       </Tooltip>
                       <Tooltip>
@@ -283,8 +276,8 @@ export function PosMachine() {
                           <Wifi size={28} strokeWidth={1.5} />
                         </TooltipTrigger>
                         <TooltipContent className="text-sm">
-                          <h6 className="font-semibold mb-1">Wi-Fi</h6>
-                          <p>2.4GHz/5GHz</p>
+                          <h6 className="font-semibold mb-1">{t("blocks.posDevice.tooltips.wifi.title")}</h6>
+                          <p>{t("blocks.posDevice.tooltips.wifi.specs")}</p>
                         </TooltipContent>
                       </Tooltip>
                       <Tooltip>
@@ -292,8 +285,8 @@ export function PosMachine() {
                           <Signal size={28} strokeWidth={1.5} />
                         </TooltipTrigger>
                         <TooltipContent className="text-sm">
-                          <h6 className="font-semibold mb-1">Network</h6>
-                          <p>2G & 3G & 4G</p>
+                          <h6 className="font-semibold mb-1">{t("blocks.posDevice.tooltips.network.title")}</h6>
+                          <p>{t("blocks.posDevice.tooltips.network.specs")}</p>
                         </TooltipContent>
                       </Tooltip>
                     </div>
@@ -303,9 +296,9 @@ export function PosMachine() {
                           <Cpu size={28} strokeWidth={1.5} />
                         </TooltipTrigger>
                         <TooltipContent className="text-sm">
-                          <h6 className="font-semibold mb-1">CPU</h6>
-                          <p>Corte-A53</p>
-                          <p>quad-core 1.4GHz</p>
+                          <h6 className="font-semibold mb-1">{t("blocks.posDevice.tooltips.cpu.title")}</h6>
+                          <p>{t("blocks.posDevice.tooltips.cpu.model")}</p>
+                          <p>{t("blocks.posDevice.tooltips.cpu.cores")}</p>
                         </TooltipContent>
                       </Tooltip>
                       <Tooltip>
@@ -313,8 +306,8 @@ export function PosMachine() {
                           <MemoryStick size={28} strokeWidth={1.5} />
                         </TooltipTrigger>
                         <TooltipContent className="text-sm">
-                          <h6 className="font-semibold mb-1">Memory</h6>
-                          <p>2GB RAM+16GB ROM</p>
+                          <h6 className="font-semibold mb-1">{t("blocks.posDevice.tooltips.memory.title")}</h6>
+                          <p>{t("blocks.posDevice.tooltips.memory.specs")}</p>
                         </TooltipContent>
                       </Tooltip>
                       <Tooltip>
@@ -323,11 +316,11 @@ export function PosMachine() {
                         </TooltipTrigger>
                         <TooltipContent className="text-sm max-w-[300px]">
                           <h6 className="font-semibold mb-1">
-                            NFC Card Reader
+                            {t("blocks.posDevice.tooltips.nfc.title")}
                           </h6>
-                          <p>Supports Type A&B card, Mifare card</p>
+                          <p>{t("blocks.posDevice.tooltips.nfc.desc1")}</p>
                           <p>
-                            Felica card; ISO/ICE 14443 and ISO15693 compliant
+                            {t("blocks.posDevice.tooltips.nfc.desc2")}
                           </p>
                         </TooltipContent>
                       </Tooltip>
@@ -337,10 +330,10 @@ export function PosMachine() {
                         </TooltipTrigger>
                         <TooltipContent className="text-sm">
                           <h6 className="font-semibold mb-1">
-                            Physical Dimensions
+                            {t("blocks.posDevice.tooltips.dimensions.title")}
                           </h6>
-                          <p>Screen: 5.99"HD+，1440*720</p>
-                          <p>Dimensions: 215.2*83*17mm</p>
+                          <p>{t("blocks.posDevice.tooltips.dimensions.screen")}</p>
+                          <p>{t("blocks.posDevice.tooltips.dimensions.dims")}</p>
                         </TooltipContent>
                       </Tooltip>
                     </div>
@@ -349,7 +342,7 @@ export function PosMachine() {
                 <div className="mt-6">
                   <Link href="/contact-us">
                     <Button className="bg-amber-400 hover:bg-amber-500 cursor-pointer flex gap-1 items-center">
-                      Talk to Sales
+                      {t("blocks.posDevice.talkToSales")}
                     </Button>
                   </Link>
                 </div>
@@ -369,12 +362,10 @@ export function PosMachine() {
             <div className="bg-[#292B31] rounded-2xl h-full relative">
               <div className="w-full pt-6 px-5 sm:px-9">
                 <h2 className="text-xl font-semibold text-amber-400">
-                  Dashboard
+                  {t("blocks.dashboard.title")}
                 </h2>
                 <div className="mt-3">
-                  A user-friendly application that lets you manage transactions
-                  and balances in real time, making it simple and secure to
-                  accept cryptocurrency in your store, with zero risk of fraud.
+                  {t("blocks.dashboard.description")}
                 </div>
               </div>
               <div className="pt-5 lg:absolute bottom-0 sm:pl-9">
@@ -390,11 +381,10 @@ export function PosMachine() {
             <div className="bg-[#292B31] rounded-2xl h-full relative overflow-hidden">
               <div className="w-full pt-6 px-5 sm:px-9">
                 <h2 className="text-xl font-semibold text-amber-400">
-                  Multiple Crypto Support
+                  {t("blocks.multiCrypto.title")}
                 </h2>
                 <div className="mt-3">
-                  Empower your clients to pay with a wide range of
-                  cryptocurrencies, including UDST, Ethereum, USDC, and more.
+                  {t("blocks.multiCrypto.description")}
                 </div>
               </div>
               <div className="pt-5 bottom-0 pl-5 sm:px-9">
@@ -410,13 +400,10 @@ export function PosMachine() {
             <div className="bg-[#292B31] rounded-2xl h-full relative">
               <div className="w-full pt-6 px-5 sm:px-9">
                 <h2 className="text-xl font-semibold text-amber-400">
-                  Fiat Settlement
+                  {t("blocks.fiatSettlement.title")}
                 </h2>
                 <div className="mt-3">
-                  With Pallapay, you don’t need to handle cryptocurrency
-                  directly, we manage the process for you. Accept crypto
-                  payments and receive secure fiat settlements in AED, USD, and
-                  more.
+                  {t("blocks.fiatSettlement.description")}
                 </div>
               </div>
               <div className="pt-5 lg:absolute bottom-0 sm:px-9">
@@ -437,12 +424,10 @@ export function PosMachine() {
             <div className="md:col-span-5 md:col-start-2 row-start-2 md:row-start-1 flex items-center px-5! md:px-0!">
               <div className="relative">
                 <h3 className="text-3xl font-semibold text-amber-400">
-                  Instant Settlements
+                  {t("instantSettlements.title")}
                 </h3>
                 <div className="mt-5 text-lg">
-                  We guarantee that when you sell an item and accept
-                  cryptocurrency with Pallapay, you’ll receive the full fiat
-                  amount instantly.
+                  {t("instantSettlements.description")}
                 </div>
                 <div className="absolute w-full">
                   <ParallaxProvider>
@@ -488,7 +473,7 @@ export function PosMachine() {
             </div>
           </div>
           <div className="text-3xl font-semibold py-8 relative">
-            How Pallapay Crypto POS Machine Works
+            {t("howItWorks")}
           </div>
           <div className="container h-full relative">
             <div className="relative bg-black rounded-3xl">
@@ -519,15 +504,10 @@ export function PosMachine() {
             <div className="md:col-span-6 flex items-center px-5 md:px-0">
               <div>
                 <div className="text-3xl">
-                  Order Your Pallapay Crypto POS Machine
+                  {t("orderPos.title")}
                 </div>
                 <div className="mt-7">
-                  Start accepting cryptocurrency payments with Pallapay crypto
-                  POS machine at your store effortlessly. No crypto knowledge
-                  needed—just enter the invoice amount in AED or USD, let your
-                  customer pay with popular cryptocurrencies like USDT,
-                  Ethereum, or USDC, and receive your fiat directly in your
-                  account.
+                  {t("orderPos.description")}
                 </div>
                 <div className="mt-7 flex justify-center">
                   <Link href="/contact-us">
@@ -535,7 +515,7 @@ export function PosMachine() {
                       size="xl"
                       className="bg-amber-400 hover:bg-amber-500 cursor-pointer flex gap-1 items-center !px-7"
                     >
-                      Talk to Sales
+                      {t("orderPos.talkToSales")}
                       <ArrowRight />
                     </Button>
                   </Link>

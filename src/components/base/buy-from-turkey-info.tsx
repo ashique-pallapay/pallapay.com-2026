@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 interface TurkeyInfoSectionProps {
   showTrustedExchange?: boolean;
@@ -12,23 +13,12 @@ const TurkeyInfoSection = ({
   showMapBelowText = false,
   purpose = "buy",
 }: TurkeyInfoSectionProps) => {
-  const features = [
-    {
-      text: "First, if you purchase on the exchange you will guarantee that you receive the bitcoin on your wallet upon leaving the shop.",
-    },
-    {
-      text: "Bitcoin is always changing rate very fast, using exchange you can assure that the rate is totally inform you without hidden charges.",
-    },
-    {
-      text: "Imagine you can buy what amount you want, with asking the teller for rate for the day.",
-    },
-    {
-      text: "Exchange can help you if there is some minor issue that you encountered, they can guide you what you need to do.",
-    },
-    {
-      text: "Apart from that you can see the people you are dealing. Having an assurance that your money will not be lost and the bitcoin you buy will confirm that come to your wallet.",
-    },
-  ];
+  const t = useTranslations("turkeyPage.info");
+  const tHero = useTranslations("turkeyPage.hero");
+
+  const features = t.raw("whyBuyItems") as string[];
+
+  const translatedPurpose = purpose.toLowerCase() === "buy" ? tHero("buy") : tHero("sell");
 
   return (
     <div
@@ -46,12 +36,11 @@ const TurkeyInfoSection = ({
         <div className="mt-1 text-left md:mt-14 flex flex-col md:flex-row gap-2 relative z-10">
           <div className="space-y-3">
             <h2 className="text-white text-center text-xl md:text-4xl font-semibold mb-6 tracking-tight">
-              Why you should {purpose} Bitcoin on a trusted exchange?
+              {t("whyBuyTitle", { purpose: translatedPurpose })}
             </h2>
 
             <p className="text-md md:text-lg  text-white">
-              We will give you some reason on how cryptocurrency exchange works
-              for trader and investor.
+              {t("whyBuySubtitle")}
             </p>
 
             <ul className="space-y-2 text-left">
@@ -59,7 +48,7 @@ const TurkeyInfoSection = ({
                 <li key={index} className="flex items-start group">
                   <span className="text-white mr-4 mt-1.5 text-xl">•</span>
                   <p className="text-white text-lg leading-relaxed group-hover:text-white transition-colors">
-                    {item.text}
+                    {item}
                   </p>
                 </li>
               ))}
@@ -83,12 +72,10 @@ const TurkeyInfoSection = ({
         height="350"
         className="border-0 mt-10 z-10 dark-map"
       ></iframe>
-      <span className="text-white mt-5">Pallapay’s ofiice in Istanbul</span>
+      <span className="text-white mt-5">{t("officeIstanbul")}</span>
       {showMapBelowText && (
         <span className="text-white mt-5 p-2">
-          {purpose} Bitcoin, Tether (USDT), and over 50 Cryptos in Istanbul
-          Turkey in The Best and Licensed Cryptocurrency Exchange in marke Using
-          Cash or Card easily and securely with Pallapay.
+          {t("bottomDesc", { purpose: translatedPurpose })}
         </span>
       )}
     </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-// import { MainFooter } from "@/components/base/MainFooter";
 import { MainNav } from "@/components/base/MainNav";
 import { ArrowRight, Check, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -21,93 +20,47 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-// import { FaqSection } from "../main/components";
 import Image from "next/image";
 import Link from "next/link";
 import "../../styles/Accordion.css";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const steps = [
   {
     id: 1,
-    title: "Create a Pallapay Account",
     bgImage: "/images/shapes/gradient/giftcard-gradient-1.png",
   },
   {
     id: 2,
-    title: "Buy a Crypto Card In-Store or Online",
     bgImage: "/images/shapes/gradient/giftcard-gradient-2.png",
   },
   {
     id: 3,
-    title: "Convert, Spend, or Withdraw Your Way",
     bgImage: "/images/shapes/gradient/giftcard-gradient-3.png",
   },
 ];
 
 const benefits = [
   {
-    title: "Lowest Fees",
     image: "/images/benefits/money-percentage.png",
     alt: "Lowest Fees",
   },
   {
-    title: "Multiple Crypto Support",
     image: "/images/benefits/wallet.png",
     alt: "Multiple Crypto Support",
   },
   {
-    title: "Highest Security",
     image: "/images/benefits/secure.png",
     alt: "Highest Security",
   },
   {
-    title: "Fiat Settlement",
     image: "/images/benefits/money-arrow.png",
     alt: "Fiat Settlement",
   },
 ];
-
-const faqs = [
-  {
-    value: "item-1",
-
-    question: "What is a Pallapay Crypto Gift Card?",
-    answer:
-      "Pallapay Prepaid gift card is a multi-functional card that bridges the world of crypto and real-world purchases. Whether you’re looking to convert crypto to spendable funds or buy crypto conveniently, Pallapay makes it fast, secure, and easy.",
-  },
-  {
-    value: "item-2",
-    question: "How can I buy a Pallapay Crypto Gift Card?",
-    answer:
-      "You can purchase a gift card directly from your Pallapay dashboard using any supported cryptocurrency or at any Pallapay trusted partner location using cash or card.",
-  },
-  {
-    value: "item-3",
-    question: "Can I sell my Pallapay Crypto Gift Card for cash?",
-    answer:
-      "Yes. You can sell your gift card at any Pallapay trusted partner location for cash or transfer the funds directly to your bank account.",
-  },
-  {
-    value: "item-4",
-    question: "Which cryptocurrencies can I use to buy a gift card?",
-    answer:
-      "Pallapay supports a wide range of cryptocurrencies, including USDT, USDC, Bitcoin (BTC), Ethereum (ETH), XRP, Solana (SOL), and more.",
-  },
-  {
-    value: "item-5",
-    question: "Is it safe to use a Pallapay Crypto Gift Card?",
-    answer:
-      "Yes. All transactions are secure, and your funds are protected. The gift card can only be used through Pallapay’s dashboard or authorized trusted partners.",
-  },
-  {
-    value: "item-6",
-    question: "Are there limits on how much I can load onto a gift card?",
-    answer:
-      "Limits may vary depending on your country’s regulations and Pallapay’s policies. Please check your dashboard or trusted partner location for the maximum load limits.",
-  },
-];
 export function GiftCard() {
+  const t = useTranslations("giftCard");
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   return (
@@ -119,21 +72,19 @@ export function GiftCard() {
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-5">
           <div className="lg:col-span-5 row-start-2 lg:row-start-1 md:mb-24 mb-0">
             <p className="text-lg xl:text-xl text-gray-400">
-              Enjoy The World of Crypto with
+              {t('hero.subtitle')}
             </p>
             <h1 className="text-2xl leading-[2.4rem] sm:text-4xl sm:leading-[3rem] lg:text-5xl lg:leading-[3.5rem] font-semibold">
-              Pallapay Crypto Gift Card
+              {t('hero.title')}
             </h1>
             <p className="text-white text-lg mt-4 sm:pr-6">
-              Pallapay Gift Card offers a prepaid crypto option that can be used
-              for multiple purposes such as transferring cryptocurrency and
-              handling deposits or withdrawals.
+              {t('hero.description')}
             </p>
 
             <div className="mt-8!">
               <a href="https://dashboard.pallapay.com/auth/register">
                 <Button className="bg-amber-400 hover:bg-amber-500 cursor-pointer text-black! flex items-center gap-1">
-                  Get Started
+                  {useTranslations('common')('getStarted')}
                   <span className="block bg-[url(/images/icons/arrow-right-sm.svg)] bg-cover w-[18px] h-[18px] mt-0.5"></span>
                 </Button>
               </a>
@@ -172,7 +123,7 @@ export function GiftCard() {
               width={400}
               src="/images/gift-cards/prepaid-giftcard.png"
               className="w-full scale-[110%] mx-5 sm:scale-80"
-              alt="Pallapay Crypto gift card"
+              alt={t('alts.prepaidCard')}
             />
           </div>
         </div>
@@ -182,40 +133,27 @@ export function GiftCard() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-7 text-white items-center">
             <div className="row-start-2 lg:row-start-1 text-left md:text-center lg:text-left">
               <h3 className="text-3xl font-semibold">
-                What is the Pallapay Crypto Gift Card?
+                {t('whatIs.title')}
               </h3>
-              <div className="mt-6 text-lg">
-                Pallapay crypto gift-card is a multi-functional card that
-                bridges the world of crypto and real-world purchases. Whether
-                you’re looking to convert crypto to spendable funds or buy
-                crypto conveniently, Pallapay makes it fast, secure, and easy.
+               <div className="mt-6 text-lg">
+                {t('whatIs.description')}
               </div>
               <div className="mt-5 lg:mt-6 lg:text-lg space-y-3 w-fit sm:mx-auto lg:mx-0">
-                <div className="flex gap-3 items-center">
-                  <div className="text-black bg-amber-400 rounded-full flex w-5 h-5 items-center justify-center">
-                    <Check size={16} strokeWidth={2.5} />
+                {(t.raw('whatIs.checkpoints') as string[]).map((checkpoint, index) => (
+                  <div key={index} className="flex gap-3 items-center">
+                    <div className="text-black bg-amber-400 rounded-full flex w-5 h-5 items-center justify-center">
+                      <Check size={16} strokeWidth={2.5} />
+                    </div>
+                    <div>{checkpoint}</div>
                   </div>
-                  <div>Convert to any cryptocurrency instantly</div>
-                </div>
-                <div className="flex gap-3 items-center">
-                  <div className="text-black bg-amber-400 rounded-full flex w-5 h-5 items-center justify-center">
-                    <Check size={16} strokeWidth={2.5} />
-                  </div>
-                  <div>Convert to cash instantly</div>
-                </div>
-                <div className="flex gap-3 items-center bg-primaryOrange">
-                  <div className="text-black bg-amber-400 rounded-full flex w-5 h-5 items-center justify-center">
-                    <Check size={16} strokeWidth={2.5} />
-                  </div>
-                  <div>Shop where Pallapay is accepted</div>
-                </div>
+                ))}
               </div>
             </div>
             <div className="row-start-1">
               <img
                 src="/images/gift-cards/pallapay-gift-cards2.png"
                 className="w-full md:w-[75%] lg:w-full mx-auto"
-                alt="Pallapay Crypto gift card pack"
+                alt={t('alts.cardPack')}
               />
             </div>
           </div>
@@ -228,99 +166,56 @@ export function GiftCard() {
             <img
               src="/images/gift-cards/withdrawal-mobile-new.png"
               className="max-h-44 mx-auto"
-              alt="Buy and redeeme Pallapay Crypto Gift Cards"
+              alt={t('alts.withdrawalMobile')}
             />
             <h3 className="text-xl sm:text-2xl font-semibold mt-4 sm:mt-5 text-(--primary-orange)">
-              Buy and Redeem Pallapay Crypto Gift Cards
+              {t('features.item1.title')}
             </h3>
             <p className="mt-3 sm:mt-6 text-white">
-              Purchase a Pallapay Crypto Gift Card with cash or card at Pallapay
-              trusted partner locations. Redeem your balance instantly and get
-              your cryptocurrency such as USDT, USDC, Bitcoin, Ethereum and
-              more.
+              {t('features.item1.description')}
             </p>
           </div>
           <div>
             <img
               src="/images/gift-cards/coins-new.png"
               className="max-h-44 sm:p-2 mx-auto"
-              alt="Gift Cryptocurrency with Pallapay Crypto Gift Card"
+              alt={t('alts.coins')}
             />
             <h3 className="text-xl sm:text-2xl font-semibold mt-4 sm:mt-5 text-(--primary-orange)">
-              Gift Cryptocurrency with Pallapay Crypto Gift Card
+              {t('features.item2.title')}
             </h3>
             <p className="mt-3 sm:mt-6 text-white">
-              Send a Pallapay Crypto Gift Card to friends, family, or employees.
-              They can spend, convert, or withdraw their crypto balance easily,
-              making it the perfect way to gift digital currency.
+              {t('features.item2.description')}
             </p>
           </div>
           <div>
             <img
               src="/images/gift-cards/financial-growth.png"
               className="max-h-44 sm:p-2 mx-auto"
-              alt="Sell Any Cryptocurrency via Pallapay Crypto Gift Card"
+              alt={t('alts.financialGrowth')}
             />
             <h3 className="text-xl sm:text-2xl font-semibold mt-4 sm:mt-5 text-(--primary-orange)">
-              Sell Any Cryptocurrency via Pallapay Crypto Gift Card
+              {t('features.item3.title')}
             </h3>
             <p className="mt-3 sm:mt-6 text-white">
-              Buy a Pallapay Gift card with any cryptocurrency such as USDT,
-              USDC, Bitcoin, Ethereum and more. Sell your Gift Card at Pallapay
-              trusted partner locations and get cash or bank transfer.
+              {t('features.item3.description')}
             </p>
           </div>
         </div>
       </div>
 
-      {/* <div className="mt-20! lg:mt-34! container text-white md:text-black text-center relative">
-        <ParallaxProvider>
-          <Parallax
-            rotate={[-6, 7]}
-            speed={5}
-            className="hidden sm:block absolute -bottom-10 left-[4%] w-[118px] h-[118px] rotate-[100deg] bg-gradient-to-b from-[#f9f9f9] via-[#d1d1d1] via-50% to-[#989898] rounded-[150%] blur-[2.5px] z-30"
-          ></Parallax>
-          <Parallax
-            rotate={[-3, 3]}
-            speed={-6}
-            className="absolute -bottom-14 right-[25%] w-[54px] h-[54px] rotate-[120deg] bg-gradient-to-b from-[#fefefe] via-[#d1d1d1] via-50% to-[#989898] rounded-[150%] blur-[4px]"
-          ></Parallax>
-          <Parallax
-            rotate={[-2, 7]}
-            speed={2}
-            className="absolute -top-14 right-[3%] w-[93px] h-[96px] rotate-[20deg] bg-gradient-to-b from-[#fefefe] via-[#d1d1d1] via-50% to-[#989898] rounded-[150%] blur-[4px]"
-          ></Parallax>
-        </ParallaxProvider>
-        <div className="bg-white h-full rounded-3xl p-5 lg:px-14 lg:py-5 shadow-2xl items-center relative z-20">
-          <h2 className="text-3xl font-semibold">
-            Get Started in 3 Simple Steps
-          </h2>
-          <div className="py-12 mt-8">
-            <img
-              src="/images/gift-cards/main-steps.png"
-              className="hidden sm:block w-full"
-              alt="Pallapay Gift Card Flow"
-            />
-            <img
-              src="/images/gift-cards/mobile-steps.png"
-              className="block sm:hidden w-full"
-              alt="Pallapay Gift Card Flow"
-            />
-          </div>
-        </div>
-      </div> */}
-
+                
       <section className="bg-black text-white mt-20! lg:mt-34! container font-sans">
         <div className="max-w-6xl mx-auto">
           <div className="mb-10">
             <div className="flex items-center gap-2 mb-2">
               <span className="w-3 h-3 bg-amber-500 rounded-full"></span>
               <span className="text-zinc-400 text-sm uppercase tracking-wider font-medium">
-                3 Simple Steps
+                {t('steps.banner')}
               </span>
             </div>
             <h2 className="text-4xl font-bold tracking-tight">
-              Effortless process
+              {t('steps.title')}
             </h2>
           </div>
 
@@ -334,7 +229,7 @@ export function GiftCard() {
                   <div className="">
                     <Image
                       src={step.bgImage}
-                      alt={step.title}
+                      alt={`Step ${step.id}`}
                       fill
                       className="object-cover"
                     />
@@ -347,7 +242,7 @@ export function GiftCard() {
                     {step.id}.
                   </span>
                   <p className="text-xl font-medium leading-tight text-zinc-100 pt-2">
-                    {step.title}
+                    {(t.raw('steps.items') as string[])[step.id - 1]}
                   </p>
                 </div>
 
@@ -374,7 +269,7 @@ export function GiftCard() {
               <img
                 src="/images/gift-cards/yellow-wallet.png"
                 width={300}
-                alt="Gift card wallet"
+                alt={t('alts.yellowWallet')}
                 className="mx-auto lg:ml-0 lg:mr-auto"
               />
               <div className="absolute top-0 right-0 bg-[url(/images/gift-cards/zero-percent-new.png)] w-[63px] h-[75px] md:w-[127px] md:h-[150px] bg-contain bg-no-repeat"></div>
@@ -382,17 +277,15 @@ export function GiftCard() {
             <div className="pb-6 flex items-end">
               <div className="pb-6">
                 <h3 className="text-2xl font-semibold text-white">
-                  Withdraw With 0% Fee!
+                  {t('withdrawFee.title')}
                 </h3>
                 <p className="mt-2 text-white">
-                  When you buy a Pallapay Crypto Gift Card with cash, you can
-                  withdraw your balance in popular cryptocurrencies like USDT,
-                  USDC, Bitcoin, XRP, Solana, Ethereum and more with 0% Fee!
+                  {t('withdrawFee.description')}
                 </p>
                 <div className="mt-4">
                   <a href="https://dashboard.pallapay.com/auth/register">
                     <Button className="bg-amber-400 hover:bg-amber-500 cursor-pointer flex items-center gap-1 justify-self-center md:justify-self-start w-full sm:w-fit">
-                      Try It Now !
+                      {useTranslations('common')('tryItNow')}
                     </Button>
                   </a>
                 </div>
@@ -450,12 +343,10 @@ export function GiftCard() {
         <div className="text-white bg-[#181A20] h-full grid grid-cols-1 lg:grid-cols-2 rounded-3xl px-5 py-7 sm:px-8 sm:py-14 lg:px-14 shadow-[0_0px_40px_rgba(0,0,0,0.05)] items-center relative gap-8 lg:gap-7">
           <div className="row-start-2 lg:row-start-1">
             <h4 className="text-2xl font-semibold">
-              Crypto To Cash In a Simple Way
+              {t('cryptoToCash.title')}
             </h4>
             <p className="mt-4">
-              Buy a Pallapay Crypto Gift Card with any cryptocurrency on your
-              dashboard, then sell for cash at any Pallapay Trusted Partner or
-              transfer directly to your bank account!
+              {t('cryptoToCash.description')}
             </p>
             <div className="mt-7">
               <a href="https://dashboard.pallapay.com/auth/register">
@@ -463,7 +354,7 @@ export function GiftCard() {
                   className="text-black bg-amber-400 hover:bg-amber-500 cursor-pointer w-full sm:w-[40%] sm:mr-[5%]"
                   size="lg"
                 >
-                  Cash
+                  {t('cryptoToCash.cashBtn')}
                 </Button>
               </a>
               <a href="https://dashboard.pallapay.com/auth/register">
@@ -471,7 +362,7 @@ export function GiftCard() {
                   className="bg-transparent border border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black cursor-pointer w-full sm:w-[45%] mt-2.5 sm:mt-0"
                   size="lg"
                 >
-                  Bank Transfer
+                  {t('cryptoToCash.bankTransferBtn')}
                 </Button>
               </a>
             </div>
@@ -482,25 +373,25 @@ export function GiftCard() {
             <img
               src="/images/gift-cards/hero-transfer2.png"
               className="relative w-[85%] mx-auto"
-              alt="Pallapay crypto gift card"
+              alt={t('alts.heroTransfer')}
             />
           </div>
         </div>
       </div>
 
       <div className="mt-16! lg:mt-24! container text-white relative">
-        <h3 className="text-3xl font-semibold text-white">Trusted Partners</h3>
+        <h3 className="text-3xl font-semibold text-white">{t('partners.title')}</h3>
 
         <div className="relative">
           <div className="absolute top-0 left-2.5 translate-y-[-50%] px-1! text-xs text-neutral-500 select-none">
             <div className="relative">
               <div className="w-[106%] h-[3px] bg-black absolute top-[50%]  translate-y-[-2px] translate-x-[-3%]"></div>
-              <span className="relative text-white!">Select Your Country</span>
+              <span className="relative text-white!">{t('partners.selectCountry')}</span>
             </div>
           </div>
           <Select defaultValue="DUBAI">
             <SelectTrigger className="w-full sm:w-[35%] h-12 mt-7 bg-black !text-white border border-neutral-400">
-              <SelectValue placeholder="Select a country" />
+              <SelectValue placeholder={t('partners.selectPlaceholder')} />
             </SelectTrigger>
             <SelectContent className="w-full bg-black !text-white">
               <SelectGroup>
@@ -508,7 +399,7 @@ export function GiftCard() {
                   className="bg-black hover:!bg-neutral-10 !text-white"
                   value="DUBAI"
                 >
-                  United Arab Emirates, Dubai
+                  {t('partners.countryDubai')}
                 </SelectItem>
               </SelectGroup>
             </SelectContent>
@@ -525,34 +416,30 @@ export function GiftCard() {
               />
               <div className="w-full">
                 <h6 className="font-semibold text-white">
-                  PALLADIUM PAYMENT SERVICES
+                  {t('partners.items.partner1.name')}
                 </h6>
                 <p className="text-neutral-400 text-sm">
-                  Office P402, The Binary by Omniyat, Marasi Drive, Business
-                  Bay, Dubai{" "}
+                  {t('partners.items.partner1.address')}
                 </p>
               </div>
             </div>
             <p className="mt-4 text-white">
-              Palladium Payment Services is a trusted Pallapay partner for
-              buying and selling
-              <br />
-              crypto gift cards.
+              {t('partners.items.partner1.description')}
             </p>
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-3">
               <div className="col-span-2 select-none space-x-1.5 space-y-1.5">
                 <span className="inline-block px-2 py-1 rounded-2xl text-[#10E392] bg-[#10E392]/20 text-xs">
-                  Online
+                  {t('partners.tags.online')}
                 </span>
                 <span className="inline-block px-2 py-1 rounded-2xl text-[#5980E5] bg-[#5980E5]/20 text-xs">
-                  Cash At Branch
+                  {t('partners.tags.cashAtBranch')}
                 </span>
                 <span className="inline-block px-2 py-1 rounded-2xl text-[#10E392] bg-[#10E392]/20 text-xs">
-                  Credit Card Accepted
+                  {t('partners.tags.creditCard')}
                 </span>
                 <div className="px-2 py-0.5 rounded-2xl text-white bg-[#2A2A2A] text-xs inline-block">
                   <div className="flex items-center justify-center gap-x-0.5 w-fit">
-                    Pay Using
+                    {t('partners.tags.payUsing')}
                     <img
                       src="/images/gift-cards/visa-mastercard-logo.png"
                       alt="Visa Mastercard Logo"
@@ -561,7 +448,7 @@ export function GiftCard() {
                   </div>
                 </div>
                 <span className="inline-block px-2 py-1 rounded-2xl text-[#FBC01D] bg-[#FFD65C]/20 text-xs">
-                  B2B Sale
+                  {t('partners.tags.b2bSale')}
                 </span>
               </div>
               <div className="text-right mt-5 sm:mt-0">
@@ -573,7 +460,7 @@ export function GiftCard() {
                     className="bg-amber-400 hover:bg-amber-500 cursor-pointer text-center w-full sm:w-fit"
                     size="lg"
                   >
-                    Buy And Sell Gift Card
+                    {t('partners.buyAndSellBtn')}
                   </Button>
                 </a>
               </div>
@@ -588,34 +475,30 @@ export function GiftCard() {
               />
               <div className="w-full">
                 <h6 className="font-semibold text-white">
-                  BITCARDI DISCOUNTED CARD SERVICES
+                  {t('partners.items.partner2.name')}
                 </h6>
                 <p className="text-neutral-400 text-sm">
-                  Shop 12, Baniyas Complex Building, Baniyas Square, Deira,
-                  Dubai
+                  {t('partners.items.partner2.address')}
                 </p>
               </div>
             </div>
             <p className="text-white mt-4">
-              Bitcardi Discounted Card Services is a trusted Pallapay partner
-              for buying and selling
-              <br />
-              crypto gift cards.
+              {t('partners.items.partner2.description')}
             </p>
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-3">
               <div className="col-span-2 select-none space-x-1.5 space-y-1.5">
                 <span className="inline-block px-2 py-1 rounded-2xl text-[#10E392] bg-[#10E392]/20 text-xs">
-                  Online
+                  {t('partners.tags.online')}
                 </span>
                 <span className="inline-block px-2 py-1 rounded-2xl text-[#5980E5] bg-[#5980E5]/20 text-xs">
-                  Cash At Branch
+                  {t('partners.tags.cashAtBranch')}
                 </span>
                 <span className="inline-block px-2 py-1 rounded-2xl text-[#10E392] bg-[#10E392]/20 text-xs">
-                  Credit Card Accepted
+                  {t('partners.tags.creditCard')}
                 </span>
                 <div className="px-2 py-0.5 rounded-2xl text-white bg-[#2A2A2A] text-xs inline-block">
                   <div className="flex items-center justify-center gap-x-0.5 w-fit">
-                    Pay Using
+                    {t('partners.tags.payUsing')}
                     <img
                       src="/images/gift-cards/visa-mastercard-logo.png"
                       alt="Visa Mastercard Logo"
@@ -624,7 +507,7 @@ export function GiftCard() {
                   </div>
                 </div>
                 <span className="inline-block px-2 py-1 rounded-2xl text-[#FBC01D] bg-[#FFD65C]/20 text-xs">
-                  B2B Sale
+                  {t('partners.tags.b2bSale')}
                 </span>
               </div>
               <div className="text-right mt-5 sm:mt-0">
@@ -633,7 +516,7 @@ export function GiftCard() {
                     className="bg-amber-400 hover:bg-amber-500 cursor-pointer text-center w-full sm:w-fit"
                     size="lg"
                   >
-                    Buy And Sell Gift Card
+                    {t('partners.buyAndSellBtn')}
                   </Button>
                 </a>
               </div>
@@ -644,39 +527,22 @@ export function GiftCard() {
 
       <div className="mt-20! lg:mt-36! container text-black text-center relative">
         <ParallaxProvider>
-          <Parallax
-            rotate={[-6, 7]}
-            speed={-5}
-            className="hidden sm:block absolute -bottom-10 left-[4%] w-[80px] h-[75px] rotate-[100deg] bg-gradient-to-b from-[#353C45] via-[#181A20] via-50% to-[#010101]  rounded-[150%] blur-[2.5px] z-30"
-          ></Parallax>
-          <Parallax
-            rotate={[-7, 7]}
-            speed={-5}
-            className="absolute -top-14 right-[3%] w-[93px] h-[96px] rotate-[-80deg] bg-gradient-to-b from-[#353C45] via-[#181A20] via-50% to-[#010101] rounded-[150%] blur-[4px] z-30"
-          ></Parallax>
-          <Parallax
-            rotate={[-3, 5]}
-            speed={3}
-            className="absolute top-12 right-[10%] w-[20px] h-[20px] bg-[url(/images/dark-star.png)] bg-contain bg-no-repeat z-30"
-          ></Parallax>
-        </ParallaxProvider>
+                        </ParallaxProvider>
         <div className="bg-gradient-to-r from-[#15171a]  to-(--primary-grey) md:to-[#353C45]/50 h-full rounded-3xl p-5 sm:p-8 lg:px-14 lg:py-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-20">
           <div className="text-white md:col-span-7 text-center lg:pr-12 row-start-2 md:row-start-1">
-            <h2 className="text-3xl font-semibold">Become a Distributor!</h2>
+            <h2 className="text-3xl font-semibold">{t('distributor.title')}</h2>
             <div className="text-lg mt-5">
-              Join Pallapay as an official distributor of Prepaid Gift Cards and
-              take advantage of the growing demand for flexible, digital payment
-              solutions.
+              {t('distributor.description')}
             </div>
             <div className="w-fit mx-auto px-12 py-3 text-gray-700 border border-gray-700 rounded-lg  select-none mt-5">
-              Coming Soon !
+              {t('distributor.comingSoon')}
             </div>
           </div>
           <div className="md:col-span-5 relative row-start-1">
             <img
               className="w-[75%] sm:w-[55%] md:w-[75%] mx-auto relative z-20"
               src="/images/gift-cards/pallapay-money-exchange.png"
-              alt="Exchange cryptocurrencies in pallapay"
+              alt={t('alts.moneyExchange')}
             />
           </div>
         </div>
@@ -689,7 +555,7 @@ export function GiftCard() {
             <div>Crypto</div>
             <div>Gift Card</div>
             <div className="text-4xl lg:text-5xl text-orange-400 mb-5">
-              (FAQ)
+              {t('faq.title')}
             </div>
           </div>
 
@@ -700,14 +566,15 @@ export function GiftCard() {
               collapsible
               className="w-full border-b border-gray-900"
             >
-              {faqs.map((faq) => {
-                const isOpen = openItem === faq.value;
+              {(t.raw('faq.items') as {question: string, answer: string}[]).map((faq, index) => {
+                const value = `item-${index + 1}`;
+                const isOpen = openItem === value;
 
                 return (
                   <AccordionItem
-                    key={faq.value}
-                    value={faq.value}
-                    onClick={() => setOpenItem(isOpen ? null : faq.value)}
+                    key={value}
+                    value={value}
+                    onClick={() => setOpenItem(isOpen ? null : value)}
                     className="border-b border-gray-900 relative"
                   >
                     <div className="flex items-center justify-between w-full">
@@ -739,7 +606,7 @@ export function GiftCard() {
                 className="text-(--primary-orange) group flex items-center gap-1 text-sm font-medium  transition-all"
               >
                 <span className="group-hover:underline group-hover:text-(--primary-orange)/50 ">
-                  See More
+                  {t('faq.seeMore')}
                 </span>
                 <ArrowRight
                   size={20}
@@ -752,11 +619,11 @@ export function GiftCard() {
       </div>
 
       <div className="container text-center mt-14! sm:mt-16! text-black">
-        <div className="text-3xl font-semibold text-white">Benefits</div>
+        <div className="text-3xl font-semibold text-white">{t('benefits.title')}</div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 mt-12">
           {benefits.map((item) => (
             <InteractiveGradientCard
-              key={item.title}
+              key={item.alt}
               className="bg-[#353C45] text-white flex flex-col items-center justify-center text-center p-4 sm:p-6"
             >
               <img
@@ -766,7 +633,7 @@ export function GiftCard() {
               />
 
               <div className="text-lg sm:text-xl font-semibold mt-3 sm:mt-5">
-                {item.title}
+                {(t.raw('benefits.items') as string[])[benefits.indexOf(item)]}
               </div>
             </InteractiveGradientCard>
           ))}
@@ -778,19 +645,17 @@ export function GiftCard() {
           <div className="md:col-span-4">
             <img
               src="/images/gift-cards/pallapay-gift-cards-back-front.png"
-              alt="Global Use of Pallapay"
+              alt={t('alts.globalUse')}
               className="w-full drop-shadow-[0_0px_40px_rgba(0,0,0,0.15)]"
             />
           </div>
           <div className="md:col-span-8 flex items-center">
             <div>
               <div className="text-xl sm:text-3xl font-semibold">
-                Global Use. Local Convenience.
+                {t('globalUse.title')}
               </div>
               <div className="sm:text-base mt-2 sm:mt-5">
-                Whether you're in Dubai, Toronto, or anywhere in between,
-                Pallapay gives you the power to manage your money across
-                borders, without limits.
+                {t('globalUse.description')}
               </div>
               <div className="text-center mt-6">
                 <a href="https://dashboard.pallapay.com/auth/register">
@@ -798,7 +663,7 @@ export function GiftCard() {
                     className="text-black bg-amber-400 hover:bg-amber-500 cursor-pointer w-full sm:w-fit"
                     size="xl"
                   >
-                    Create Account
+                    {useTranslations('common')('createAccount')}
                   </Button>
                 </a>
               </div>
@@ -807,7 +672,6 @@ export function GiftCard() {
         </div>
       </div>
 
-      {/* <MainFooter className="!mt-14" hasContactSection={false} /> */}
-    </>
+                    </>
   );
 }

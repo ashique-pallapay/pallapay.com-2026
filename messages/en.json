@@ -156,6 +156,10 @@
       }
     }
   },
+  "videoSection": {
+    "title": "You’re In Good Company",
+    "subtitle": "Another Great Success For Pallapay and It's the Beginning"
+  },
   "aboutUs": {
     "breadcrumbHome": "Home",
     "breadcrumbAbout": "About Us",
@@ -232,7 +236,27 @@
     "officesTitle": "Pallapay Offices",
     "hqTitle": "Pallapay Headquarters",
     "customerSupportTitle": "Pallapay Customer Support",
-    "branchTitle": "Pallapay Branch"
+    "branchTitle": "Pallapay Branch",
+    "usa": "USA",
+    "usaReg": "USA MSB Registration Number: 31000295387275",
+    "usaAddress1": "1001 S. Main St. #10457",
+    "usaAddress2": "Kalispell, Montana, 59901",
+    "canada": "Canada",
+    "canadaReg": "Canada MSB Registration Number: M23088601",
+    "canadaAddress1": "18 Strathearn Avenue, Unit #29A",
+    "canadaAddress2": "Brampton, ON, Canada, L6T 4X7",
+    "authDescription": "Pallapay is authorized by FINTRAC and FINCEN to conduct foreign exchange dealing, money transfers, and virtual currency transactions.",
+    "dubaiBranchName": "PALLA DMCC Dubai Branch",
+    "dubaiBranchReg": "Reg. Number: 999491",
+    "dubaiBranchAddress": "Office P402, The Binary by Omniyat, Marasi Drive, Business Bay, Dubai, UAE",
+    "ltdName": "Pallapay Ltd.",
+    "ltdReg": "Reg. Number: 1337470",
+    "ltdAddress": "Office P402, The Binary by Omniyat, Marasi Drive, Business Bay Dubai, UAE",
+    "singaporeBranchName": "Pallapay PTE. Ltd",
+    "singaporeBranchReg": "Reg. Number: 202138429Z",
+    "singaporeBranchAddress": "68 Circular Road, #02-01, Postal Code: 049422, Singapore",
+    "nyBranchName": "Pallapay International Inc",
+    "nyBranchAddress": "40 Wall Street office 112, New York, NY, 10005, USA"
   },
   "contactPage": {
     "home": "Home",
@@ -498,48 +522,149 @@
     "bottomDesc": "With zero merchant fees on transactions, instant transaction confirmations, and no charge-backs, Pallapay crypto payment gateway helps retail shops reduce fraud, cut costs, and attract crypto-savvy buyers. Pallapay crypto POS machines are easy to set up and use, enabling seamless in-store crypto transactions. For added flexibility, you can accept cryptocurrency payments by sending payment links to customers for remote or contactless payments."
   },
   "buyBitcoinDubai": {
-    "heroTitle": "Buy Bitcoin in Dubai UAE With Cash",
-    "buyOnline": "Buy online now",
-    "visitOffice": "Visit our office",
-    "calculatorTitle": "Calculate Bitcoin to Cash",
-    "ourFeatures": "Our Features",
-    "bestRateTitle": "We guarantee the best rate",
-    "bestRateDesc": "We price match all local dealer competitors (including their online prices).",
-    "fastPayoutsTitle": "Fast Payouts",
-    "fastPayoutsDesc": "Fast cryptocurrency payouts - no more waiting time",
-    "bestCommissionsTitle": "Best commissions available",
-    "bestCommissionsDesc": "Great commission structure for all transactions with no hidden fees.",
-    "globalPaymentsTitle": "Global payments",
-    "globalPaymentsDesc": "We accept payments from nearly anywhere, as we support 180+ countries",
-    "insuranceTitle": "$100,000 Insurance",
-    "insuranceDesc": "Secure Checkout with coverage up to $100,000 Identity Protection.",
-    "supportTitle": "Live 24/7 support",
-    "supportDesc": "Our dedicated, multilingual support team is ready to help you out via email or live chat",
-    "howToBuyTitle": "How to Buy Bitcoin in Dubai with Cash or Card",
-    "whyTrustTitle": "Why people trust Pallapay",
-    "step1title": "Getting Started",
-    "step2title": "What is Bitcoin and How Does it Work?",
-    "step3title": "Why use pallapay to Buy Bitcoin in Dubai?",
-    "step4title": "Choosing a Bitcoin Wallet",
-    "whyBuyTitle": "Why you should buy bitcoin in the trustable exchange?",
-    "howWorkTitle": "How does this buy bitcoin work in Dubai?",
-    "getRateStep": "1. Get Rate",
-    "getRateDesc": "Calculate the best exchange rate for your Bitcoin.",
-    "buyBitcoinStep": "2. Buy Bitcoin",
-    "buyBitcoinDesc": "Visit on of our VIP branches in Dubai and make the payment.",
-    "getCoinStep": "3. Get your Coin",
-    "getCoinDesc": "You will receive your Bitcoin or other crypto at the same time after payment completed.",
-    "trustItems": {
-      "noHiddenFees": "No hidden fees",
-      "verification": "Verification in less than 5 minutes",
-      "licenses": "Licenses Payment Service Providers",
-      "support": "24/7/365 live customer support",
-      "team": "40-person team with expertise and experience",
-      "transactions": "More than $170,000,000 in annual transactions",
-      "instantPayouts": "Instant cryptocurrency payouts",
-      "lowestFees": "Lowest fees on the market",
-      "beginners": "Excellent option for beginners and pros",
-      "countries": "Serving 180+ countries"
+    "hero": {
+      "title": "Buy Bitcoin in Dubai UAE With Cash",
+      "buyOnline": "Buy online now",
+      "visitOffice": "Visit our office"
+    },
+    "calculator": {
+      "title": "Calculate Bitcoin to Cash"
+    },
+    "intro": {
+      "para1": "Buy bitcoin in Dubai, UAE securely and instantly. Now you can buy bitcoin in Dubai via cash in less than 5 minutes. Pallapay is an exchange for buying bitcoin and other cryptocurrencies in Dubai that you can mostly trust.",
+      "para2": "We all know that bitcoin is the most popular cryptocurrency now in the world even in Dubai. Some people make trading and invest on the particular cryptocurrency coins. Other people won’t know what is bitcoin? Most of the traders, and investors are looking for trading company that they can buy bitcoin."
+    },
+    "whyBuy": {
+      "title": "Why you should buy bitcoin in the trustable exchange?",
+      "subtitle": "I will give you some reason on how cryptocurrency exchange works for trader and investor.",
+      "items": [
+        "First, if you purchase on the exchange you will guarantee that you receive the bitcoin on your wallet upon leaving the shop.",
+        "Bitcoin is always changing rate very fast, using exchange you can assure that the rate is totally inform you without hidden charges.",
+        "Imagine you can buy what amount you want, with asking the teller for rate for the day.",
+        "Exchange can help you if there is some minor issue that you encountered, they can guide you what you need to do.",
+        "Apart from that you can see the people you are dealing. Having an assurance that your money will not be lost and the bitcoin you buy will confirm that come to your wallet."
+      ]
+    },
+    "howItWorks": {
+      "title": "How does this buy bitcoin work in Dubai?",
+      "steps": {
+        "getRate": {
+          "title": "1. Get Rate",
+          "desc": "Calculate the best exchange rate for your Bitcoin."
+        },
+        "buyBitcoin": {
+          "title": "2. Buy Bitcoin",
+          "desc": "Visit on of our VIP branches in Dubai and make the payment."
+        },
+        "getCoin": {
+          "title": "3. Get your Coin",
+          "desc": "You will receive your Bitcoin or other crypto at the same time after payment completed."
+        }
+      }
+    },
+    "features": {
+      "title": "Our Features",
+      "items": {
+        "bestRate": {
+          "title": "We guarantee the best rate",
+          "desc": "We price match all local dealer competitors (including their online prices)."
+        },
+        "fastPayouts": {
+          "title": "Fast Payouts",
+          "desc": "Fast cryptocurrency payouts - no more waiting time"
+        },
+        "bestCommissions": {
+          "title": "Best commissions available",
+          "desc": "Great commission structure for all transactions with no hidden fees."
+        },
+        "globalPayments": {
+          "title": "Global payments",
+          "desc": "We accept payments from nearly anywhere, as we support 180+ countries"
+        },
+        "insurance": {
+          "title": "$100,000 Insurance",
+          "desc": "Secure Checkout with coverage up to $100,000 Identity Protection."
+        },
+        "support": {
+          "title": "Live 24/7 support",
+          "desc": "Our dedicated, multilingual support team is ready to help you out via email or live chat"
+        }
+      }
+    },
+    "howToBuy": {
+      "title": "How to Buy Bitcoin in Dubai with Cash or Card",
+      "steps": {
+        "step1": {
+          "title": "Getting Started",
+          "para1": "Welcome to Pallapay, the one-stop-shop for all your cryptocurrency (and digital currency) needs.",
+          "para2": "Here is a short guide on how to Buy Bitcoin in dubai with Cash or Card:",
+          "list": [
+            "1st Step: Create a Bitcoin wallet—we suggest using Binance.",
+            "2nd Step: Start a new transaction on Pallapay.",
+            "3rd Step: Enter your BTC address.",
+            "4rth Step: Pay with your Pallapay account."
+          ],
+          "footer": "The whole process takes 15 minutes (or less) to complete. To learn more about buying Bitcoin, swipe to the next step."
+        },
+        "step2": {
+          "title": "What is Bitcoin and How Does it Work?",
+          "para1": "Since its creation in 2009, Bitcoin has become the most prominent method to store and exchange value across the web:",
+          "list": [
+            "You can buy and send Bitcoin all over the world at all times.",
+            "Transfers are cheaper and much faster than bank transfers.",
+            "Bitcoin is fairly private, and it is not controlled by 3rd parties.",
+            "Furthermore, Bitcoin has a limited supply of 21 million coins."
+          ],
+          "footer": "Thanks to all of this, Bitcoin’s value tends to appreciate over time."
+        },
+        "step3": {
+          "title": "Why use pallapay to Buy Bitcoin in Dubai?",
+          "para1": "Credit and debit cards are the most popular payment method when buying goods and services worldwide. That’s also the reason why people favor bank cards over other payment methods. Therefore, when looking for the best option to buy Bitcoin in Dubai instantly, look no further—choose debit cards or credit cards. They are the fastest and most secure way to buy BTC instantaneously in your local currency."
+        },
+        "step4": {
+          "title": "Choosing a Bitcoin Wallet",
+          "para1": "To buy Bitcoin with cash or card, you will need to create a Bitcoin wallet, and here are your options:",
+          "list": [
+            "Desktop wallet - Easy to use and very secure. The most popular option is Binance.",
+            "Hardware wallet - Outstanding security. The most popular option is Ledger.",
+            "Online wallet - Very convenient.",
+            "Paper wallet - Budget option that’s also secure."
+          ],
+          "footer": "In short, the best wallet to buy Bitcoin instantly is Electrum because it’s safe and takes just a minute to create."
+        }
+      }
+    },
+    "trust": {
+      "title": "Why people trust Pallapay",
+      "items": {
+        "noHiddenFees": "No hidden fees",
+        "verification": "Verification in less than 5 minutes",
+        "licenses": "Licenses Payment Service Providers",
+        "support": "24/7/365 live customer support",
+        "team": "40-person team with expertise and experience",
+        "transactions": "More than $170,000,000 in annual transactions",
+        "instantPayouts": "Instant cryptocurrency payouts",
+        "lowestFees": "Lowest fees on the market",
+        "beginners": "Excellent option for beginners and pros",
+        "countries": "Serving 180+ countries"
+      }
+    },
+    "bottom": {
+      "title": "Buy Bitcoin, Tether (USDT), and over 3000 Cryptos in Dubai UAE in The Best and Licensed Cryptocurrency Exchange in Dubai Near Dubai Mall Using Cash or Card easily and securely with Pallapay.",
+      "subtitle": "The easiest way to buy bitcoins in Dubai UAE",
+      "paras": [
+        "Dubai is the city of luxury life, here you can find beautiful places to see and visit. due to the colorful life of the city, people like to visit it. There are so many aspects of living a life in any city, so if you are living in Dubai that means you are enjoying your life very well.",
+        "On the other hand, it is also necessary for good living that you have good earning source and many amounts of money that you spend to fulfill your desires. So, if you are looking for such an opportunity to maximize your earning then you should invest your money in a good thing that gives you a good amount in return.",
+        "This era has been digitalized, everything has become advance. So, cryptocurrencies are considered a good source of earning; you can earn much by investing in them. There are some options that you can select for you that suit you best.",
+        "Whatever option suits you, you can opt for it. But here we are going to discuss the first option that is buying bitcoins. Yes if you are in Dubai and want to buy bitcoins and for it, you are searching the easiest way so you cannot face complex procedures then it is the right place for you as we are going to tell you about a platform where you can buy Bitcoin most easily in Dubai. Pallapay is an OTC platform that offers you a secure and authentic place to buy your bitcoin most easily. You have to just follow some simple steps and you will easily buy bitcoins as much as you want using cash or cards.",
+        "The whole process is very easy and not requires you much time, it will take just 5 minutes maybe less for the completion of this process.",
+        "Pallapay is a reliable OTC platform for all cryptocurrencies that you can sell, buy, and trade through it. It has so many features that are good and friendly to its customers."
+      ],
+      "list": [
+        "You can buy bitcoin",
+        "You can sell bitcoin",
+        "Or you can trade on it"
+      ]
     }
   },
   "mobileApps": {
@@ -550,16 +675,1174 @@
     "heroTitle": "Pallapay Dashboard",
     "heroDesc": "Manage all your crypto payments in one place."
   },
-  "allSolutions": {
-    "heroTitle": "All Solutions",
-    "heroDesc": "Explore all payment solutions offered by Pallapay."
+  "allSolutionsPage": {
+    "heroTitle": "Accept Crypto Payments for Any Business with Pallapay",
+    "heroDesc": "Pallapay provides fast, secure crypto payment solutions for businesses of all sizes. Accept cryptocurrency payments online or in-store with zero merchant fees on transactions and seamless integration.",
+    "createAccount": "Create Account",
+    "contactUs": "Contact Us",
+    "learnMore": "Learn More",
+    "gaming": {
+      "title": "Gaming",
+      "desc": "Power your gaming platform with Pallapay. accept cryptocurrency for in-game purchases, subscriptions, boost player engagement, and expand your reach."
+    },
+    "casinos": {
+      "title": "Casinos",
+      "desc": "Accept crypto payments at your casino with Pallapay. whether online or in-person, offer secure deposits and withdrawals with ease."
+    },
+    "hotels": {
+      "title": "Hotels",
+      "desc": "Enhance your hotel experience with Pallapay. accept cryptocurrency for reservations, check-ins, dining, and more. Offer guests fast, secure, and flexible crypto payment options that set your property apart."
+    },
+    "tradingPlatforms": {
+      "title": "Trading Platforms",
+      "desc": "Power your trading platform with Pallapay. accept cryptocurrency payments and deposits instantly, securely, and without complications. Give your users the speed and confidence they need to trade without limits."
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "desc": "Power your online store with Pallapay. accept crypto payments easily by integrating our API and offer your customers a seamless, secure, and modern checkout experience."
+    },
+    "retailSector": {
+      "title": "Retail Sector",
+      "desc": "Bring crypto to your retail store with Pallapay. accept cryptocurrency at your point of sale with secure, real-time transactions."
+    }
+  },
+  "buyBitcoinInDubai": {
+    "heroTitle": "Buy Bitcoin in Dubai United Arab Emirates",
+    "buyOnline": "Buy online now",
+    "visitOffice": "Visit our office",
+    "whatsapp": "WhatsApp",
+    "introPara": "We all know that bitcoin is the most popular cryptocurrency now in the world even in Dubai. Some people make trading and invest on the particular cryptocurrency coins. Other people won’t know what is bitcoin? Most of the traders, and investors are looking for trading company that they can buy bitcoin.",
+    "whyBuyTitle": "Why you should buy bitcoin in the trustable exchange?",
+    "whyBuySubtitle": "I will give you some reason on how cryptocurrency exchange works for trader and investor.",
+    "whyBuyItems": [
+      "First, if you purchase on the exchange you will guarantee that you receive the bitcoin on your wallet upon leaving the shop.",
+      "Bitcoin is always changing rate very fast, using exchange you can assure that the rate is totally inform you without hidden charges.",
+      "Imagine you can buy what amount you want, with asking the teller for rate for the day.",
+      "Exchange can help you if there is some minor issue that you encountered, they can guide you what you need to do.",
+      "Apart from that you can see the people you are dealing. Having an assurance that your money will not be lost and the bitcoin you buy will confirm that come to your wallet."
+    ],
+    "howToBuyTitle": "How to Buy Bitcoin in Dubai?",
+    "howToBuyPara1": "For buying bitcoin in Dubai here is a different way using credit card, cash, bank transfer and remittance.",
+    "howToBuyPara2": "There is one exchange that can helps you to buy bitcoin easily and secured.",
+    "howToBuyPara3": "Pallapay is an exchange for buying bitcoin and others cryptocurrency that you can mostly trust. They are the first exchange in Dubai that operate with cash. They have 3 ways how you can deal with them that you probably no hesitation, feel secure and have peace of mind.",
+    "howToBuyList": [
+      "Come to Pallapay shop in Marasi Dr - Business Bay and exchange cash to bitcoin.",
+      "Do Bitcoin trading with cash",
+      "If you want to Bitcoin trading with credit card, you can visit"
+    ]
+  },
+  "turkeyPage": {
+    "hero": {
+      "buy": "Buy",
+      "sell": "Sell",
+      "bestPlace": "Pallapay is the best place to {purpose} {crypto} and other Cryptocurrency with cash instantly.",
+      "bestPlaceUsdt": "Pallapay is the best place to buy and sell USDT and other cryptocurrencies instantly. You can now trade in a fast, easy, and secure way with Pallapay.",
+      "with": "with",
+      "andGet": "and Get",
+      "buyOnline": "Buy online now",
+      "visitOffice": "Visit our office",
+      "istanbul": "Istanbul"
+    },
+    "info": {
+      "title": "Trusted Cryptocurrency Exchange in Istanbul, Turkey",
+      "desc1": "Pallapay is a leading cryptocurrency exchange in Istanbul, providing secure and fast services for buying and selling Bitcoin, Ethereum, USDT, and other digital assets.",
+      "desc2": "Our office in Istanbul offers a safe environment for your transactions with competitive rates and instant processing.",
+      "whyBuyTitle": "Why you should {purpose} Bitcoin on a trusted exchange?",
+      "whyBuySubtitle": "We will give you some reason on how cryptocurrency exchange works for trader and investor.",
+      "whyBuyItems": [
+        "First, if you purchase on the exchange you will guarantee that you receive the bitcoin on your wallet upon leaving the shop.",
+        "Bitcoin is always changing rate very fast, using exchange you can assure that the rate is totally inform you without hidden charges.",
+        "Imagine you can buy what amount you want, with asking the teller for rate for the day.",
+        "Exchange can help you if there is some minor issue that you encountered, they can guide you what you need to do.",
+        "Apart from that you can see the people you are dealing. Having an assurance that your money will not be lost and the bitcoin you buy will confirm that come to your wallet."
+      ],
+      "officeIstanbul": "Pallapay's office in Istanbul",
+      "bottomDesc": "{purpose} Bitcoin, Tether (USDT), and over 50 Cryptos in Istanbul Turkey in The Best and Licensed Cryptocurrency Exchange in market Using Cash or Card easily and securely with Pallapay."
+    },
+    "howToBuy": {
+      "title": "How to {purpose} {crypto} in Istanbul?",
+      "steps": {
+        "visit": {
+          "title": "Visit our branch in Istanbul",
+          "desc": "Calculate the best exchange rate for your {crypto}."
+        },
+        "pay": {
+          "title": "Pay For {crypto}",
+          "desc": "Make payment via cash, card or bank transfer."
+        },
+        "get": {
+          "title": "Get Your {crypto}",
+          "desc": "You will receive your {crypto} at the same time after payment completed."
+        },
+        "transfer": {
+          "title": "Transfer {crypto}",
+          "desc": "Transfer your {crypto} using our automated system."
+        },
+        "getCash": {
+          "title": "Get Your Cash",
+          "desc": "Get your payment via the chosen method."
+        }
+      },
+      "livePricesTitle": "Live Top Crypto Prices",
+      "livePricesDesc": "Track the market with real-time price updates",
+      "stepIntoTitle": "Step Into the Crypto World",
+      "stepIntoDesc": "Open a free account today and benefit from 0% commission on your first trade. Account opening process takes only 15 minutes!",
+      "visitOffice": "Visit our office",
+      "faq": "Frequently Asked Questions",
+      "features": {
+        "noCard": "No credit card required",
+        "support": "24/7 support",
+        "quickOpen": "Open account in 15 minutes"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "about": "FAQ about",
+      "ing": "ing",
+      "inPallapay": "in PallaPay",
+      "istanbul": "Istanbul",
+      "didntFind": "Didn't find the answer to your question?",
+      "contactSupport": "Contact Our Support Team",
+      "items": [
+        {
+          "question": "How do I buy Bitcoin from your office?",
+          "answer": "To buy Bitcoin at our Istanbul office, simply visit us with a valid ID. Our team will guide you through the process, calculate the current exchange rate, and help you complete the transaction via cash or bank transfer instantly."
+        },
+        {
+          "question": "Do I need my own Bitcoin wallet?",
+          "answer": "Yes, you should have a personal Bitcoin wallet ready to receive your funds. If you don't have one yet, our staff can recommend secure mobile or hardware wallet options and help you set it up during your visit."
+        },
+        {
+          "question": "Is it safe to trade with you?",
+          "answer": "Absolutely. We operate in full compliance with local regulations and MASAK requirements. Our office provides a secure, transparent environment for all high-volume and retail crypto transactions."
+        },
+        {
+          "question": "Do you offer large volume (wholesale) OTC deals?",
+          "answer": "Yes, we specialize in high-volume Over-The-Counter (OTC) trades. For large transactions, we provide competitive personalized rates and a private trading desk to ensure speed, security, and discretion."
+        },
+        {
+          "question": "Do you provide transaction receipts?",
+          "answer": "Yes, we provide official transaction receipts for every trade. You will receive a digital or physical confirmation detailing the amount, exchange rate, and transaction ID for your records."
+        },
+        {
+          "question": "Do you offer other cryptocurrencies?",
+          "answer": "While Bitcoin is our primary focus, we also support Ethereum (ETH), USDT, and other major cryptocurrencies. Please contact us or check in-office for the full list of currently available digital assets."
+        },
+        {
+          "question": "Where I can go for additional help or questions?",
+          "answer": "You can reach out to our 24/7 support team via WhatsApp, Telegram, or phone. Alternatively, you are always welcome to visit our Istanbul branch for face-to-face assistance with any queries."
+        }
+      ]
+    },
+    "easiestWay": {
+      "title": "The Easiest Way to {purpose} {crypto} in Istanbul, Turkey",
+      "para1": "Istanbul is a city where East meets West, blending rich history with modern living. From the stunning Hagia Sophia to the vibrant Grand Bazaar, the city offers a colorful life style that attracts millions of visitors and residents alike. Living in Istanbul means enjoying culture, business opportunities, and a dynamic economy.",
+      "para2": "To maintain a comfortable lifestyle in such a vibrant city, having a strong source of income is essential. Many people today look for smart investment opportunities to grow their wealth. In this digital era, cryptocurrencies have become one of the most popular investment options worldwide.",
+      "opportunities": "Cryptocurrency offers several opportunities:",
+      "buy": "You can buy {crypto}",
+      "sell": "You can sell {crypto}",
+      "trade": "You can trade {crypto}",
+      "firstStep": "Among these options, buying {crypto} is often the first step for many investors.",
+      "subTitle": "{purpose}ing {crypto} in Istanbul",
+      "para3": "If you are in Istanbul and looking for the easiest way to {purpose} {crypto} without complicated procedures, choosing a reliable and secure platform is very important. A trusted OTC (Over-The-Counter) platform can provide a smooth and fast process for purchasing {crypto}.",
+      "para4": "One such platform is {pallapay}, which offers users a secure and straightforward way to {purpose} {crypto} and other cryptocurrencies.",
+      "disclaimer": "As always, before investing, make sure to understand the risks involved and choose a platform that prioritizes security and reliability."
+    },
+    "keyBenefits": {
+      "title": "Key Benefits",
+      "items": [
+        {
+          "title": "Sell USDT for USD cash or Turkish Lira",
+          "desc": "Flexible payment options to suit your needs"
+        },
+        {
+          "title": "Instant settlement in Istanbul",
+          "desc": "Get your cash immediately with no delays"
+        },
+        {
+          "title": "Competitive OTC exchange rates",
+          "desc": "Best rates in the market for your trades"
+        },
+        {
+          "title": "Safe and discreet crypto-to-cash transactions",
+          "desc": "Your privacy and security are our priority"
+        },
+        {
+          "title": "Support for both retail and high-volume trades",
+          "desc": "Perfect for individuals and businesses alike"
+        },
+        {
+          "title": "No hidden fees or commissions",
+          "desc": "Transparent pricing with what you see is what you get"
+        }
+      ]
+    },
+    "whyEthereum": {
+      "title": "Why you should {purpose} Ethereum in the trustable exchange?",
+      "section1Title": "1. Ethereum provides real-world applications",
+      "section1Desc": "Perhaps the key ingredient to Ethereum's success is its inclusion of smart contracts since its inception. Way back in 2013, Vitalik Buterin saw the importance of providing ways for a cryptocurrency network to execute transactions immediately upon some agreed-upon conditions being met. This functionality spurred a range of real-world applications that extend from finance to insurance, healthcare, and other large sectors waiting to be disrupted. Being an open-source, decentralized blockchain has its advantages for those holding ETH tokens. As Ethereum becomes the go-to platform upon which developers build dApps or crypto-focused projects, Ethereum's network effect grows. Accordingly, the utility Ethereum provides is real and tangible. Other cryptocurrencies struggle with this concept. While other cryptocurrencies do possess currency-like features, decentralized finance and the real-world applications that Ethereum has unlocked is a game changer in so many respects. The fact that Ethereum powers an incredible number of important, high-profile crypto projects right now leads investors to the idea that owning the basic building blocks of the cryptocurrency ecosystem is a good idea. Indeed, that's a hard concept to argue against.",
+      "section2Title": "2. Ethereum will be (more) green very shortly",
+      "section2Desc": "Perhaps one of the biggest arguments against cryptocurrency ownership or acceptance as of late is the sheer amount of energy required to power these blockchain networks. Even one of the most bullish influencers in the crypto world, Elon Musk, took to Twitter to push for change on this issue. Ethereum's rise as one of the earliest cryptocurrencies meant a proof-of-work crypto mining model was necessary. Miners, or those verifying transactions across the blockchain, needed to be rewarded for doing so. After all, there are costs to adding the computing power necessary to make a network to begin with. However, with the crypto world having seemingly evolved to near-ubiquitous status among investors, Ethereum looks to change its ways. The cryptocurrency network announced an Ethereum Improvement Proposal 3554 (or EIP-3554, for short) to switch to a proof-of-stake model. By allowing Ethereum users to stake their existing Ethereum tokens to verify transactions, a significant energy reduction is seen across the blockchain. Those who stake their tokens will be rewarded in a similar way (via more ETH tokens). However, the amount of energy consumed across the blockchain will drop dramatically, a good thing for those looking to make passive income from their holdings without putting up the capital for mining rigs and handling the ongoing power costs associated with mining. The total energy reduction across the Ethereum network is estimated by the Ethereum foundation to be roughly 99.95%. This move is expected to vastly improve the social costs of crypto mining (and indirectly, crypto ownership). Those looking to own a greener, leaner cryptocurrency may start shifting toward mega-cap Ethereum as the primary choice over Bitcoin for this reason alone.",
+      "section3Title": "3. Ethereum powers the NFT world",
+      "section3Desc": "Perhaps the biggest buzzword in the crypto world right now is NFT (non-fungible token). NFTs rose to popularity over the past year, due to the rapid rise in the valuations of these digital assets. Famously, a non-fungible token was sold earlier this year for a whopping $69 million. These sorts of price tags tend to invite speculators to the party quickly. As it happens, Ethereum powers some of the biggest and most well-known NFT marketplaces right now. Among these, opensea.io has seen incredible volume of late. NFT investors appear to like the flexibility of using Ethereum to trade their artwork. However, other cryptocurrencies such as Solana (SOL) are popping up as competitors in the race for NFT market share. Will Ethereum be able to crowd out the competition in these growing crypto markets? Time will tell. However, investors looking to bet on the biggest and most robust ecosystem certainly have their fair share of reasons to consider Ethereum right now."
+    },
+    "whyChoose": {
+      "title": "Why choose Pallapay?",
+      "items": [
+        {
+          "title": "Bank-Level Security",
+          "desc": "Your assets are protected with multi-layer security protocols and cold wallet storage."
+        },
+        {
+          "title": "Instant Transactions",
+          "desc": "Your crypto trades complete in 30 seconds. TRY transfers appear instantly in your account."
+        },
+        {
+          "title": "KYC & Compliance",
+          "desc": "Full compliance with Turkish regulations, MASAK approved and secure trading environment."
+        },
+        {
+          "title": "24/7 Live Support",
+          "desc": "Our expert team is always by your side. Instant help via WhatsApp, phone and live chat."
+        },
+        {
+          "title": "Low Commission",
+          "desc": "Industry's lowest transaction fees, 0.1% trading commission, free TRY withdrawals."
+        },
+        {
+          "title": "Fast Approval Process",
+          "desc": "Open account in 15 minutes, complete identity verification and start trading."
+        }
+      ]
+    }
   },
   "giftCard": {
-    "breadcrumbHome": "Home",
-    "breadcrumbGiftCard": "Gift Card"
+    "hero": {
+      "subtitle": "Enjoy The World of Crypto with",
+      "title": "Pallapay Crypto Gift Card",
+      "description": "Pallapay Gift Card offers a prepaid crypto option that can be used for multiple purposes such as transferring cryptocurrency and handling deposits or withdrawals."
+    },
+    "steps": {
+      "banner": "3 Simple Steps",
+      "title": "Effortless process",
+      "items": [
+        "Create a Pallapay Account",
+        "Buy a Crypto Card In-Store or Online",
+        "Convert, Spend, or Withdraw Your Way"
+      ]
+    },
+    "whatIs": {
+      "title": "What is the Pallapay Crypto Gift Card?",
+      "description": "Pallapay crypto gift-card is a multi-functional card that bridges the world of crypto and real-world purchases. Whether you’re looking to convert crypto to spendable funds or buy crypto conveniently, Pallapay makes it fast, secure, and easy.",
+      "checkpoints": [
+        "Convert to any cryptocurrency instantly",
+        "Convert to cash instantly",
+        "Shop where Pallapay is accepted"
+      ]
+    },
+    "features": {
+      "item1": {
+        "title": "Buy and Redeem Pallapay Crypto Gift Cards",
+        "description": "Purchase a Pallapay Crypto Gift Card with cash or card at Pallapay trusted partner locations. Redeem your balance instantly and get your cryptocurrency such as USDT, USDC, Bitcoin, Ethereum and more."
+      },
+      "item2": {
+        "title": "Gift Cryptocurrency with Pallapay Crypto Gift Card",
+        "description": "Send a Pallapay Crypto Gift Card to friends, family, or employees. They can spend, convert, or withdraw their crypto balance easily, making it the perfect way to gift digital currency."
+      },
+      "item3": {
+        "title": "Sell Any Cryptocurrency via Pallapay Crypto Gift Card",
+        "description": "Buy a Pallapay Gift card with any cryptocurrency such as USDT, USDC, Bitcoin, Ethereum and more. Sell your Gift Card at Pallapay trusted partner locations and get cash or bank transfer."
+      }
+    },
+    "withdrawFee": {
+      "title": "Withdraw With 0% Fee!",
+      "description": "When you buy a Pallapay Crypto Gift Card with cash, you can withdraw your balance in popular cryptocurrencies like USDT, USDC, Bitcoin, XRP, Solana, Ethereum and more with 0% Fee!"
+    },
+    "cryptoToCash": {
+      "title": "Crypto To Cash In a Simple Way",
+      "description": "Buy a Pallapay Crypto Gift Card with any cryptocurrency on your dashboard, then sell for cash at any Pallapay Trusted Partner or transfer directly to your bank account!",
+      "cashBtn": "Cash",
+      "bankTransferBtn": "Bank Transfer"
+    },
+    "partners": {
+      "title": "Trusted Partners",
+      "selectCountry": "Select Your Country",
+      "selectPlaceholder": "Select a country",
+      "countryDubai": "United Arab Emirates, Dubai",
+      "buyAndSellBtn": "Buy And Sell Gift Card",
+      "items": {
+        "partner1": {
+          "name": "PALLADIUM PAYMENT SERVICES",
+          "address": "Office P402, The Binary by Omniyat, Marasi Drive, Business Bay, Dubai",
+          "description": "Palladium Payment Services is a trusted Pallapay partner for buying and selling crypto gift cards."
+        },
+        "partner2": {
+          "name": "BITCARDI DISCOUNTED CARD SERVICES",
+          "address": "Shop 12, Baniyas Complex Building, Baniyas Square, Deira, Dubai",
+          "description": "Bitcardi Discounted Card Services is a trusted Pallapay partner for buying and selling crypto gift cards."
+        }
+      },
+      "tags": {
+        "online": "Online",
+        "cashAtBranch": "Cash At Branch",
+        "creditCard": "Credit Card Accepted",
+        "payUsing": "Pay Using",
+        "b2bSale": "B2B Sale"
+      }
+    },
+    "distributor": {
+      "title": "Become a Distributor!",
+      "description": "Join Pallapay as an official distributor of Prepaid Gift Cards and take advantage of the growing demand for flexible, digital payment solutions.",
+      "comingSoon": "Coming Soon !"
+    },
+    "faq": {
+      "title": "(FAQ)",
+      "seeMore": "See More",
+      "items": [
+        {
+          "question": "What is a Pallapay Crypto Gift Card?",
+          "answer": "Pallapay Prepaid gift card is a multi-functional card that bridges the world of crypto and real-world purchases. Whether you’re looking to convert crypto to spendable funds or buy crypto conveniently, Pallapay makes it fast, secure, and easy."
+        },
+        {
+          "question": "How can I buy a Pallapay Crypto Gift Card?",
+          "answer": "You can purchase a gift card directly from your Pallapay dashboard using any supported cryptocurrency or at any Pallapay trusted partner location using cash or card."
+        },
+        {
+          "question": "Can I sell my Pallapay Crypto Gift Card for cash?",
+          "answer": "Yes. You can sell your gift card at any Pallapay trusted partner location for cash or transfer the funds directly to your bank account."
+        },
+        {
+          "question": "Which cryptocurrencies can I use to buy a gift card?",
+          "answer": "Pallapay supports a wide range of cryptocurrencies, including USDT, USDC, Bitcoin (BTC), Ethereum (ETH), XRP, Solana (SOL), and more."
+        },
+        {
+          "question": "Is it safe to use a Pallapay Crypto Gift Card?",
+          "answer": "Yes. All transactions are secure, and your funds are protected. The gift card can only be used through Pallapay’s dashboard or authorized trusted partners."
+        },
+        {
+          "question": "Are there limits on how much I can load onto a gift card?",
+          "answer": "Limits may vary depending on your country’s regulations and Pallapay’s policies. Please check your dashboard or trusted partner location for the maximum load limits."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Benefits",
+      "items": [
+        "Lowest Fees",
+        "Multiple Crypto Support",
+        "Highest Security",
+        "Fiat Settlement"
+      ]
+    },
+    "globalUse": {
+      "title": "Global Use. Local Convenience.",
+      "description": "Whether you're in Dubai, Toronto, or anywhere in between, Pallapay gives you the power to manage your money across borders, without limits."
+    },
+    "alts": {
+      "prepaidCard": "Pallapay Crypto gift card",
+      "cardPack": "Pallapay Crypto gift card pack",
+      "withdrawalMobile": "Buy and redeeme Pallapay Crypto Gift Cards",
+      "coins": "Gift Cryptocurrency with Pallapay Crypto Gift Card",
+      "financialGrowth": "Sell Any Cryptocurrency via Pallapay Crypto Gift Card",
+      "yellowWallet": "Gift card wallet",
+      "heroTransfer": "Pallapay crypto gift card",
+      "moneyExchange": "Exchange cryptocurrencies in pallapay",
+      "globalUse": "Global Use of Pallapay"
+    }
+  },
+  "walletPage": {
+    "hero": {
+      "receive": "Receive",
+      "send": "Send",
+      "buy": "BUY",
+      "sell": "SELL"
+    },
+    "featuresList": [
+      "Buy & Sell Instantly",
+      "Send & Receive Widest Cryptocurrencies",
+      "Fund Your Crypto Wallet",
+      "Convert with Ease",
+      "All-in-One Wallet"
+    ],
+    "tabs": {
+      "send": "Send",
+      "fund": "Fund",
+      "gift": "Gift",
+      "convert": "Convert"
+    },
+    "sendContent": {
+      "title": "Experience the fastest and most secure way to manage your digital assets with Pallapay Wallet.",
+      "description": "Whether you want to buy, sell, convert, send, receive, or transfer funds directly to bank accounts, Pallapay gives you full control with seamless performance and powerful features:",
+      "list": [
+        "Instant Conversion: Swap between cryptocurrencies and fiat in seconds.",
+        "Fast & Secure Transactions: Built with advanced encryption and regulatory compliance.",
+        "Bank Transfers Made Easy: Withdraw or deposit directly to your local or international bank account.",
+        "Global Access: Use your wallet anytime, anywhere 24/7.",
+        "Cash Pickup & Local Settlement: Collect or send funds through Pallapay branches.",
+        "Multi-Currency Support: Manage Bitcoin, Ethereum, USDT, and other top cryptocurrencies in one simple app."
+      ],
+      "footer": "Empower your payments, trading, and transfers with the next generation of crypto-to-fiat technology.",
+      "bridge": "Pallapay bridging digital assets with real-world finance."
+    },
+    "fundContent": {
+      "title": "Add money to your Pallapay Wallet in the way that suits you best whether it’s crypto, cash, or direct bank transfer.",
+      "description": "Top up in seconds and keep your balance ready for trading, sending, or everyday payments.",
+      "list": [
+        "Multiple Funding Options: Deposit using crypto, credit/debit card, cash, or local bank transfer.",
+        "Instant Availability: Your funds appear in your wallet immediately after confirmation.",
+        "Global Access: Fund from anywhere — in AED, USD, EUR, or your preferred currency.",
+        "Fully Secure & Compliant: Every transaction is protected under strict verification and AML standards."
+      ],
+      "footer": "Keep your wallet powered always ready for the next transaction."
+    },
+    "giftContent": {
+      "title": "Share the power of crypto with anyone, anywhere instantly.",
+      "description": "With Pallapay, sending a digital gift is as easy as sending a message.",
+      "list": [
+        "Send Crypto as a Gift: Surprise friends, family, or clients with Bitcoin, USDT, or any supported coin.",
+        "Instant Delivery: Recipients receive their crypto gift in seconds, no wallet setup required.",
+        "Personalized Messages: Add a custom note to make your gift more meaningful.",
+        "Perfect for Any Occasion: Birthdays, rewards, promotions, or just to show appreciation."
+      ],
+      "footer": "Make your next gift smarter send it with Pallapay."
+    },
+    "convertContent": {
+      "title": "Exchange your digital assets with ease using Pallapay’s instant conversion feature.",
+      "description": "Switch between crypto and fiat anytime, fast, secure, and transparent.",
+      "list": [
+        "Real-Time Rates: Get live market prices with no hidden fees.",
+        "Crypto-to-Fiat & Fiat-to-Crypto: Convert in both directions effortlessly.",
+        "Multi-Currency Support: Swap between BTC, ETH, USDT, AED, USD, EUR, and more.",
+        "Instant Execution: Your funds are ready for withdrawal or reinvestment in seconds."
+      ],
+      "footer": "Seamlessly bridge the gap between digital and traditional finance with Pallapay."
+    },
+    "downloadTitle": "Download Pallapay Mobile Application"
+  },
+  "posMachinePage": {
+    "hero": {
+      "title": "Pallapay Crypto POS Machine",
+      "subtitle": "Accept cryptocurrency payments in your store using pallapay crypto pos machine and receive settlements in fiat, seamlessly and securely.",
+      "getStarted": "Get Started",
+      "features": {
+        "preConfigured": "Pre-conﬁgured POS Machine",
+        "contactless": "Contactless Payments",
+        "builtInPrinter": "Built-in Receipt Printer",
+        "userFriendlyApp": "Pre-installed and User-friendly App"
+      }
+    },
+    "intro": "Pallapay Crypto POS Machine is a powerful solution for physical, in-person transactions, enabling retail businesses to accept cryptocurrency payments with ease. Customers can pay using popular cryptocurrencies such as USDT, USDC, and Ethereum, while merchants receive settlements in fiat currencies like AED or USD, ensuring fast, secure, and convenient crypto payment processing at the point of sale.",
+    "supportedCrypto": "Supported Cryptocurrencies",
+    "andMore": "And More ...",
+    "blocks": {
+      "posDevice": {
+        "title": "Crypto POS Device",
+        "description": "Ready-to-use POS terminal featuring a pre-installed Pallapay App, built-in receipt printer, 2D scanner, and support for contactless crypto payments.",
+        "tooltips": {
+          "thermalPrinter": {
+            "title": "Built-in 58mm thermal printer",
+            "speed": "Print speed: 70mm/s",
+            "roll": "Paper roll: 40mm"
+          },
+          "scanner": {
+            "title": "Scanner",
+            "specs": "2D barcode scan engine"
+          },
+          "wifi": {
+            "title": "Wi-Fi",
+            "specs": "2.4GHz/5GHz"
+          },
+          "network": {
+            "title": "Network",
+            "specs": "2G & 3G & 4G"
+          },
+          "cpu": {
+            "title": "CPU",
+            "model": "Corte-A53",
+            "cores": "quad-core 1.4GHz"
+          },
+          "memory": {
+            "title": "Memory",
+            "specs": "2GB RAM+16GB ROM"
+          },
+          "nfc": {
+            "title": "NFC Card Reader",
+            "desc1": "Supports Type A&B card, Mifare card",
+            "desc2": "Felica card; ISO/ICE 14443 and ISO15693 compliant"
+          },
+          "dimensions": {
+            "title": "Physical Dimensions",
+            "screen": "Screen: 5.99\"HD+，1440*720",
+            "dims": "Dimensions: 215.2*83*17mm"
+          }
+        },
+        "talkToSales": "Talk to Sales"
+      },
+      "dashboard": {
+        "title": "Dashboard",
+        "description": "A user-friendly application that lets you manage transactions and balances in real time, making it simple and secure to accept cryptocurrency in your store, with zero risk of fraud."
+      },
+      "multiCrypto": {
+        "title": "Multiple Crypto Support",
+        "description": "Empower your clients to pay with a wide range of cryptocurrencies, including UDST, Ethereum, USDC, and more."
+      },
+      "fiatSettlement": {
+        "title": "Fiat Settlement",
+        "description": "With Pallapay, you don’t need to handle cryptocurrency directly, we manage the process for you. Accept crypto payments and receive secure fiat settlements in AED, USD, and more."
+      }
+    },
+    "instantSettlements": {
+      "title": "Instant Settlements",
+      "description": "We guarantee that when you sell an item and accept cryptocurrency with Pallapay, you’ll receive the full fiat amount instantly."
+    },
+    "howItWorks": "How Pallapay Crypto POS Machine Works",
+    "orderPos": {
+      "title": "Order Your Pallapay Crypto POS Machine",
+      "description": "Start accepting cryptocurrency payments with Pallapay crypto POS machine at your store effortlessly. No crypto knowledge needed—just enter the invoice amount in AED or USD, let your customer pay with popular cryptocurrencies like USDT, Ethereum, or USDC, and receive your fiat directly in your account.",
+      "talkToSales": "Talk to Sales"
+    }
   },
   "media": {
+    "yahooFinance": "Yahoo Finance",
+    "einPresswire": "EIN Presswire",
     "yahooContent": "Pallapay Establishes Itself as a Mega Company in Dubai Pallapay has positioned itself as a leading fintech force in the Middle East, officially establishing itself as a “Mega Company” in Dubai’s rapidly growing digital asset sector. Known for its innovative cryptocurrency payment solutions, Pallapay provides businesses and users with secure platforms for buying, selling, and ...",
     "einContent": "Pallapay has launched the world’s first crypto-to-fiat POS machine system in the UAE, allowing businesses to accept cryptocurrencies like Bitcoin, USDT, Ethereum, and more—while receiving settlements directly in AED, USD, EUR, or GBP. No crypto handling or technical knowledge required. The system handles the full conversion process, making it simple, secure, and seamless for merchants."
+  },
+  "sellBitcoinDubai": {
+    "hero": {
+      "title": "Sell Bitcoin in Dubai\nGet Cash or Bank Transfer",
+      "buyOnline": "Buy online now",
+      "visitOffice": "Visit our office"
+    },
+    "calculator": {
+      "title": "Calculate Sell Bitcoin to Cash"
+    },
+    "howItWorks": {
+      "title": "How to sell Bitcoin and Receive Cash in Dubai UAE?",
+      "steps": {
+        "visit": {
+          "title": "1. Visit Our Branch in Dubai",
+          "desc": "Calculate the best exchange rate for your Bitcoin."
+        },
+        "transfer": {
+          "title": "2. Transfer your Bitcoin",
+          "desc": "Transfer your Bitcoin using our automated system."
+        },
+        "get": {
+          "title": "3. Get your Cash",
+          "desc": "Get your payment via the chosen method."
+        }
+      }
+    },
+    "intro": {
+      "title": "What is Bitcoin and how does it work?",
+      "para1": "Bitcoin is a digital currency which operates free of any central control or the oversight of banks or governments. Instead it relies on peer-to-peer software and cryptography.",
+      "para2": "Bitcoin was created as a way for people to send money over the internet. The digital currency was intended to provide an alternative payment system that would operate free of central control but otherwise be used just like traditional currencies.",
+      "faqTitle": "Can bitcoin be converted to cash?",
+      "faqAnswer": "Yes Bitcoin can be exchanged for cash just like any other cryptocurrency in Pallapay branches in Dubai."
+    },
+    "bottom": {
+      "title": "Pallapay is the best place to sell Bitcoin and other Cryptocurrency and get cash instantly in Dubai UAE. You can now sell Bitcoin and other cryptocurrencies in a fast, easy, and secure way with Pallapay.",
+      "paraTitle": "Dubai is the city of luxury life",
+      "para1": "Dubai is the city of luxury life, here you can find beautiful places to see and visit. due to the colorful life of the city, people like to visit it. There are so many aspects of living a life in any city, so if you are living in Dubai that means you are enjoying your life very well.",
+      "para2": "On the other hand, it is also necessary for good living that you have good earning source and many amounts of money that you spend to fulfill your desires. So, if you are looking for such an opportunity to maximize your earning then you should invest your money in a good thing that gives you a good amount in return.",
+      "para3": "This era has been digitalized, everything has become advance. So, cryptocurrencies are considered a good source of earning; you can earn much by investing in them. There are some options that you can select for you that suit you best.",
+      "para4": "Whatever option suits you, you can opt for it. But here we are going to discuss the first option that is selling bitcoins. Yes if you are in Dubai and want to sell bitcoins and for it, you are searching the easiest way so you cannot face complex procedures then it is the right place for you as we are going to tell you about a platform where you can sell Bitcoin most easily in Dubai. Pallapay is an OTC platform that offers you a secure and authentic place to sell your bitcoin most easily. You have to just follow some simple steps and you will easily sell bitcoins as much as you want for cash or bank transfer.",
+      "para5": "The whole process is very easy and not requires you much time, it will take just 5 minutes maybe less for the completion of this process.",
+      "para6": "Pallapay is a reliable OTC platform for all cryptocurrencies that you can sell, buy, and trade through it. It has so many features that are good and friendly to its customers.",
+      "list": {
+        "buy": "You can buy bitcoin",
+        "sell": "You can sell bitcoin",
+        "trade": "Or you can trade on it"
+      }
+    },
+    "faq": {
+      "title": "FAQ about selling bitcoin in PallaPay Dubai",
+      "q1": "Where to sell bitcoin in Dubai?",
+      "a1": "You can sell bitcoin in Dubai at Pallapay. We have several branches located in key areas. For more details, visit our website or contact us.",
+      "q2": "Can I sell bitcoin for cash in Dubai?",
+      "a2": "Yes, you can sell bitcoin for cash in Dubai at any of our branches. The process is quick and secure.",
+      "q3": "Do I need an account to sell bitcoin?",
+      "a3": "Yes, you will need a verified PallaPay account to sell bitcoin. Registration and verification are fast and simple."
+    }
+  },
+  "buyEthereumDubai": {
+    "hero": {
+      "title": "Buy ETH (Ethereum) in Dubai\nGet Cash or Bank Transfer",
+      "buyOnline": "Buy online now",
+      "visitOffice": "Visit our office"
+    },
+    "calculator": {
+      "title": "Calculate ETH to Cash"
+    },
+    "howItWorks": {
+      "title": "How to buy Ethereum (ETH) with cash in dubai UAE?",
+      "steps": {
+        "visit": {
+          "title": "1. Visit Our Branch in Dubai",
+          "desc": "Calculate the best exchange rate for your ETH."
+        },
+        "pay": {
+          "title": "2. Pay For The ETH",
+          "desc": "Make payment via cash, card or bank transfer."
+        },
+        "get": {
+          "title": "3. Get Your ETH",
+          "desc": "Get your ETH (Ethereum)."
+        }
+      }
+    },
+    "reasons": {
+      "title": "3 Reasons to Buy Ethereum",
+      "r1": {
+        "title": "1. Ethereum provides real-world applications",
+        "desc": "Perhaps the key ingredient to Ethereum's success is its inclusion of smart contracts since its inception . Way back in 2013, Vitalik Buterin saw the importance of providing ways for a cryptocurrency network to execute transactions immediately upon some agreed-upon conditions being met. This functionality spurred a range of real-world applications that extend from finance to insurance, healthcare, and other large sectors waiting to be disrupted. Being an open-source, decentralized blockchain has its advantages for those holding ETH tokens. As Ethereum becomes the go-to platform upon which developers build dApps or crypto-focused projects, Ethereum's network effect grows. Accordingly, the utility Ethereum provides is real and tangible. Other cryptocurrencies struggle with this concept. While other cryptocurrencies do possess currency-like features, decentralized finance and the real-world applications that Ethereum has unlocked is a game changer in so many respects. The fact that Ethereum powers an incredible number of important, high-profile crypto projects right now leads investors to the idea that owning the basic building blocks of the cryptocurrency ecosystem is a good idea. Indeed, that's a hard concept to argue against."
+      },
+      "r2": {
+        "title": "2. Ethereum will be (more) green very shortly",
+        "desc": "Perhaps one of the biggest arguments against cryptocurrency ownership or acceptance as of late is the sheer amount of energy required to power these blockchain networks. Even one of the most bullish influencers in the crypto world, Elon Musk, took to Twitter to push for change on this issue. Ethereum's rise as one of the earliest cryptocurrencies meant a proof-of-work crypto mining model was necessary. Miners, or those verifying transactions across the blockchain, needed to be rewarded for doing so. After all, there are costs to adding the computing power necessary to make a network to begin with. However, with the crypto world having seemingly evolved to near-ubiquitous status among investors, Ethereum looks to change its ways. The cryptocurrency network announced an Ethereum Improvement Proposal 3554 (or EIP-3554, for short) to switch to a proof-of-stake model. By allowing Ethereum users to stake their existing Ethereum tokens to verify transactions, a significant energy reduction is seen across the blockchain. Those who stake their tokens will be rewarded in a similar way (via more ETH tokens). However, the amount of energy consumed across the blockchain will drop dramatically, a good thing for those looking to make passive income from their holdings without putting up the capital for mining rigs and handling the ongoing power costs associated with mining. The total energy reduction across the Ethereum network is estimated by the Ethereum foundation to be roughly 99.95%. This move is expected to vastly improve the social costs of crypto mining (and indirectly, crypto ownership). Those looking to own a greener, leaner cryptocurrency may start shifting toward mega-cap Ethereum as the primary choice over Bitcoin for this reason alone."
+      },
+      "r3": {
+        "title": "3. Ethereum powers the NFT world",
+        "desc": "Perhaps the biggest buzzword in the crypto world right now is NFT (non-fungible token). NFTs rose to popularity over the past year, due to the rapid rise in the valuations of these digital assets. Famously, a non-fungible token was sold earlier this year for a whopping $69 million. These sorts of price tags tend to invite speculators to the party quickly. As it happens, Ethereum powers some of the biggest and most well-known NFT marketplaces right now. Among these, opensea.io has seen incredible volume of late. NFT investors appear to like the flexibility of using Ethereum to trade their artwork. However, other cryptocurrencies such as Solana (SOL -10.60%) are popping up as competitors in the race for NFT market share. Will Ethereum be able to crowd out the competition in these growing crypto markets? Time will tell. However, investors looking to bet on the biggest and most robust ecosystem certainly have their fair share of reasons to consider Ethereum right now."
+      }
+    },
+    "bottom": "Pallapay is the best place to buy Ethereum (ETH) and other Cryptocurrency with cash instantly.",
+    "faq": {
+      "title": "FAQ about buying ETH (Ethereum) in PallaPay Dubai",
+      "items": {
+        "item1": {
+          "q": "This is my first time. Can you help me?",
+          "a": "Yes, of course. Visit our office, and our employees will be happy to assist you with your transaction."
+        },
+        "item2": {
+          "q": "What is the min/max amount that I can buy?",
+          "a": "Our Minimum Transaction Amount is 1 ETH and Maximum 4M ETH Per Person Per Day"
+        },
+        "item3": {
+          "q": "How long does it take to buy Ethereum in PallaPay Dubai?",
+          "a": "The exchange takes around 5 to 10 minutes. We want our service to be convenient, and we try to take care of your needs as quickly as possible."
+        },
+        "item4": {
+          "q": "What are the opening and closing hours of the Dubai office?",
+          "a": "Monday to Saturday 10 A.M. to 7 P.M., Sunday closed."
+        },
+        "item5": {
+          "q": "How many branches do you have in Dubai?",
+          "a": "We have Few Branches in Dubai. But The Most convenient Branch is Located at Marasi Drive Business Bay P4 Floor Office P401 and P402 The Binary By Omniyat - Dubai - UAE"
+        },
+        "item6": {
+          "q": "Can I Pay USD or Euro Instead of AED?",
+          "a": "Yes You Can Pay Via USD or Euro :)"
+        },
+        "item7": {
+          "q": "Do you have an app?",
+          "a": "Yes We Do Have an App, You Can Download From Apple Store Or Google Play."
+        },
+        "item8": {
+          "q": "Do you provide receipt when i buy my eth in your Dubai store?",
+          "a": "Yes we do provide an official receipt for any transaction."
+        }
+      }
+    }
+  },
+  "sellEthereumDubai": {
+    "hero": {
+      "title": "Sell ETH (Ethereum) in Dubai\nGet Cash or Bank Transfer",
+      "buyOnline": "Buy online now",
+      "visitOffice": "Visit our office"
+    },
+    "calculator": {
+      "title": "Calculate ETH to Cash"
+    },
+    "howItWorks": {
+      "title": "How to sell Ethereum (ETH) and Receive Cash in Dubai UAE?",
+      "steps": {
+        "visit": {
+          "title": "1. Visit Our Branch in Dubai",
+          "desc": "Calculate the best exchange rate for your ETH."
+        },
+        "transfer": {
+          "title": "2. Transfer ETH",
+          "desc": "Transfer your ETH using our automated system."
+        },
+        "get": {
+          "title": "3. Get Cash",
+          "desc": "Get your payment via the chosen method."
+        }
+      }
+    },
+    "intro": {
+      "title": "What is (Ethereum) ETH?",
+      "desc": "Ethereum is a decentralized, open-source blockchain with smart contract functionality. Ether (ETH or Ξ) is the native cryptocurrency of the platform."
+    },
+    "bottom": "Pallapay is the best place to sell Ethereum (ETH) and other Cryptocurrency and get cash instantly in Dubai UAE. Pallapay is an international brand providing cryptocurrency exchange services. Currently, it operates in four (4) different countries and major cities: Dubai, USA, Singapore, and Istanbul. Since 2015, thousands of people have relied on Pallapay to exchange their cryptocurrencies for cash and vice versa.",
+    "faq": {
+      "title": "FAQ about selling ETH (Ethereum) in PallaPay Dubai",
+      "items": {
+        "item1": {
+          "q": "This is my first time. Can you help me?",
+          "a": "Yes, of course. Visit our office, and our employees will be happy to assist you with your transaction."
+        },
+        "item2": {
+          "q": "What is the min/max amount that I can sell?",
+          "a": "Our Minimum Transaction Amount is 1 ETH and Maximum 4M ETH Per Person Per Day"
+        },
+        "item3": {
+          "q": "How long does it take to sell Ethereum in PallaPay Dubai?",
+          "a": "The exchange takes around 5 to 10 minutes. We want our service to be convenient, and we try to take care of your needs as quickly as possible."
+        },
+        "item4": {
+          "q": "What are the opening and closing hours of the Dubai office?",
+          "a": "Monday to Saturday 10 A.M. to 7 P.M., Sunday closed."
+        },
+        "item5": {
+          "q": "How many branches do you have in Dubai?",
+          "a": "We have Few Branches in Dubai. But The Most convenient Branch is Located at Marasi Drive Business Bay P4 Floor Office P401 and P402 The Binary By Omniyat - Dubai - UAE"
+        },
+        "item6": {
+          "q": "Can I Get USD or Euro Instead of AED?",
+          "a": "Yes We Can Pay You Via USD or Euro :)"
+        },
+        "item7": {
+          "q": "Can I sell ETH online?",
+          "a": "Yes You Can Sell Online And Get Cash Or Bank Transfer By Visiting The Sell Page, Also Available on Our OTC (Over the Counter) exchange."
+        },
+        "item8": {
+          "q": "Can I send ETH to another person with cash in PallaPay?",
+          "a": "Providing your ID, you can send crypto coins with cash to another person."
+        },
+        "item9": {
+          "q": "Do you have an app?",
+          "a": "Yes We Do Have an App, You Can Download From Apple Store Or Google Play."
+        },
+        "item10": {
+          "q": "Do you provide receipt when i sell my eth in your Dubai store?",
+          "a": "Yes we do provide an official receipt for any transaction."
+        }
+      }
+    }
+  },
+  "buyUsdtDubai": {
+    "hero": {
+      "title": "Buy USDT (Tether) in Dubai\nGet Cash or Bank Transfer",
+      "buyOnline": "Buy online now",
+      "visitOffice": "Visit our office"
+    },
+    "calculator": {
+      "title": "Calculate USDT to Cash"
+    },
+    "howItWorks": {
+      "title": "How to buy USDT (Tether) with cash in dubai UAE?",
+      "steps": {
+        "visit": {
+          "title": "1. Visit Our Branch in Dubai",
+          "desc": "Calculate the best exchange rate for your USDT."
+        },
+        "pay": {
+          "title": "2. Pay For The USDT",
+          "desc": "Make payment via cash, card or bank transfer."
+        },
+        "get": {
+          "title": "3. Get Your USDT",
+          "desc": "Get your USDT (Tether)."
+        }
+      }
+    },
+    "intro": {
+      "title": "What is (Tether) USDT?",
+      "desc": "Tether (USDT) is a stablecoin, a type of cryptocurrency which aims to keep cryptocurrency valuations stable. Tether is used by crypto Traders and investors who want to avoid the extreme volatility of other cryptocurrencies while keeping value within the crypto market and it can easily transferable to other cryptocurrencies."
+    },
+    "bottom": "Pallapay is the best place to buy USDT and other Cryptocurrency with cash instantly.",
+    "faq": {
+      "title": "FAQ about buying USDT (Tether) in PallaPay Dubai",
+      "items": {
+        "item1": {
+          "q": "This is my first time. Can you help me?",
+          "a": "Yes, of course. Visit our office, and our employees will be happy to assist you with your transaction."
+        },
+        "item2": {
+          "q": "What is the min/max amount that I can buy?",
+          "a": "Our Minimum Transaction Amount is 1000 USDT and Maximum 4M USDT Per Person Per Day"
+        },
+        "item3": {
+          "q": "How long does it take to buy Tether in PallaPay Dubai?",
+          "a": "The exchange takes around 5 to 10 minutes. We want our service to be convenient, and we try to take care of your needs as quickly as possible."
+        },
+        "item4": {
+          "q": "What are the opening and closing hours of the Dubai office?",
+          "a": "Monday to Saturday 10 A.M. to 7 P.M., Sunday closed."
+        },
+        "item5": {
+          "q": "How many branches do you have in Dubai?",
+          "a": "We have Few Branches in Dubai. But The Most convenient Branch is Located at Marasi Drive Business Bay P4 Floor Office P401 and P402 The Binary By Omniyat - Dubai - UAE"
+        },
+        "item6": {
+          "q": "Can I Pay USD or Euro Instead of AED?",
+          "a": "Yes You Can Pay Via USD or Euro :)"
+        },
+        "item7": {
+          "q": "Do you have an app?",
+          "a": "Yes We Do Have an App, You Can Download From Apple Store Or Google Play."
+        },
+        "item8": {
+          "q": "Do you provide receipt when i buy my usdt in your Dubai store?",
+          "a": "Yes we do provide an official receipt for any transaction."
+        }
+      }
+    }
+  },
+  "sellUsdtDubai": {
+    "hero": {
+      "title": "Sell USDT (Tether) in Dubai\nGet Cash or Bank Transfer",
+      "buyOnline": "Buy online now",
+      "visitOffice": "Visit our office"
+    },
+    "calculator": {
+      "title": "Calculate USDT to Cash"
+    },
+    "howItWorks": {
+      "title": "How to sell USDT (Tether) and Receive Cash in Dubai UAE?",
+      "steps": {
+        "visit": {
+          "title": "1. Visit Our Branch in Dubai",
+          "desc": "Calculate the best exchange rate for your USDT."
+        },
+        "transfer": {
+          "title": "2. Transfer USDT",
+          "desc": "Transfer your usdt using our automated system."
+        },
+        "get": {
+          "title": "3. Get Cash",
+          "desc": "Get your payment via the chosen method."
+        }
+      }
+    },
+    "intro": {
+      "title": "What is (Tether) USDT?",
+      "desc": "Tether (USDT) is a stablecoin, a type of cryptocurrency which aims to keep cryptocurrency valuations stable. Tether is used by crypto Traders and investors who want to avoid the extreme volatility of other cryptocurrencies while keeping value within the crypto market and it can easily transferable to other cryptocurrencies."
+    },
+    "bottom": "Pallapay is the best place to sell USDT and other Cryptocurrency and get cash instantly in Dubai UAE. Pallapay is an international brand providing cryptocurrency exchange services. Currently, it operates in four (4) different countries and major cities: Dubai, USA, Singapore, and Istanbul. Since 2015, thousands of people have relied on Pallapay to exchange their cryptocurrencies for cash and vice versa.",
+    "faq": {
+      "title": "FAQ about selling USDT (Tether) in PallaPay Dubai",
+      "items": {
+        "item1": {
+          "q": "This is my first time. Can you help me?",
+          "a": "Yes, of course. Visit our office, and our employees will be happy to assist you with your transaction."
+        },
+        "item2": {
+          "q": "What is the min/max amount that I can sell?",
+          "a": "Our Minimum Transaction Amount is 1000 USDT and Maximum 4M USDT Per Person Per Day"
+        },
+        "item3": {
+          "q": "How long does it take to sell Tether in PallaPay Dubai?",
+          "a": "The exchange takes around 5 to 10 minutes. We want our service to be convenient, and we try to take care of your needs as quickly as possible."
+        },
+        "item4": {
+          "q": "What are the opening and closing hours of the Dubai office?",
+          "a": "Monday to Saturday 10 A.M. to 7 P.M., Sunday closed."
+        },
+        "item5": {
+          "q": "How many branches do you have in Dubai?",
+          "a": "We have Few Branches in Dubai. But The Most convenient Branch is Located at Marasi Drive Business Bay P4 Floor Office P401 and P402 The Binary By Omniyat - Dubai - UAE"
+        },
+        "item6": {
+          "q": "Can I Get USD or Euro Instead of AED?",
+          "a": "Yes We Can Pay You Via USD or Euro :)"
+        },
+        "item7": {
+          "q": "Can I sell Tether (USDT) online?",
+          "a": "Yes You Can Sell Online And Get Cash Or Bank Transfer By Visiting The Sell Page, Also Available on Our OTC (Over the Counter) exchange."
+        },
+        "item8": {
+          "q": "Can I send Tether (USDT) to another person with cash in PallaPay?",
+          "a": "Providing your ID, you can send crypto coins with cash to another person."
+        },
+        "item9": {
+          "q": "Do you have an app?",
+          "a": "Yes We Do Have an App, You Can Download From Apple Store Or Google Play."
+        },
+        "item10": {
+          "q": "Do you provide receipt when i sell my usdt in your Dubai store?",
+          "a": "Yes we do provide an official receipt for any transaction."
+        }
+      }
+    }
+  },
+  "sellShibaDubai": {
+    "hero": {
+      "title": "Sell Shiba Inu in Dubai\nGet Cash or Bank Transfer",
+      "buyOnline": "Buy online now",
+      "visitOffice": "Visit our office"
+    },
+    "calculator": {
+      "title": "Calculate Shiba to Cash"
+    },
+    "howItWorks": {
+      "title": "How to sell Shiba Inu and Receive Cash in Dubai UAE?",
+      "steps": {
+        "visit": {
+          "title": "1. Visit Our Branch in Dubai",
+          "desc": "Calculate the best exchange rate for your Shiba Iinu."
+        },
+        "transfer": {
+          "title": "2. Transfer Shiba Inu",
+          "desc": "Transfer your shiba inu using our automated system."
+        },
+        "get": {
+          "title": "3. Get Cash",
+          "desc": "Get your payment via the chosen method."
+        }
+      }
+    },
+    "intro": {
+      "title": "What is SHIBA INU Coin?",
+      "desc": "Shiba Inu (SHIB) is a token that aspires to be an Ethereum-based alternative to Dogecoin (DOGE), the popular memecoin. Unlike Bitcoin, which is designed to be scarce, SHIB is intentionally abundant — with a total supply of one quadrillion. The Shiba Inu Token ecosystem supports projects such as an NFT art incubator and the development of a decentralized exchange called Shibaswap."
+    },
+    "bottom": "Pallapay is the best place to sell Shiba Inu and other Cryptocurrency and get cash instantly in Dubai UAE. Pallapay is an international brand providing cryptocurrency exchange services. Currently, it operates in four (4) different countries and major cities: Dubai, USA, Singapore, and Istanbul. Since 2015, thousands of people have relied on Pallapay to exchange their cryptocurrencies for cash and vice versa.",
+    "faq": {
+      "title": "FAQ about selling shiba inu in PallaPay Dubai",
+      "items": {
+        "item1": {
+          "q": "This is my first time. Can you help me?",
+          "a": "Yes, of course. Visit our office, and our employees will be happy to assist you with your transaction."
+        },
+        "item2": {
+          "q": "What is the min/max amount that I can sell?",
+          "a": "Our Minimum Transaction Amount is 1000 Shiba and Maximum 4M Shiba Per Person Per Day"
+        },
+        "item3": {
+          "q": "How long does it take to sell Shiba Inu in PallaPay Dubai?",
+          "a": "The exchange takes around 5 to 10 minutes. We want our service to be convenient, and we try to take care of your needs as quickly as possible."
+        },
+        "item4": {
+          "q": "What are the opening and closing hours of the Dubai office?",
+          "a": "Monday to Saturday 10 A.M. to 7 P.M., Sunday closed."
+        },
+        "item5": {
+          "q": "How many branches do you have in Dubai?",
+          "a": "We have Few Branches in Dubai. But The Most convenient Branch is Located at Marasi Drive Business Bay P4 Floor Office P401 and P402 The Binary By Omniyat - Dubai - UAE"
+        },
+        "item6": {
+          "q": "Can I Get USD or Euro Instead of AED?",
+          "a": "Yes We Can Pay You Via USD or Euro :)"
+        },
+        "item7": {
+          "q": "Can I sell Shiba Inu online?",
+          "a": "Yes You Can Sell Online And Get Cash Or Bank Transfer By Visiting The Sell Page, Also Available on Our OTC (Over the Counter) exchange."
+        },
+        "item8": {
+          "q": "Can I send Shiba Inu to another person with cash in PallaPay?",
+          "a": "Providing your ID, you can send crypto coins with cash to another person."
+        },
+        "item9": {
+          "q": "Do you have an app?",
+          "a": "Yes We Do Have an App, You Can Download From Apple Store Or Google Play."
+        },
+        "item10": {
+          "q": "Do you provide receipt when i sell my Shiba Inu in your Dubai store?",
+          "a": "Yes we do provide an official receipt for any transaction."
+        }
+      }
+    }
+  },
+  "sellBnbDubai": {
+    "hero": {
+      "title": "Sell BNB in Dubai\nGet Cash or Bank Transfer",
+      "buyOnline": "Buy online now",
+      "visitOffice": "Visit our office"
+    },
+    "calculator": {
+      "title": "Calculate BNB to Cash"
+    },
+    "howItWorks": {
+      "title": "How to sell BNB and Receive Cash in Dubai UAE?",
+      "steps": {
+        "visit": {
+          "title": "1. Visit Our Branch in Dubai",
+          "desc": "Calculate the best exchange rate for your BNB."
+        },
+        "transfer": {
+          "title": "2. Transfer BNB",
+          "desc": "Transfer your bnb using our automated system."
+        },
+        "get": {
+          "title": "3. Get Cash",
+          "desc": "Get your payment via the chosen method."
+        }
+      }
+    },
+    "intro": {
+      "title": "What is (Binance Coin) BNB?",
+      "desc": "BNB is the cryptocurrency coin that powers the Binance ecosystem. As one of the world's most popular utility tokens, not only can you buy or sell BNB like any other cryptocurrency, but BNB also comes with a wide range of applications and benefits."
+    },
+    "bottom": "Pallapay is the best place to sell BNB and other Cryptocurrency and get cash instantly in Dubai UAE. Pallapay is an international brand providing cryptocurrency exchange services. Currently, it operates in four (4) different countries and major cities: Dubai, USA, Singapore, and Istanbul. Since 2015, thousands of people have relied on Pallapay to exchange their cryptocurrencies for cash and vice versa.",
+    "faq": {
+      "title": "FAQ about selling BNB in PallaPay Dubai",
+      "items": {
+        "item1": {
+          "q": "This is my first time. Can you help me?",
+          "a": "Yes, of course. Visit our office, and our employees will be happy to assist you with your transaction."
+        },
+        "item2": {
+          "q": "What is the min/max amount that I can sell?",
+          "a": "Our Minimum Transaction Amount is 1 BNB and Maximum 4M BNB Per Person Per Day"
+        },
+        "item3": {
+          "q": "How long does it take to sell BNB in PallaPay Dubai?",
+          "a": "The exchange takes around 5 to 10 minutes. We want our service to be convenient, and we try to take care of your needs as quickly as possible."
+        },
+        "item4": {
+          "q": "What are the opening and closing hours of the Dubai office?",
+          "a": "Monday to Saturday 10 A.M. to 7 P.M., Sunday closed."
+        },
+        "item5": {
+          "q": "How many branches do you have in Dubai?",
+          "a": "We have Few Branches in Dubai. But The Most convenient Branch is Located at Marasi Drive Business Bay P4 Floor Office P401 and P402 The Binary By Omniyat - Dubai - UAE"
+        },
+        "item6": {
+          "q": "Can I Get USD or Euro Instead of AED?",
+          "a": "Yes We Can Pay You Via USD or Euro :)"
+        },
+        "item7": {
+          "q": "Can I sell BNB online?",
+          "a": "Yes You Can Sell Online And Get Cash Or Bank Transfer By Visiting The Sell Page, Also Available on Our OTC (Over the Counter) exchange."
+        },
+        "item8": {
+          "q": "Can I send BNB to another person with cash in PallaPay?",
+          "a": "Providing your ID, you can send crypto coins with cash to another person."
+        },
+        "item9": {
+          "q": "Do you have an app?",
+          "a": "Yes We Do Have an App, You Can Download From Apple Store Or Google Play."
+        },
+        "item10": {
+          "q": "Do you provide receipt when i sell my BNB in your Dubai store?",
+          "a": "Yes we do provide an official receipt for any transaction."
+        }
+      }
+    }
+  },
+  "sellXrpDubai": {
+    "hero": {
+      "title": "Sell XRP (Ripple) in Dubai\nGet Cash or Bank Transfer",
+      "buyOnline": "Buy online now",
+      "visitOffice": "Visit our office"
+    },
+    "calculator": {
+      "title": "Calculate XRP to Cash"
+    },
+    "howItWorks": {
+      "title": "How to sell XRP (Ripple) and Receive Cash in Dubai UAE?",
+      "steps": {
+        "visit": {
+          "title": "1. Visit Our Branch in Dubai",
+          "desc": "Calculate the best exchange rate for your XRP."
+        },
+        "transfer": {
+          "title": "2. Transfer XRP",
+          "desc": "Transfer your xrp using our automated system."
+        },
+        "get": {
+          "title": "3. Get Cash",
+          "desc": "Get your payment via the chosen method."
+        }
+      }
+    },
+    "intro": {
+      "title": "What is (Ripple) XRP?",
+      "desc": "XRP is the currency that runs on a digital payment platform called RippleNet, which is on top of a distributed ledger database called XRP Ledger. While RippleNet is run by a company called Ripple, the XRP Ledger is open-source and is not based on blockchain, but rather the previously mentioned distributed ledger database."
+    },
+    "bottom": "Pallapay is the best place to sell XRP and other Cryptocurrency and get cash instantly in Dubai UAE. Pallapay is an international brand providing cryptocurrency exchange services. Currently, it operates in four (4) different countries and major cities: Dubai, USA, Singapore, and Istanbul. Since 2015, thousands of people have relied on Pallapay to exchange their cryptocurrencies for cash and vice versa.",
+    "faq": {
+      "title": "FAQ about selling XRP in PallaPay Dubai",
+      "items": {
+        "item1": {
+          "q": "This is my first time. Can you help me?",
+          "a": "Yes, of course. Visit our office, and our employees will be happy to assist you with your transaction."
+        },
+        "item2": {
+          "q": "What is the min/max amount that I can sell?",
+          "a": "Our Minimum Transaction Amount is 1000 XRP and Maximum 4M XRP Per Person Per Day"
+        },
+        "item3": {
+          "q": "How long does it take to sell XRP in PallaPay Dubai?",
+          "a": "The exchange takes around 5 to 10 minutes. We want our service to be convenient, and we try to take care of your needs as quickly as possible."
+        },
+        "item4": {
+          "q": "What are the opening and closing hours of the Dubai office?",
+          "a": "Monday to Saturday 10 A.M. to 7 P.M., Sunday closed."
+        },
+        "item5": {
+          "q": "How many branches do you have in Dubai?",
+          "a": "We have Few Branches in Dubai. But The Most convenient Branch is Located at Marasi Drive Business Bay P4 Floor Office P401 and P402 The Binary By Omniyat - Dubai - UAE"
+        },
+        "item6": {
+          "q": "Can I Get USD or Euro Instead of AED?",
+          "a": "Yes We Can Pay You Via USD or Euro :)"
+        },
+        "item7": {
+          "q": "Can I sell XRP online?",
+          "a": "Yes You Can Sell Online And Get Cash Or Bank Transfer By Visiting The Sell Page, Also Available on Our OTC (Over the Counter) exchange."
+        },
+        "item8": {
+          "q": "Can I send XRP to another person with cash in PallaPay?",
+          "a": "Providing your ID, you can send crypto coins with cash to another person."
+        },
+        "item9": {
+          "q": "Do you have an app?",
+          "a": "Yes We Do Have an App, You Can Download From Apple Store Or Google Play."
+        },
+        "item10": {
+          "q": "Do you provide receipt when i sell my XRP in your Dubai store?",
+          "a": "Yes we do provide an official receipt for any transaction."
+        }
+      }
+    }
+  },
+  "commonExchange": {
+    "features": {
+      "title": "Our Features",
+      "f1": {
+        "title": "We guarantee the best rate",
+        "desc": "we price match all local dealer competitors (including their online prices)."
+      },
+      "f2": {
+        "title": "Get your funds instantly",
+        "desc": "Payouts occur immediately after we receive your crypto"
+      },
+      "f3": {
+        "title": "Competitive fee structure",
+        "desc": "Check the fees you are expected to pay before a transaction"
+      },
+      "f4": {
+        "title": "Global support",
+        "desc": "Service available from nearly any country in the world"
+      },
+      "f5": {
+        "title": "$100,000 Insurance",
+        "desc": "Secure Checkout with coverage up to $100,000 Identity Protection."
+      },
+      "f6": {
+        "title": "Continuous support",
+        "desc": "Our support team stands ready to help you out"
+      }
+    },
+    "trust": {
+      "title": "Why people trust Pallapay",
+      "items": {
+        "i1": "No hidden fees",
+        "i2": "Verification in less than 5 minutes",
+        "i3": "Licenses Payment Service Providers",
+        "i4": "24/7/365 live customer support",
+        "i5": "40-person team with expertise and experience",
+        "i6": "More than $170,000,000 in annual transactions",
+        "i7": "Instant cryptocurrency payouts",
+        "i8": "Lowest fees on the market",
+        "i9": "Excellent option for beginners and pros",
+        "i10": "Serving 180+ countries"
+      }
+    }
   }
 }
+

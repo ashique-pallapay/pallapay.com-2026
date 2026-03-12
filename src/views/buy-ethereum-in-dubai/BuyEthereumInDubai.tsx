@@ -25,6 +25,8 @@ import {
 } from "@/components/ui/accordion";
 import { Calculator } from "@/components/calculator";
 
+import { useTranslations } from "next-intl";
+
 export function BuyEthereumInDubai({
   prices = {},
 }: {
@@ -40,6 +42,9 @@ export function BuyEthereumInDubai({
     };
   };
 }) {
+  const t = useTranslations("buyEthereumDubai");
+  const te = useTranslations("commonExchange");
+
   return (
     <>
       <div className="relative mb-10 bg-black overflow-hidden">
@@ -57,10 +62,8 @@ export function BuyEthereumInDubai({
             </div>
             <div className="col-span-12 md:col-span-7 text-center md:pl-10">
               <div>
-                <h1 className="text-3xl leading-[2.8rem] lg:text-4xl lg:leading-[3.7rem] font-semibold">
-                  Buy ETH (Ethereum) in Dubai
-                  <br />
-                  Get Cash or Bank Transfer
+                <h1 className="text-3xl leading-[2.8rem] lg:text-4xl lg:leading-[3.7rem] font-semibold whitespace-pre-line">
+                  {t("hero.title")}
                 </h1>
               </div>
 
@@ -70,7 +73,7 @@ export function BuyEthereumInDubai({
                     size="xl"
                     className="bg-amber-400 hover:bg-amber-500 cursor-pointer"
                   >
-                    Buy online now
+                    {t("hero.buyOnline")}
                   </Button>
                 </a>
                 <a
@@ -82,7 +85,7 @@ export function BuyEthereumInDubai({
                     variant="outline"
                     className="bg-transparent text-amber-400 hover:text-amber-400 hover:bg-amber-400/10 border-amber-400 cursor-pointer"
                   >
-                    Visit our office
+                    {t("hero.visitOffice")}
                   </Button>
                 </a>
               </div>
@@ -113,7 +116,7 @@ export function BuyEthereumInDubai({
         </div>
       </div>
 
-      <Calculator title="Calculate ETH to Cash" symbol="ETH" prices={prices} />
+      <Calculator title={t("calculator.title")} symbol="ETH" prices={prices} />
 
       <div className="container mt-20! text-black">
         <iframe
@@ -125,7 +128,7 @@ export function BuyEthereumInDubai({
         ></iframe>
 
         <h4 className="text-2xl font-semibold text-center mt-10">
-          How to buy Ethereum (ETH) with cash in dubai UAE?
+          {t("howItWorks.title")}
         </h4>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-20 text-center mt-6">
@@ -136,10 +139,10 @@ export function BuyEthereumInDubai({
               className="w-[110px] mx-auto"
             />
             <h5 className="card-title mt-3 font-semibold mb-2">
-              1. Visit Our Branch in Dubai
+              {t("howItWorks.steps.visit.title")}
             </h5>
             <p className="card-text">
-              Calculate the best exchange rate for your ETH.
+              {t("howItWorks.steps.visit.desc")}
             </p>
           </div>
           <div>
@@ -149,10 +152,10 @@ export function BuyEthereumInDubai({
               className="w-[110px] mx-auto"
             />
             <h5 className="card-title mt-3 font-semibold mb-2">
-              2. Pay For The ETH
+              {t("howItWorks.steps.pay.title")}
             </h5>
             <p className="card-text">
-              Make payment via cash, card or bank transfer.
+              {t("howItWorks.steps.pay.desc")}
             </p>
           </div>
           <div>
@@ -162,9 +165,9 @@ export function BuyEthereumInDubai({
               className="w-[110px] mx-auto"
             />
             <h5 className="card-title mt-3 font-semibold mb-2">
-              3. Get Your ETH
+              {t("howItWorks.steps.get.title")}
             </h5>
-            <p className="card-text">Get your ETH (Ethereum).</p>
+            <p className="card-text">{t("howItWorks.steps.get.desc")}</p>
           </div>
         </div>
 
@@ -179,56 +182,54 @@ export function BuyEthereumInDubai({
 
       <div className="container text-black text-center">
         <div>
-          <h2 className="text-3xl font-semibold">Our Features</h2>
+          <h2 className="text-3xl font-semibold">{te("features.title")}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12">
             <InteractiveGradientCard className="bg-neutral-300 flex items-center justify-center pb-4 pt-1">
               <div className="bg-[url(/images/benefits/laptop-coins.png)] bg-contain bg-no-repeat bg-center w-[150px] h-[150px] mx-auto"></div>
               <h5 className="text-xl font-semibold mt-9">
-                We guarantee the best rate
+                {te("features.f1.title")}
               </h5>
               <p className="mt-2">
-                we price match all local dealer competitors (including their
-                online prices).
+                {te("features.f1.desc")}
               </p>
             </InteractiveGradientCard>
             <InteractiveGradientCard className="bg-neutral-300 flex items-center justify-center pb-4 pt-1">
               <div className="bg-[url(/images/benefits/wallet.png)] bg-contain bg-no-repeat bg-center w-[150px] h-[150px] mx-auto"></div>
               <h5 className="text-xl font-semibold mt-9">
-                Get your funds instantly
+                {te("features.f2.title")}
               </h5>
               <p className="mt-2">
-                Payouts occur immediately after we receive your ETH
+                {te("features.f2.desc")}
               </p>
             </InteractiveGradientCard>
             <InteractiveGradientCard className="bg-neutral-300 flex items-center justify-center pb-4 pt-1">
               <div className="bg-[url(/images/benefits/money-percentage.png)] bg-contain bg-no-repeat bg-center w-[150px] h-[150px] mx-auto"></div>
               <h5 className="text-xl font-semibold mt-9">
-                Competitive fee structure
+                {te("features.f3.title")}
               </h5>
               <p className="mt-2">
-                Check the fees you are expected to pay before a transaction
+                {te("features.f3.desc")}
               </p>
             </InteractiveGradientCard>
             <InteractiveGradientCard className="bg-neutral-300 flex items-center justify-center pb-4 pt-1">
               <div className="bg-[url(/images/benefits/earth.png)] bg-contain bg-no-repeat bg-center w-[150px] h-[150px] mx-auto"></div>
-              <h5 className="text-xl font-semibold mt-9">Global support</h5>
+              <h5 className="text-xl font-semibold mt-9">{te("features.f4.title")}</h5>
               <p className="mt-2">
-                Buy ETH from nearly any country in the world
+                {te("features.f4.desc")}
               </p>
             </InteractiveGradientCard>
             <InteractiveGradientCard className="bg-neutral-300 flex items-center justify-center pb-4 pt-1">
               <div className="bg-[url(/images/benefits/list.png)] bg-contain bg-no-repeat bg-center w-[150px] h-[150px] mx-auto"></div>
-              <h5 className="text-xl font-semibold mt-9">$100,000 Insurance</h5>
+              <h5 className="text-xl font-semibold mt-9">{te("features.f5.title")}</h5>
               <p className="mt-2">
-                Secure Checkout with coverage up to $100,000 Identity
-                Protection.
+                {te("features.f5.desc")}
               </p>
             </InteractiveGradientCard>
             <InteractiveGradientCard className="bg-neutral-300 flex items-center justify-center pb-4 pt-1">
               <div className="bg-[url(/images/benefits/heaset.png)] bg-contain bg-no-repeat bg-center w-[150px] h-[150px] mx-auto"></div>
-              <h5 className="text-xl font-semibold mt-9">Continuous support</h5>
+              <h5 className="text-xl font-semibold mt-9">{te("features.f6.title")}</h5>
               <p className="mt-2">
-                Our support team stands ready to help you out
+                {te("features.f6.desc")}
               </p>
             </InteractiveGradientCard>
           </div>
@@ -243,89 +244,28 @@ export function BuyEthereumInDubai({
             className="w-[70%] mx-auto"
           />
           <h3 className="text-3xl font-semibold text-center">
-            3 Reasons to Buy Ethereum
+            {t("reasons.title")}
           </h3>
           <div className="desc-wiu mt-8">
             <h4 className="text-xl font-semibold mt-5">
-              1. Ethereum provides real-world applications
+              {t("reasons.r1.title")}
             </h4>
             <p className="mt-1">
-              Perhaps the key ingredient to Ethereum's success is its inclusion
-              of smart contracts since its inception . Way back in 2013, Vitalik
-              Buterin saw the importance of providing ways for a cryptocurrency
-              network to execute transactions immediately upon some agreed-upon
-              conditions being met. This functionality spurred a range of
-              real-world applications that extend from finance to insurance,
-              healthcare, and other large sectors waiting to be disrupted. Being
-              an open-source, decentralized blockchain has its advantages for
-              those holding ETH tokens. As Ethereum becomes the go-to platform
-              upon which developers build dApps or crypto-focused projects,
-              Ethereum's network effect grows. Accordingly, the utility Ethereum
-              provides is real and tangible. Other cryptocurrencies struggle
-              with this concept. While other cryptocurrencies do possess
-              currency-like features, decentralized finance and the real-world
-              applications that Ethereum has unlocked is a game changer in so
-              many respects. The fact that Ethereum powers an incredible number
-              of important, high-profile crypto projects right now leads
-              investors to the idea that owning the basic building blocks of the
-              cryptocurrency ecosystem is a good idea. Indeed, that's a hard
-              concept to argue against.
+              {t("reasons.r1.desc")}
             </p>
 
             <h4 className="text-xl font-semibold mt-5">
-              2. Ethereum will be (more) green very shortly
+              {t("reasons.r2.title")}
             </h4>
             <p className="mt-1">
-              Perhaps one of the biggest arguments against cryptocurrency
-              ownership or acceptance as of late is the sheer amount of energy
-              required to power these blockchain networks. Even one of the most
-              bullish influencers in the crypto world, Elon Musk, took to
-              Twitter to push for change on this issue. Ethereum's rise as one
-              of the earliest cryptocurrencies meant a proof-of-work crypto
-              mining model was necessary. Miners, or those verifying
-              transactions across the blockchain, needed to be rewarded for
-              doing so. After all, there are costs to adding the computing power
-              necessary to make a network to begin with. However, with the
-              crypto world having seemingly evolved to near-ubiquitous status
-              among investors, Ethereum looks to change its ways. The
-              cryptocurrency network announced an Ethereum Improvement Proposal
-              3554 (or EIP-3554, for short) to switch to a proof-of-stake model.
-              By allowing Ethereum users to stake their existing Ethereum tokens
-              to verify transactions, a significant energy reduction is seen
-              across the blockchain. Those who stake their tokens will be
-              rewarded in a similar way (via more ETH tokens). However, the
-              amount of energy consumed across the blockchain will drop
-              dramatically, a good thing for those looking to make passive
-              income from their holdings without putting up the capital for
-              mining rigs and handling the ongoing power costs associated with
-              mining. The total energy reduction across the Ethereum network is
-              estimated by the Ethereum foundation to be roughly 99.95%. This
-              move is expected to vastly improve the social costs of crypto
-              mining (and indirectly, crypto ownership). Those looking to own a
-              greener, leaner cryptocurrency may start shifting toward mega-cap
-              Ethereum as the primary choice over Bitcoin for this reason alone.
+              {t("reasons.r2.desc")}
             </p>
 
             <h4 className="text-xl font-semibold mt-5">
-              3. Ethereum powers the NFT world
+              {t("reasons.r3.title")}
             </h4>
             <p className="mt-1">
-              Perhaps the biggest buzzword in the crypto world right now is NFT
-              (non-fungible token). NFTs rose to popularity over the past year,
-              due to the rapid rise in the valuations of these digital assets.
-              Famously, a non-fungible token was sold earlier this year for a
-              whopping $69 million. These sorts of price tags tend to invite
-              speculators to the party quickly. As it happens, Ethereum powers
-              some of the biggest and most well-known NFT marketplaces right
-              now. Among these, opensea.io has seen incredible volume of late.
-              NFT investors appear to like the flexibility of using Ethereum to
-              trade their artwork. However, other cryptocurrencies such as
-              Solana (SOL -10.60%) are popping up as competitors in the race for
-              NFT market share. Will Ethereum be able to crowd out the
-              competition in these growing crypto markets? Time will tell.
-              However, investors looking to bet on the biggest and most robust
-              ecosystem certainly have their fair share of reasons to consider
-              Ethereum right now.
+              {t("reasons.r3.desc")}
             </p>
           </div>
           <ParallaxProvider>
@@ -337,10 +277,9 @@ export function BuyEthereumInDubai({
       </div>
 
       <div className="container mt-20! text-black">
-        <div className="bg-white rounded-3xl p-10 shadow-[0_0px_40px_rgba(0,0,0,0.05)] space-y-3">
+        <div className="bg-white rounded-3xl p-10 shadow-[0_0px_40px_rgba(0,0,0,0.05)] space-y-3 mt-10 text-center">
           <h3 className="text-xl font-semibold">
-            Pallapay is the best place to buy Ethereum (ETH) and other
-            Cryptocurrency with cash instantly.
+            {t("bottom")}
           </h3>
         </div>
       </div>
@@ -355,7 +294,7 @@ export function BuyEthereumInDubai({
             </div>
           </div>
           <div className="text-3xl font-semibold py-8 relative">
-            Why people trust Pallapay
+            {te("trust.title")}
           </div>
           <div className="container h-full! relative">
             <div className="relative bg-black rounded-3xl">
@@ -390,154 +329,35 @@ export function BuyEthereumInDubai({
             className="absolute right-4 top-[10%]"
           />
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-10">
-            <div>
-              <div className="p-2.5 rounded-md border-[3px] border-white w-fit mx-auto">
-                <Check size={26} strokeWidth={3.8} />
+            {Object.values(te.raw("trust.items") as {[key: string]: string}).map((val, idx) => (
+              <div key={idx}>
+                <div className="p-2.5 rounded-md border-[3px] border-white w-fit mx-auto">
+                  <Check size={26} strokeWidth={3.8} />
+                </div>
+                <div className="mt-4">{val}</div>
               </div>
-              <div className="mt-4">No hidden fees</div>
-            </div>
-            <div>
-              <div className="p-2.5 rounded-md border-[3px] border-white w-fit mx-auto">
-                <Check size={26} strokeWidth={3.8} />
-              </div>
-              <div className="mt-4">Verification in less than 5 minutes</div>
-            </div>
-            <div>
-              <div className="p-2.5 rounded-md border-[3px] border-white w-fit mx-auto">
-                <Check size={26} strokeWidth={3.8} />
-              </div>
-              <div className="mt-4">Licenses Payment Service Providers</div>
-            </div>
-            <div>
-              <div className="p-2.5 rounded-md border-[3px] border-white w-fit mx-auto">
-                <Check size={26} strokeWidth={3.8} />
-              </div>
-              <div className="mt-4">24/7/365 live customer support</div>
-            </div>
-            <div>
-              <div className="p-2.5 rounded-md border-[3px] border-white w-fit mx-auto">
-                <Check size={26} strokeWidth={3.8} />
-              </div>
-              <div className="mt-4">
-                40-person team with expertise and experience
-              </div>
-            </div>
-            <div>
-              <div className="p-2.5 rounded-md border-[3px] border-white w-fit mx-auto">
-                <Check size={26} strokeWidth={3.8} />
-              </div>
-              <div className="mt-4">
-                More than $170,000,000 in annual transactions
-              </div>
-            </div>
-            <div>
-              <div className="p-2.5 rounded-md border-[3px] border-white w-fit mx-auto">
-                <Check size={26} strokeWidth={3.8} />
-              </div>
-              <div className="mt-4">Instant cryptocurrency payouts</div>
-            </div>
-            <div>
-              <div className="p-2.5 rounded-md border-[3px] border-white w-fit mx-auto">
-                <Check size={26} strokeWidth={3.8} />
-              </div>
-              <div className="mt-4">Lowest fees on the market</div>
-            </div>
-            <div>
-              <div className="p-2.5 rounded-md border-[3px] border-white w-fit mx-auto">
-                <Check size={26} strokeWidth={3.8} />
-              </div>
-              <div className="mt-4">
-                Excellent option for beginners and pros
-              </div>
-            </div>
-            <div>
-              <div className="p-2.5 rounded-md border-[3px] border-white w-fit mx-auto">
-                <Check size={26} strokeWidth={3.8} />
-              </div>
-              <div className="mt-4">Serving 180+ countries</div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
 
       <div className="my-14! container text-black">
         <h2 className="text-3xl font-semibold">
-          FAQ about buying ETH (Ethereum) in PallaPay Dubai
+          {t("faq.title")}
         </h2>
         <Accordion type="single" collapsible className="w-full border-b mt-6">
-          <AccordionItem value="item-1">
-            <AccordionTrigger>
-              This is my first time. Can you help me?
-            </AccordionTrigger>
-            <AccordionContent>
-              Yes, of course. Visit our office, and our employees will be happy
-              to assist you with your transaction.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>
-              What is the min/max amount that I can buy?
-            </AccordionTrigger>
-            <AccordionContent>
-              Our Minimum Transaction Amount is 1 ETH and Maximum 4M ETH Per
-              Person Per Day
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger>
-              How long does it take to buy Ethereum in PallaPay Dubai?
-            </AccordionTrigger>
-            <AccordionContent>
-              The exchange takes around 5 to 10 minutes. We want our service to
-              be convenient, and we try to take care of your needs as quickly as
-              possible.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-4">
-            <AccordionTrigger>
-              What are the opening and closing hours of the Dubai office?
-            </AccordionTrigger>
-            <AccordionContent>
-              Monday to Saturday 10 A.M. to 7 P.M., Sunday closed.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-5">
-            <AccordionTrigger>
-              How many branches do you have in Dubai?
-            </AccordionTrigger>
-            <AccordionContent>
-              We have Few Branches in Dubai. But The Most convenient Branch is
-              Located at Marasi Drive Business Bay P4 Floor Office P401 and P402
-              The Binary By Omniyat - Dubai - UAE
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-6">
-            <AccordionTrigger>
-              Can I Pay USD or Euro Instead of AED?
-            </AccordionTrigger>
-            <AccordionContent>
-              Yes You Can Pay Via USD or Euro :)
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-9">
-            <AccordionTrigger>Do you have an app?</AccordionTrigger>
-            <AccordionContent>
-              Yes We Do Have an App, You Can Download From Apple Store Or Google
-              Play.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-10">
-            <AccordionTrigger>
-              Do you provide receipt when i buy my eth in your Dubai store?
-            </AccordionTrigger>
-            <AccordionContent>
-              Yes we do provide an official receipt for any transaction.
-            </AccordionContent>
-          </AccordionItem>
+          {Object.entries(t.raw("faq.items") as {[key: string]: {q: string, a: string}}).map(([key, item]) => (
+            <AccordionItem value={key} key={key}>
+              <AccordionTrigger>
+                {item.q}
+              </AccordionTrigger>
+              <AccordionContent>
+                {item.a}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
         </Accordion>
       </div>
-
-      {/* <MainFooter className="!mt-24" /> */}
     </>
   );
 }

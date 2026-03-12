@@ -7,11 +7,14 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { useState } from "react";
 import { clsx } from "clsx";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export function Wallet() {
   const [selectedTab, setSelectedTab] = useState<
     "SEND" | "FUND" | "GIFT" | "CONVERT"
   >("SEND");
+
+  const t = useTranslations("walletPage");
 
   return (
     <>
@@ -46,8 +49,8 @@ export function Wallet() {
                 width={200}
                 height={200}
                 className="absolute -bottom-16 md:-bottom-32 
-               right-2 md:right-0 
-               w-26 md:w-[200px]"
+                right-2 md:right-0 
+                w-26 md:w-[200px]"
               />
 
               <div
@@ -55,8 +58,8 @@ export function Wallet() {
                   absolute left-6 md:left-32 lg:left-52 left
                   -top-14 md:-top-32"
               >
-                <h1 className="md:-ml-24">Receive</h1>
-                <h1 className="ml-4 sm:ml-8 md:ml-1">Send</h1>
+                <h1 className="md:-ml-24">{t("hero.receive")}</h1>
+                <h1 className="ml-4 sm:ml-8 md:ml-1">{t("hero.send")}</h1>
               </div>
 
               <div
@@ -64,8 +67,8 @@ export function Wallet() {
               absolute right-10 md:right-28 lg:right-52
               -top-14 md:-top-32 "
               >
-                <h1 className="md:-ml-6">BUY</h1>
-                <h1 className="ml-4 md:ml-10">SELL</h1>
+                <h1 className="md:-ml-6">{t("hero.buy")}</h1>
+                <h1 className="ml-4 md:ml-10">{t("hero.sell")}</h1>
               </div>
 
               <div
@@ -75,14 +78,12 @@ export function Wallet() {
               >
                 <ul
                   className="px-6 md:px-10 list-disc 
-                   text-sm md:text-lg 
-                   space-y-1 md:space-y-2"
+                    text-sm md:text-lg 
+                    space-y-1 md:space-y-2"
                 >
-                  <li>Buy & Sell Instantly</li>
-                  <li>Send & Receive Widest Cryptocurrencies</li>
-                  <li>Fund Your Crypto Wallet</li>
-                  <li>Convert with Ease</li>
-                  <li>All-in-One Wallet</li>
+                  {(t.raw("featuresList") as string[]).map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
                 </ul>
               </div>
             </ParallaxProvider>
@@ -120,7 +121,7 @@ export function Wallet() {
                       },
                     )}
                   >
-                    Send
+                    {t("tabs.send")}
                   </button>
                   <button
                     onClick={() => setSelectedTab("FUND")}
@@ -135,7 +136,7 @@ export function Wallet() {
                       },
                     )}
                   >
-                    Fund
+                    {t("tabs.fund")}
                   </button>
                   <button
                     onClick={() => setSelectedTab("GIFT")}
@@ -150,7 +151,7 @@ export function Wallet() {
                       },
                     )}
                   >
-                    Gift
+                    {t("tabs.gift")}
                   </button>
                   <button
                     onClick={() => setSelectedTab("CONVERT")}
@@ -165,148 +166,76 @@ export function Wallet() {
                       },
                     )}
                   >
-                    Convert
+                    {t("tabs.convert")}
                   </button>
                 </div>
                 {selectedTab == "SEND" && (
                   <>
                     <div>
-                      Experience the fastest and most secure way to manage your
-                      digital assets with Pallapay Wallet.
+                      {t("sendContent.title")}
                       <br />
-                      Whether you want to buy, sell, convert, send, receive, or
-                      transfer funds directly to bank accounts, Pallapay gives
-                      you full control with seamless performance and powerful
-                      features:
+                      {t("sendContent.description")}
                     </div>
                     <ul className="list-disc ml-5 my-2">
-                      <li>
-                        Instant Conversion: Swap between cryptocurrencies and
-                        fiat in seconds.
-                      </li>
-                      <li>
-                        Fast & Secure Transactions: Built with advanced
-                        encryption and regulatory compliance.
-                      </li>
-                      <li>
-                        Bank Transfers Made Easy: Withdraw or deposit directly
-                        to your local or international bank account.
-                      </li>
-                      <li>
-                        Global Access: Use your wallet anytime, anywhere 24/7.
-                      </li>
-                      <li>
-                        Cash Pickup & Local Settlement: Collect or send funds
-                        through Pallapay branches.
-                      </li>
-                      <li>
-                        Multi-Currency Support: Manage Bitcoin, Ethereum, USDT,
-                        and other top cryptocurrencies in one simple app.
-                      </li>
+                      {(t.raw("sendContent.list") as string[]).map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
                     <div>
-                      Empower your payments, trading, and transfers with the
-                      next generation of crypto-to-fiat technology.
+                      {t("sendContent.footer")}
                       <br />
-                      Pallapay bridging digital assets with real-world finance.
+                      {t("sendContent.bridge")}
                     </div>
                   </>
                 )}
                 {selectedTab == "FUND" && (
                   <>
                     <div>
-                      Add money to your Pallapay Wallet in the way that suits
-                      you best whether it’s crypto, cash, or direct bank
-                      transfer.
+                      {t("fundContent.title")}
                       <br />
-                      Top up in seconds and keep your balance ready for trading,
-                      sending, or everyday payments.
+                      {t("fundContent.description")}
                     </div>
                     <ul className="list-disc ml-5 my-2">
-                      <li>
-                        Multiple Funding Options: Deposit using crypto,
-                        credit/debit card, cash, or local bank transfer.
-                      </li>
-                      <li>
-                        Instant Availability: Your funds appear in your wallet
-                        immediately after confirmation.
-                      </li>
-                      <li>
-                        Global Access: Fund from anywhere — in AED, USD, EUR, or
-                        your preferred currency.
-                      </li>
-                      <li>
-                        Fully Secure & Compliant: Every transaction is protected
-                        under strict verification and AML standards.
-                      </li>
+                      {(t.raw("fundContent.list") as string[]).map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
                     <div>
-                      Keep your wallet powered always ready for the next
-                      transaction.
+                      {t("fundContent.footer")}
                     </div>
                   </>
                 )}
                 {selectedTab == "GIFT" && (
                   <>
                     <div>
-                      Share the power of crypto with anyone, anywhere instantly.
+                      {t("giftContent.title")}
                       <br />
-                      With Pallapay, sending a digital gift is as easy as
-                      sending a message.
+                      {t("giftContent.description")}
                     </div>
                     <ul className="list-disc ml-5 my-2">
-                      <li>
-                        Send Crypto as a Gift: Surprise friends, family, or
-                        clients with Bitcoin, USDT, or any supported coin.
-                      </li>
-                      <li>
-                        Instant Delivery: Recipients receive their crypto gift
-                        in seconds, no wallet setup required.
-                      </li>
-                      <li>
-                        Personalized Messages: Add a custom note to make your
-                        gift more meaningful.
-                      </li>
-                      <li>
-                        Perfect for Any Occasion: Birthdays, rewards,
-                        promotions, or just to show appreciation.
-                      </li>
+                       {(t.raw("giftContent.list") as string[]).map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
                     <div>
-                      Make your next gift smarter send it with Pallapay.
+                      {t("giftContent.footer")}
                     </div>
                   </>
                 )}
                 {selectedTab == "CONVERT" && (
                   <>
                     <div>
-                      Exchange your digital assets with ease using Pallapay’s
-                      instant conversion feature.
+                      {t("convertContent.title")}
                       <br />
-                      Switch between crypto and fiat anytime, fast, secure, and
-                      transparent.
+                      {t("convertContent.description")}
                     </div>
                     <ul className="list-disc ml-5 my-2">
-                      <li>
-                        Real-Time Rates: Get live market prices with no hidden
-                        fees.
-                      </li>
-                      <li>
-                        Crypto-to-Fiat & Fiat-to-Crypto: Convert in both
-                        directions effortlessly.
-                      </li>
-                      <li>
-                        Multi-Currency Support: Swap between BTC, ETH, USDT,
-                        AED, USD, EUR, and more.
-                      </li>
-                      <li>
-                        Instant Execution: Your funds are ready for withdrawal
-                        or reinvestment in seconds.
-                      </li>
+                      {(t.raw("convertContent.list") as string[]).map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
                     <div>
-                      Seamlessly bridge the gap between digital and traditional
-                      finance with Pallapay.
+                      {t("convertContent.footer")}
                     </div>
                   </>
                 )}
@@ -358,7 +287,7 @@ export function Wallet() {
           <div className="container row-start-2 lg:row-start-1  ">
             <div>
               <div className="text-4xl leading-[3rem] lg:text-5xl lg:leading-[3.85rem] font-semibold text-center">
-                Download Pallapay Mobile Application
+                {t("downloadTitle")}
               </div>
 
               <div className="mt-6 sm:mt-10 flex gap-5 items-center justify-center px-8 sm:px-0">

@@ -181,13 +181,13 @@ export function AboutUs() {
               <MapPin />
             </div>
             <div>
-              <div className="font-semibold">USA</div>
+              <div className="font-semibold">{t("usa")}</div>
               <div className="mt-1">
-                USA MSB Registration Number: 31000295387275
+                {t("usaReg")}
                 <div className="mt-1 mb-3 text-sm">
-                  1001 S. Main St. #10457
+                  {t("usaAddress1")}
                   <br />
-                  Kalispell, Montana, 59901
+                  {t("usaAddress2")}
                 </div>
               </div>
               <div className="max-w-[140px] sm:max-w-[120px] pt-2">
@@ -204,12 +204,12 @@ export function AboutUs() {
               <MapPin />
             </div>
             <div>
-              <div className="font-semibold">Canada</div>
+              <div className="font-semibold">{t("canada")}</div>
               <div className="mt-1">
-                Canada MSB Registration Number: M23088601
+                {t("canadaReg")}
                 <div className="mt-1 mb-3 text-sm">
-                  <p>18 Strathearn Avenue, Unit #29A</p>
-                  <p>Brampton, ON, Canada, L6T 4X7</p>
+                  <p>{t("canadaAddress1")}</p>
+                  <p>{t("canadaAddress2")}</p>
                 </div>
               </div>
               <div className="max-w-[270px] sm:max-w-[250px] pt-1.5">
@@ -219,9 +219,7 @@ export function AboutUs() {
           </div>
           <div className="md:col-span-2 font-semibold text-xl mb-4">
             <div className="mt-3 text-sm">
-              Pallapay is authorized by FINTRAC and FINCEN to conduct foreign
-              exchange dealing, money transfers, and virtual currency
-              transactions.
+              {t("authDescription")}
             </div>
           </div>
           <div className="md:col-span-2 font-semibold text-2xl mt-5">
@@ -232,11 +230,10 @@ export function AboutUs() {
               <MapPin />
             </div>
             <div>
-              <div className="font-semibold">PALLA DMCC Dubai Branch</div>
-              <div className="mt-3 text-sm">Reg. Number: 999491</div>
+              <div className="font-semibold">{t("dubaiBranchName")}</div>
+              <div className="mt-3 text-sm">{t("dubaiBranchReg")}</div>
               <div className="mt-1.5 text-sm">
-                Office P402, The Binary by Omniyat, Marasi Drive, Business Bay,
-                Dubai, UAE
+                {t("dubaiBranchAddress")}
               </div>
             </div>
           </div>
@@ -245,11 +242,10 @@ export function AboutUs() {
               <MapPin />
             </div>
             <div>
-              <div className="font-semibold">Pallapay Ltd.</div>
-              <div className="mt-3 text-sm">Reg. Number: 1337470</div>
+              <div className="font-semibold">{t("ltdName")}</div>
+              <div className="mt-3 text-sm">{t("ltdReg")}</div>
               <div className="mt-1.5 text-sm">
-                Office P402, The Binary by Omniyat, Marasi Drive, Business Bay
-                Dubai, UAE
+                {t("ltdAddress")}
               </div>
             </div>
           </div>
@@ -261,10 +257,10 @@ export function AboutUs() {
               <MapPin />
             </div>
             <div>
-              <div className="font-semibold">Pallapay PTE. Ltd</div>
-              <div className="mt-3 text-sm">Reg. Number: 202138429Z</div>
+              <div className="font-semibold">{t("singaporeBranchName")}</div>
+              <div className="mt-3 text-sm">{t("singaporeBranchReg")}</div>
               <div className="mt-1.5 text-sm">
-                68 Circular Road, #02-01, Postal Code: 049422, Singapore
+                {t("singaporeBranchAddress")}
               </div>
             </div>
           </div>
@@ -273,9 +269,9 @@ export function AboutUs() {
               <MapPin />
             </div>
             <div>
-              <div className="font-semibold">Pallapay International Inc</div>
+              <div className="font-semibold">{t("nyBranchName")}</div>
               <div className="mt-3 text-sm">
-                40 Wall Street office 112, New York, NY, 10005, USA
+                {t("nyBranchAddress")}
               </div>
             </div>
           </div>

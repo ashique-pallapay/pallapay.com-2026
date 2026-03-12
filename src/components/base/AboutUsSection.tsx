@@ -16,15 +16,13 @@ export function AboutUsSection({ className, ...props }: VideoSectionProps) {
   const mediaItems = [
     {
       logo: "/images/in-media/yahoo-finance.png",
-      // source: t("media.yahooFinance"),
-      source: "Yahoo Finance",
+      source: t("media.yahooFinance"),
       content: t("media.yahooContent"),
       link: "https://finance.yahoo.com/news/pallapay-establishes-itself-mega-company-050000714.html",
     },
     {
       logo: "/images/in-media/einpresswire.png",
-      // source: t("media.einPresswire"),
-      source: "EIN Presswire",
+      source: t("media.einPresswire"),
       content: t("media.einContent"),
       link: "https://www.einpresswire.com/article/575325873/with-pallapay-crypto-pos-machine-system-businesses-can-accept-crypto-and-get-fiat-in-their-bank-account-in-uae",
     },

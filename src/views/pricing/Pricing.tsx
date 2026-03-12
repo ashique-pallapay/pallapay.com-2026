@@ -118,19 +118,19 @@ export function Pricing({currencies, cryptocurrencies, walletConfigs}: {currenci
                                                 'cursor-pointer px-1 py-1.5',
                                                 { 'border-b-2 border-amber-400 text-amber-400': selectedSubTab == 1 },
                                                 { 'text-amber-100 border-b-2 border-b-transparent hover:border-amber-200/30': selectedSubTab != 1 }
-                                            )}>Deposit/Withdrawal
+                                            )}>{t('depositWithdrawal')}
                                             </button>
                                             {/*<button onClick={() => setSelectedSubTab(2)} className={clsx(*/}
                                             {/*    'cursor-pointer px-1 py-1.5',*/}
                                             {/*    { 'border-b-2 border-amber-400 text-amber-400': selectedSubTab == 2 },*/}
                                             {/*    { 'text-amber-100 border-b-2 border-b-transparent hover:border-amber-200/30': selectedSubTab != 2 }*/}
-                                            {/*)}>Convert*/}
+                                            {/*)}>{t('convert')}*/}
                                             {/*</button>*/}
                                             {/*<button onClick={() => setSelectedSubTab(3)} className={clsx(*/}
                                             {/*    'cursor-pointer px-1 py-1.5',*/}
                                             {/*    { 'border-b-2 border-amber-400 text-amber-400': selectedSubTab == 3 },*/}
                                             {/*    { 'text-amber-100 border-b-2 border-b-transparent hover:border-amber-200/30': selectedSubTab != 3 }*/}
-                                            {/*)}>Fiat Withdrawal*/}
+                                            {/*)}>{t('fiatWithdrawal')}*/}
                                             {/*</button>*/}
                                         </div>
 
@@ -214,7 +214,7 @@ export function Pricing({currencies, cryptocurrencies, walletConfigs}: {currenci
                                         {
                                             selectedSubTab == 2 && (
                                                 <div className="pt-6 pb-14">
-                                                    Coming Soon !
+                                                    {t('comingSoon')}
                                                 </div>
                                                 // <table className="text-sm w-full">
                                                 //     <thead className="bg-neutral-900 text-gray-300">
@@ -293,7 +293,7 @@ export function Pricing({currencies, cryptocurrencies, walletConfigs}: {currenci
                                         {
                                             selectedSubTab == 3 && (
                                                 <div className="pt-6 pb-14">
-                                                    Coming Soon !
+                                                    {t('comingSoon')}
                                                 </div>
                                             )
                                         }
@@ -308,13 +308,13 @@ export function Pricing({currencies, cryptocurrencies, walletConfigs}: {currenci
                                                 'cursor-pointer px-1 py-1.5',
                                                 { 'border-b-2 border-amber-400 text-amber-400': selectedSubTab == 1 },
                                                 { 'text-amber-100 border-b-2 border-b-transparent hover:border-amber-200/30': selectedSubTab != 1 }
-                                            )}>Convert to Gift Card
+                                            )}>{t('convertToGiftCard')}
                                             </button>
                                             <button onClick={() => setSelectedSubTab(2)} className={clsx(
                                                 'cursor-pointer px-1 py-1.5',
                                                 { 'border-b-2 border-amber-400 text-amber-400': selectedSubTab == 2 },
                                                 { 'text-amber-100 border-b-2 border-b-transparent hover:border-amber-200/30': selectedSubTab != 2 }
-                                            )}>Withdrawal
+                                            )}>{t('withdrawal')}
                                             </button>
                                         </div>
 
@@ -469,31 +469,31 @@ export function Pricing({currencies, cryptocurrencies, walletConfigs}: {currenci
                                                 'cursor-pointer px-1 py-1.5',
                                                 { 'border-b-2 border-amber-400 text-amber-400': selectedSubTab == 1 },
                                                 { 'text-amber-100 border-b-2 border-b-transparent hover:border-amber-200/30': selectedSubTab != 1 }
-                                            )}>API
+                                            )}>{t('api')}
                                             </button>
                                             <button onClick={() => setSelectedSubTab(2)} className={clsx(
                                                 'cursor-pointer px-1 py-1.5',
                                                 { 'border-b-2 border-amber-400 text-amber-400': selectedSubTab == 2 },
                                                 { 'text-amber-100 border-b-2 border-b-transparent hover:border-amber-200/30': selectedSubTab != 2 }
-                                            )}>POS
+                                            )}>{t('pos')}
                                             </button>
                                             <button onClick={() => setSelectedSubTab(3)} className={clsx(
                                                 'cursor-pointer px-1 py-1.5',
                                                 { 'border-b-2 border-amber-400 text-amber-400': selectedSubTab == 3 },
                                                 { 'text-amber-100 border-b-2 border-b-transparent hover:border-amber-200/30': selectedSubTab != 3 }
-                                            )}>Payment Link
+                                            )}>{t('paymentLink')}
                                             </button>
                                             <button onClick={() => setSelectedSubTab(4)} className={clsx(
                                                 'cursor-pointer px-1 py-1.5',
                                                 { 'border-b-2 border-amber-400 text-amber-400': selectedSubTab == 4 },
                                                 { 'text-amber-100 border-b-2 border-b-transparent hover:border-amber-200/30': selectedSubTab != 4 }
-                                            )}>Payment Page
+                                            )}>{t('paymentPage')}
                                             </button>
                                             <button onClick={() => setSelectedSubTab(5)} className={clsx(
                                                 'cursor-pointer px-1 py-1.5',
                                                 { 'border-b-2 border-amber-400 text-amber-400': selectedSubTab == 5 },
                                                 { 'text-amber-100 border-b-2 border-b-transparent hover:border-amber-200/30': selectedSubTab != 5 }
-                                            )}>Crypto Settlement
+                                            )}>{t('cryptoSettlement')}
                                             </button>
                                         </div>
 

@@ -17,9 +17,10 @@ import { Button } from "@/components/ui/button";
 // } from '@/components/ui/select';
 // import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 // import InteractiveGradientCard from '@/components/base/InteractiveGradientCard';
-// import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { useTranslations } from "next-intl";
 
 export function BuyBitcoinInDubai() {
+  const t = useTranslations("buyBitcoinInDubai");
   return (
     <>
       <div className="relative bg-black overflow-hidden">
@@ -29,7 +30,7 @@ export function BuyBitcoinInDubai() {
           <div className="text-center">
             <div>
               <h1 className="text-3xl leading-[2.8rem] lg:text-4xl lg:leading-[3.7rem] font-semibold">
-                Buy Bitcoin in Dubai United Arab Emirates
+                {t("heroTitle")}
               </h1>
             </div>
 
@@ -39,7 +40,7 @@ export function BuyBitcoinInDubai() {
                   size="xl"
                   className="bg-amber-400 hover:bg-amber-500 cursor-pointer"
                 >
-                  Buy online now
+                  {t("buyOnline")}
                 </Button>
               </a>
               <a
@@ -51,7 +52,7 @@ export function BuyBitcoinInDubai() {
                   variant="outline"
                   className="bg-transparent text-amber-400 hover:text-amber-400 hover:bg-amber-400/10 border-amber-400 cursor-pointer"
                 >
-                  Visit our office
+                  {t("visitOffice")}
                 </Button>
               </a>
             </div>
@@ -73,7 +74,7 @@ export function BuyBitcoinInDubai() {
                   href="https://api.whatsapp.com/send?phone=971588971652"
                 >
                   <div className="w-7 h-7 bg-[url(/images/icons/social/whatsapp-icon.svg)] bg-no-repeat bg-cover"></div>
-                  WhatsApp
+                  {t("whatsapp")}
                 </a>
               </div>
             </div>
@@ -83,41 +84,18 @@ export function BuyBitcoinInDubai() {
 
       <div className="text-black container mt-14">
         <p>
-          We all know that bitcoin is the most popular cryptocurrency now in the
-          world even in Dubai. Some people make trading and invest on the
-          particular cryptocurrency coins. Other people won’t know what is
-          bitcoin? Most of the traders, and investors are looking for trading
-          company that they can buy bitcoin.
+          {t("introPara")}
         </p>
         <h2 className="text-2xl font-semibold mt-5">
-          Why you should buy bitcoin in the trustable exchange?
+          {t("whyBuyTitle")}
         </h2>
         <p className="mt-2">
-          I will give you some reason on how cryptocurrency exchange works for
-          trader and investor.
+          {t("whyBuySubtitle")}
         </p>
         <ul className="list-disc pl-4 my-4">
-          <li>
-            First, if you purchase on the exchange you will guarantee that you
-            receive the bitcoin on your wallet upon leaving the shop.
-          </li>
-          <li>
-            Bitcoin is always changing rate very fast, using exchange you can
-            assure that the rate is totally inform you without hidden charges.
-          </li>
-          <li>
-            Imagine you can buy what amount you want, with asking the teller for
-            rate for the day.
-          </li>
-          <li>
-            Exchange can help you if there is some minor issue that you
-            encountered, they can guide you what you need to do.
-          </li>
-          <li>
-            Apart from that you can see the people you are dealing. Having an
-            assurance that your money will not be lost and the bitcoin you buy
-            will confirm that come to your wallet.
-          </li>
+          {(t.raw("whyBuyItems") as string[]).map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
       </div>
 
@@ -157,39 +135,35 @@ export function BuyBitcoinInDubai() {
 
       <div className="container text-black">
         <h2 className="text-3xl font-semibold mt-10">
-          How to Buy Bitcoin in Dubai?
+          {t("howToBuyTitle")}
         </h2>
         <p className="mt-4">
-          For buying bitcoin in Dubai here is a different way using credit card,
-          cash, bank transfer and remittance.
+          {t("howToBuyPara1")}
         </p>
         <p className="py-1">
-          There is one exchange that can helps you to buy bitcoin easily and
-          secured.
+          {t("howToBuyPara2")}
         </p>
         <p className="py-1">
-          Pallapay is an exchange for buying bitcoin and others cryptocurrency
-          that you can mostly trust. They are the first exchange in Dubai that
-          operate with cash. Unfortunately, they have 3 ways how you can deal
-          with them that you probably no hesitation, feel secure and have peace
-          of mind.
+          {t("howToBuyPara3")}
         </p>
         <ol className="list-disc pl-4 mt-2">
-          <li>
-            Come to Pallapay shop in Marasi Dr - Business Bay and exchange cash
-            to bitcoin.
-          </li>
-          <li>Do Bitcoin trading with cash</li>
-          <li>
-            If you want to Bitcoin trading with credit card, you can visit{" "}
-            <a
-              className="text-blue-600 underline"
-              href="https://www.pallapay.com"
-              title="Buy bitcoin in dubai"
-            >
-              Pallapay.com
-            </a>
-          </li>
+          {t.raw("howToBuyList").map((item: string, index: number) => (
+            <li key={index}>
+              {item}
+              {index === 2 && (
+                <>
+                  {" "}
+                  <a
+                    className="text-blue-600 underline"
+                    href="https://www.pallapay.com"
+                    title="Buy bitcoin in dubai"
+                  >
+                    Pallapay.com
+                  </a>
+                </>
+              )}
+            </li>
+          ))}
         </ol>
       </div>
 

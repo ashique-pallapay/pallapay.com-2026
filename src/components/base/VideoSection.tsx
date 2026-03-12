@@ -1,9 +1,14 @@
+"use client";
+
 import * as React from "react";
 import { clsx } from "clsx";
+import { useTranslations } from "next-intl";
 
 type VideoSectionProps = React.HTMLAttributes<HTMLDivElement>;
 
 export function VideoSection({ className, ...props }: VideoSectionProps) {
+  const t = useTranslations("videoSection");
+
   return (
     <div
       className={clsx(
@@ -21,7 +26,7 @@ export function VideoSection({ className, ...props }: VideoSectionProps) {
           </div>
         </div>
         <div className="text-3xl font-semibold py-8 relative">
-          You’re In Good Company
+          {t("title")}
         </div>
         <div className="container h-full relative">
           <div className="relative bg-black rounded-3xl">
@@ -35,7 +40,7 @@ export function VideoSection({ className, ...props }: VideoSectionProps) {
             ></iframe>
           </div>
           <div className="text-lg mt-5">
-            Another Great Success For Pallapay and It's the Beginning
+            {t("subtitle")}
           </div>
           <div>{props.children}</div>
         </div>
