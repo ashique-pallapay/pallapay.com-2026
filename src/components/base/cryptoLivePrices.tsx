@@ -4,7 +4,7 @@ const CryptoCard = ({ coin }: any) => (
   <div className="bg-[#0f0f0f] border border-gray-800 rounded-xl p-5 flex flex-col justify-between hover:border-gray-600 transition-all">
     <div className="flex justify-between items-start mb-4">
       <div>
-        <h3 className="text-white font-bold text-lg">{coin.symbol}</h3>
+        <h3 className="text-white font-semibold text-lg">{coin.symbol}</h3>
         <p className="text-gray-500 text-sm">{coin.name}</p>
       </div>
       <div

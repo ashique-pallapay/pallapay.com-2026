@@ -3,6 +3,8 @@
 import * as React from "react";
 import { ScrollAnimation } from "@/components/base/ScrollAnimation";
 import { useTranslations } from "next-intl";
+import TitleBanner from "@/components/ui/TitleBanner";
+import ServicesGrid from "@/components/base/ServiceCard";
 
 export function HowItWorks() {
   const t = useTranslations("howItWorks");
@@ -11,6 +13,7 @@ export function HowItWorks() {
     <div className="relative">
       <div className="absolute top-0 w-full h-[520px] bg-[url('/images/bg-slice-gradient.svg')] bg-fill bg-center bg-no-repeat"></div>
       <div className="container mt-12 relative">
+        <TitleBanner title="Pallapay Wallet" />
         <div className="grid grid-cols-1 lg:grid-cols-3 rounded-3xl lg:pb-16 h-full pb-8 pt-10 sm:pt-14 relative text-black mb-24 items-center text-center lg:text-left">
           <div className="px-5 w-full ">
             <ScrollAnimation>
@@ -44,6 +47,9 @@ export function HowItWorks() {
             />
           </div>
         </div>
+
+        <TitleBanner title="Pallapay Payment Gateway" />
+        <ServicesGrid />
       </div>
     </div>
   );

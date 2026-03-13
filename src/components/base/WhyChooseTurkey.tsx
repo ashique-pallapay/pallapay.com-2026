@@ -24,7 +24,7 @@ const WhyChooseTurkey = () => {
   return (
     <section>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center text-white mb-12">
           {t("title")}
         </h2>
 

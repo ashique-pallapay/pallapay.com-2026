@@ -214,7 +214,7 @@ export function GiftCard() {
                 {t('steps.banner')}
               </span>
             </div>
-            <h2 className="text-4xl font-bold tracking-tight">
+            <h2 className="text-4xl font-semibold tracking-tight">
               {t('steps.title')}
             </h2>
           </div>
@@ -238,7 +238,7 @@ export function GiftCard() {
                 )}
 
                 <div className="relative flex items-start gap-6 z-10">
-                  <span className="text-7xl font-bold text-amber-500 leading-none">
+                  <span className="text-7xl font-semibold text-amber-500 leading-none">
                     {step.id}.
                   </span>
                   <p className="text-xl font-medium leading-tight text-zinc-100 pt-2">

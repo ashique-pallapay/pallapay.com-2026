@@ -31,7 +31,7 @@ export function Main() {
       <SolutionsSection />
       <InstantSettlementSection />
       <VideoSection className="mt-24 sm:mt-36" />
-      <div className="mt-20! sm:mt-36! text-2xl sm:text-5xl md:text-6xl font-bold text-center leading-[125%] container">
+      <div className="mt-20! sm:mt-36! text-2xl sm:text-5xl md:text-6xl font-semibold text-center leading-[125%] container">
         <ScrollingCharacterReveal
           text={t("scrollText")}
           scrollThresholds={Array.from(

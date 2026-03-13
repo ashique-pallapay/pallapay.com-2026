@@ -79,7 +79,7 @@ const EasiestWayToBuy = ({
             purpose: translatedPurpose,
             crypto: translatedCrypto,
             pallapay: (chunks) => (
-              <span className="text-white font-bold underline decoration-[#7a6431]">
+              <span className="text-white font-semibold underline decoration-[#7a6431]">
                 {chunks}
               </span>
             ),

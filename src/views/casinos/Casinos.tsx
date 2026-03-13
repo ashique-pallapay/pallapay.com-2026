@@ -85,7 +85,7 @@ export function Casinos() {
             </div>
             <div className="container">
                 <div
-                    className="mt-20 sm:mt-36 text-5xl md:text-6xl font-bold text-center leading-[125%] container">
+                    className="mt-20 sm:mt-36 text-5xl md:text-6xl font-semibold text-center leading-[125%] container">
                     <ScrollingCharacterReveal
                         theme="DARK"
                         text={longText}

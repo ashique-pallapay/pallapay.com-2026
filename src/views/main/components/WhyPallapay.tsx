@@ -42,7 +42,7 @@ export function WhyPallapay() {
                   {t("quickSetup.title")}
                 </div>
                 <div className="mt-2 relative">
-                  <div className="absolute top-3 left-0 w-full leading-none text-center text-amber-400 text-[200px] font-bold opacity-[0.15]">
+                  <div className="absolute top-3 left-0 w-full leading-none text-center text-amber-400 text-[200px] font-semibold opacity-[0.15]">
                     1
                   </div>
                   <div className="relative">
@@ -57,7 +57,7 @@ export function WhyPallapay() {
                   {t("transactionControl.title")}
                 </div>
                 <div className="mt-2 relative">
-                  <div className="absolute top-3 left-0 w-full leading-none text-center text-amber-400 text-[200px] font-bold opacity-[0.15]">
+                  <div className="absolute top-3 left-0 w-full leading-none text-center text-amber-400 text-[200px] font-semibold opacity-[0.15]">
                     2
                   </div>
                   <div className="relative">
@@ -72,7 +72,7 @@ export function WhyPallapay() {
                   {t("support.title")}
                 </div>
                 <div className="mt-2 relative">
-                  <div className="absolute top-3 left-0 w-full leading-none text-center text-amber-400 text-[200px] font-bold opacity-[0.15]">
+                  <div className="absolute top-3 left-0 w-full leading-none text-center text-amber-400 text-[200px] font-semibold opacity-[0.15]">
                     3
                   </div>
                   <div className="relative">

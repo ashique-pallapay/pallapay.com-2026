@@ -40,7 +40,7 @@ export default function KeyBenefitsTurkey() {
             key={benefit.id}
             className="relative overflow-hidden bg-[#161618] p-8 rounded-2xl min-h-[250px] flex flex-col justify-between"
           >
-            <span className="absolute top-4 right-6 text-7xl font-bold text-white opacity-5 select-none pointer-events-none">
+            <span className="absolute top-4 right-6 text-7xl font-semibold text-white opacity-5 select-none pointer-events-none">
               {benefit.id}
             </span>
 
