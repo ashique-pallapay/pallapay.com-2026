@@ -5,16 +5,20 @@ import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
 
 interface TurkeyHeroSectionProps {
-  crypto: string;
+  // crypto: string;
   shortForm?: string;
   image: string;
   purpose?: "Buy" | "Sell";
+  title1: string;
+  title2: string;
 }
 const TurkeyHeroSection = ({
-  crypto,
+  // crypto,
   shortForm,
   image,
-  purpose = "Buy",
+  title1,
+  title2,
+  // purpose = "Buy",
 }: TurkeyHeroSectionProps) => {
   const t = useTranslations("turkeyPage.hero");
   const tc = useTranslations("coins");
@@ -31,13 +35,15 @@ const TurkeyHeroSection = ({
 
       <div className="text-center relative z-10">
         <div className="text-3xl leading-[2.5rem] lg:text-4xl lg:leading-[3rem] font-semibold">
-          <h1 className=" text-xl md:text-3xl">
-            {purpose === "Buy" ? t("buy") || "Buy" : t("sell") || "Sell"}{" "}
+          <h1 className=" text-xl md:text-4xl">
+            {/* {purpose === "Buy" ? t("buy") || "Buy" : t("sell") || "Sell"}{" "}
             {tc(crypto) || crypto} {shortForm}{" "}
             {purpose === "Buy" ? t("with") : t("andGet")}{" "}
-            {t("usDollarsOrLira")} {t("in")}
-            <span className="text-(--primary-orange)"> {t("istanbul")}</span>
+            {t("usDollarsOrLira")} {t("in")} */}
+            {title1}
+            {/* <span className="text-(--primary-orange)"> {t("istanbul")}</span> */}
           </h1>
+          <h1 className=" text-xl md:text-4xl">{title2}</h1>
         </div>
 
         <div className="flex justify-center items-center mt-5 gap-5 text-(--primary-orange) flex-wrap">
@@ -69,7 +75,10 @@ const TurkeyHeroSection = ({
             </Button>
           </a>
 
-          <a href="https://dashboard.pallapay.com/auth/register" target="_blank">
+          <a
+            href="https://dashboard.pallapay.com/auth/register"
+            target="_blank"
+          >
             <Button
               size="xl"
               variant="outline"
@@ -83,7 +92,7 @@ const TurkeyHeroSection = ({
         <div className="relative flex mt-10 justify-center items-center">
           <Image
             src={image}
-            alt={crypto}
+            alt="Turkey Flag"
             width={180}
             height={180}
             className="w-16 h-16 md:w-36 md:h-36  lg:w-44 lg:h-44  "
@@ -93,7 +102,7 @@ const TurkeyHeroSection = ({
             alt="Turkey Flag"
             width={1050}
             height={750}
-            className="absolute  md:-bottom-13 -bottom-6  xl:left-16 left-1"
+            className="absolute  md:-bottom-13 -bottom-6  xl:left-14 left-1"
           />
         </div>
       </div>

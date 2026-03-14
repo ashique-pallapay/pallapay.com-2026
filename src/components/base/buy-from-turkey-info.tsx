@@ -6,19 +6,28 @@ interface TurkeyInfoSectionProps {
   showTrustedExchange?: boolean;
   showMapBelowText?: boolean;
   purpose?: string;
+  title?: string;
+  para1?: string;
+  para2?: string;
+  para3?: string;
 }
 
 const TurkeyInfoSection = ({
   showTrustedExchange = false,
   showMapBelowText = false,
   purpose = "buy",
+  title,
+  para1,
+  para2,
+  para3,
 }: TurkeyInfoSectionProps) => {
   const t = useTranslations("turkeyPage.info");
   const tHero = useTranslations("turkeyPage.hero");
 
   const features = t.raw("whyBuyItems") as string[];
 
-  const translatedPurpose = purpose.toLowerCase() === "buy" ? tHero("buy") : tHero("sell");
+  const translatedPurpose =
+    purpose.toLowerCase() === "buy" ? tHero("buy") : tHero("sell");
 
   return (
     <div
@@ -35,24 +44,13 @@ const TurkeyInfoSection = ({
       {showTrustedExchange && (
         <div className="mt-1 text-left md:mt-14 flex flex-col md:flex-row gap-2 relative z-10">
           <div className="space-y-3">
-            <h2 className="text-white text-center text-xl md:text-4xl font-semibold mb-6 tracking-tight">
-              {t("whyBuyTitle", { purpose: translatedPurpose })}
+            <h2 className="text-white text-left text-xl md:text-3xl font-semibold mb-6 tracking-tight">
+              {title}
             </h2>
 
-            <p className="text-md md:text-lg  text-white">
-              {t("whyBuySubtitle")}
-            </p>
-
-            <ul className="space-y-2 text-left">
-              {features.map((item, index) => (
-                <li key={index} className="flex items-start group">
-                  <span className="text-white mr-4 mt-1.5 text-xl">•</span>
-                  <p className="text-white text-lg leading-relaxed group-hover:text-white transition-colors">
-                    {item}
-                  </p>
-                </li>
-              ))}
-            </ul>
+            <p className="text-md md:text-lg  text-white">{para1}</p>
+            <p className="text-md md:text-lg  text-white">{para2}</p>
+            <p className="text-md md:text-lg  text-white">{para3}</p>
           </div>
           <div className=" flex justify-center items-center">
             <Image

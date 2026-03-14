@@ -25,7 +25,12 @@ interface FaqTurkeyProps {
   purpose?: string;
 }
 
-export function FaqTurkey({ crypto, shortForm, faqs, purpose = "Buy" }: FaqTurkeyProps) {
+export function FaqTurkey({
+  crypto,
+  shortForm,
+  faqs,
+  purpose = "Buy",
+}: FaqTurkeyProps) {
   const [openItem, setOpenItem] = useState<any>(null);
   const t = useTranslations("turkeyPage.faq");
   const tHero = useTranslations("turkeyPage.hero");
@@ -33,12 +38,14 @@ export function FaqTurkey({ crypto, shortForm, faqs, purpose = "Buy" }: FaqTurke
 
   const translatedPurpose =
     purpose.toLowerCase() === "buy" ? tHero("buy") : tHero("sell");
-  
-  const displayFaqs = faqs || (t.raw("items") as any[]).map((item, index) => ({
-    value: `item-${index + 1}`,
-    question: item.question,
-    answer: item.answer
-  }));
+
+  const displayFaqs =
+    faqs ||
+    (t.raw("items") as any[]).map((item, index) => ({
+      value: `item-${index + 1}`,
+      question: item.question,
+      answer: item.answer,
+    }));
 
   return (
     <div className=" text-black">
@@ -47,7 +54,10 @@ export function FaqTurkey({ crypto, shortForm, faqs, purpose = "Buy" }: FaqTurke
           <div className="text-[1.75rem] sm:text-4xl lg:text-5xl font-semibold mt-14 leading-[2.4rem] sm:leading-[3.2rem] lg:leading-[3.8rem] ">
             <div className="flex flex-col">
               <span>{t("about")}</span>
-              <span>{translatedPurpose}{t("ing")}</span>
+              <span>
+                {translatedPurpose}
+                {t("ing")}
+              </span>
               <span className="text-yellow-500">{tc(crypto) || crypto}</span>
               <span className="text-yellow-500">{shortForm}</span>
               <span>{t("inPallapay")}</span>
@@ -70,7 +80,7 @@ export function FaqTurkey({ crypto, shortForm, faqs, purpose = "Buy" }: FaqTurke
                   key={faq.value}
                   value={faq.value}
                   onClick={() => setOpenItem(isOpen ? null : faq.value)}
-                  className="flex flex-col items-center border-b border-white/10"
+                  className="flex flex-col  border-b border-white/10"
                 >
                   <div className="flex items-center w-full justify-between">
                     <AccordionTrigger
@@ -89,8 +99,8 @@ export function FaqTurkey({ crypto, shortForm, faqs, purpose = "Buy" }: FaqTurke
                     />
                   </div>
 
-                  <AccordionContent>
-                    <div className="text-left space-y-3 text-white">
+                  <AccordionContent className=" w-full">
+                    <div className=" text-left  text-white">
                       {faq.answer}
                     </div>
                   </AccordionContent>

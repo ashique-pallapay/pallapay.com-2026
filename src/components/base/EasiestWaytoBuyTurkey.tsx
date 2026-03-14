@@ -55,7 +55,7 @@ const EasiestWayToBuy = ({
               <span className="w-1.5 h-1.5 bg-[#7a6431] rounded-full"></span>
               {t("sell", { crypto: translatedCrypto })}
             </li>
-            {crypto != "USDT" && (
+            {crypto != "USDT" && crypto != "Ethereum" && (
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#7a6431] rounded-full"></span>
                 {t("trade", { crypto: translatedCrypto })}
@@ -64,7 +64,7 @@ const EasiestWayToBuy = ({
           </ul>
         </div>
 
-        <p className="italic">{t("firstStep", { crypto: translatedCrypto })}</p>
+        <p>{t("firstStep", { crypto: translatedCrypto })}</p>
 
         <h2 className="text-lg font-semibold text-white pt-2 border-b border-[#7a6431]/20 pb-1 inline-block">
           {t("subTitle", { purpose: translatedPurpose, crypto: translatedCrypto })}

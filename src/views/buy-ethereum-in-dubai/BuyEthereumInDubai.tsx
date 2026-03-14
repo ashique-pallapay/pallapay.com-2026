@@ -46,7 +46,7 @@ export function BuyEthereumInDubai({
   const te = useTranslations("commonExchange");
 
   return (
-    <>
+    <>s
       <div className="relative mb-10 bg-black overflow-hidden">
         <MainNav hasBackground={true} />
         <div className="absolute bg-[url(/images/cryptocurrency/waves.png)] bg-cover bg-center w-full h-full"></div>

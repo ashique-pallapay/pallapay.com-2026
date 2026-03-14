@@ -277,7 +277,7 @@ export function AboutUs() {
           </div>
         </div>
       </div>
-      <MainFooter className="!mt-24" hasCreateAccountSection={true} />
+      {/* <MainFooter className="!mt-24" hasCreateAccountSection={true} /> */}
     </>
   );
 }

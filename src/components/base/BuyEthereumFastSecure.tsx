@@ -1,25 +1,22 @@
-"use client";
+import React from "react";
 
 import Image from "next/image";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { useTranslations } from "next-intl";
 
-interface BuySellProps {
+interface BuyEthereumFastSecureProps {
   title: string;
   para1: string;
   para2: string;
   para3: string;
-  para4: string;
 }
-const BuyAndSellUSDT = ({
+
+const BuyEthereumFastSecure = ({
   title,
   para1,
   para2,
   para3,
-  para4,
-}: BuySellProps) => {
-  const t = useTranslations("buyAndSellUSDT");
-
+}: BuyEthereumFastSecureProps) => {
   return (
     <div className="relative bg-[#181A20] rounded-xl px-1 py-9 md:p-1 shadow-2xl">
       <ParallaxProvider>
@@ -28,31 +25,15 @@ const BuyAndSellUSDT = ({
         </Parallax>
       </ParallaxProvider>
       <div className="absolute lg:z-10 -z-10 -top-10! right-[4.5%] w-[150px]! h-[150px]! rotate-[-16deg] bg-linear-to-b from-[#353C45] via-[#181A20] to-[#010101] rounded-full blur-[10px]! particle-move-2"></div>
-      <div className="absolute -top-20 -right-3 w-64 h-64 ">
-        <Image
-          src="/images/turkey/tether-usdt-cryptocurrency-coins-dark.png"
-          alt=" Purple Circle"
-          width={150}
-          height={150}
-        />
-      </div>
-      <div className="absolute left-0 -bottom-52 w-64 h-64 ">
-        <Image
-          src="/images/turkey/tether-usdt-cryptocurrency-coins-dark-background.png"
-          alt=" Purple Circle"
-          width={150}
-          height={150}
-        />
-      </div>
+
       <div className="p-10 text-left space-y-4 sm:space-y-6 mx-auto px-4 flex lg:flex-row flex-col gap-8 items-center">
-        <div className="md:w-2/3 w-full px-1 md:px-5 md:py-3 space-y-4 sm:space-y-5 text-white text-sm sm:text-base md:text-lg leading-relaxed">
+        <div className="lg:w-2/3 w-full px-1 md:px-5 md:py-3 space-y-4 sm:space-y-5 text-white text-sm sm:text-base md:text-lg leading-relaxed">
           <h1 className="text-white text-lg sm:text-2xl md:text-3xl font-semibold tracking-tight leading-tight">
             {title}
           </h1>
           <p>{para1}</p>
           <p>{para2}</p>
           <p>{para3}</p>
-          <p>{para4}</p>
         </div>
 
         <div className=" relative flex justify-center md:justify-end">
@@ -83,4 +64,4 @@ const BuyAndSellUSDT = ({
   );
 };
 
-export default BuyAndSellUSDT;
+export default BuyEthereumFastSecure;

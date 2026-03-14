@@ -45,9 +45,7 @@ export function WhyPallapay() {
                   <div className="absolute top-3 left-0 w-full leading-none text-center text-amber-400 text-[200px] font-semibold opacity-[0.15]">
                     1
                   </div>
-                  <div className="relative">
-                    {t("quickSetup.description")}
-                  </div>
+                  <div className="relative">{t("quickSetup.description")}</div>
                 </div>
               </div>
             </ScrollAnimation>
@@ -75,9 +73,7 @@ export function WhyPallapay() {
                   <div className="absolute top-3 left-0 w-full leading-none text-center text-amber-400 text-[200px] font-semibold opacity-[0.15]">
                     3
                   </div>
-                  <div className="relative">
-                    {t("support.description")}
-                  </div>
+                  <div className="relative">{t("support.description")}</div>
                 </div>
               </div>
             </ScrollAnimation>
