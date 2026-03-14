@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import { useTranslations } from "next-intl";
 
 interface BuySellProps {
   title: string;
@@ -18,7 +17,6 @@ const BuyAndSellUSDT = ({
   para3,
   para4,
 }: BuySellProps) => {
-  const t = useTranslations("buyAndSellUSDT");
 
   return (
     <div className="relative bg-[#181A20] rounded-xl px-1 py-9 md:p-1 shadow-2xl">

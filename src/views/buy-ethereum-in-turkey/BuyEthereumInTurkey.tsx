@@ -8,9 +8,8 @@ import WhyChooseTurkey from "@/components/base/WhyChooseTurkey";
 import { FaqTurkey } from "@/components/base/FaqTurkey";
 import EasiestWayToBuy from "@/components/base/EasiestWaytoBuyTurkey";
 import TurkeyHeroSection from "@/components/base/TurkeyHeroSection";
-import WhyShouldBuyEthereumTurkey from "@/components/base/WhyEthereumTrustableExchange";
+// import WhyShouldBuyEthereumTurkey from "@/components/base/WhyEthereumTrustableExchange";
 import KeyBenefitsTurkey from "@/components/base/KeyFeaturesTurkey";
-import { useTranslations } from "next-intl";
 import StepIntoCrypto from "@/components/base/StepIntoCrypto";
 import Image from "next/image";
 import CryptoLivePrice from "@/components/base/cryptoLivePrices";
@@ -23,11 +22,9 @@ import {
   Users,
   Zap,
 } from "lucide-react";
-import { Description } from "@radix-ui/react-dialog";
 import BuyEthereumFastSecure from "@/components/base/BuyEthereumFastSecure";
 
 export function BuyEthereumInTurkey() {
-  const t = useTranslations("turkeyPage.hero");
 
   const keyFeaturesData = [
     {

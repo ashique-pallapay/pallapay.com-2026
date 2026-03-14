@@ -2,7 +2,6 @@ import React from "react";
 
 import Image from "next/image";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import { useTranslations } from "next-intl";
 
 interface BuyEthereumFastSecureProps {
   title: string;

@@ -77,7 +77,7 @@ export function SellUsdtInIstanbul() {
       id: 2,
       description: "Transfer your ETH using our automated system.",
       title: "Send your USDT (Tether) to the provided wallet address.",
-      image: "/images/turkey/secure-mobile-payment.png",
+      image: "/images/turkey/crypto-exchange-3d-icon-illustration1.png",
       alt: "Payment Icon",
     },
     {
@@ -85,7 +85,7 @@ export function SellUsdtInIstanbul() {
       title: "Receive cash in USD, EUR, or Turkish Lira instantly",
       description:
         "Receive cash in USD, EUR, or Turkish Lira instantly after confirmation.",
-      image: "/images/turkey/crypto-hold-bitcoin.png",
+      image: "/images/turkey/3d-hand-holding-dollar-money 1.png",
       alt: "Bitcoin Icon",
     },
   ];
@@ -210,7 +210,8 @@ export function SellUsdtInIstanbul() {
       <div className="container text-center mt-20! sm:mt-28!">
         <WhyChooseTurkey />
       </div>
-      <div className="container text-center mt-5! sm:mt-28!">s
+      <div className="container text-center mt-5! sm:mt-28!">
+        s
         <FaqTurkey
           crypto="Tether"
           shortForm="(USDT)"

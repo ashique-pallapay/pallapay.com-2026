@@ -14,14 +14,12 @@ interface TurkeyHeroSectionProps {
 }
 const TurkeyHeroSection = ({
   // crypto,
-  shortForm,
   image,
   title1,
   title2,
   // purpose = "Buy",
 }: TurkeyHeroSectionProps) => {
   const t = useTranslations("turkeyPage.hero");
-  const tc = useTranslations("coins");
 
   return (
     <div className="container py-14 relative">

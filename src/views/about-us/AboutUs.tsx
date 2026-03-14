@@ -1,5 +1,4 @@
 import * as React from "react";
-import { MainFooter } from "@/components/base/MainFooter";
 import { Header } from "@/views/about-us/components";
 import {
   Carousel,

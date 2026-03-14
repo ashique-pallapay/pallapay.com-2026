@@ -24,7 +24,6 @@ const TurkeyInfoSection = ({
   const t = useTranslations("turkeyPage.info");
   const tHero = useTranslations("turkeyPage.hero");
 
-  const features = t.raw("whyBuyItems") as string[];
 
   const translatedPurpose =
     purpose.toLowerCase() === "buy" ? tHero("buy") : tHero("sell");

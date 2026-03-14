@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  DollarSign,
-  Zap,
-  TrendingUp,
-  ShieldCheck,
-  Users,
-  CheckCircle2,
-} from "lucide-react";
-import { useTranslations } from "next-intl";
+
 
 interface KeyBenefitsTurkeyProps {
   id: string;
@@ -25,7 +17,6 @@ export default function KeyBenefitsTurkey({
   data,
   title,
 }: KeyBenefitsTurkeyComponentProps) {
-  const t = useTranslations("turkeyPage.keyBenefits");
 
   // const benefits = (t.raw("items") as any[]).map((item, index) => ({
   //   id: (index + 1).toString().padStart(2, "0"),

@@ -1,8 +1,5 @@
 import React from "react";
-import { CheckCircle } from "lucide-react";
 import Image from "next/image";
-import CryptoLivePrice from "./cryptoLivePrices";
-import { useTranslations } from "next-intl";
 
 interface HowtoBuyBitcoinTurkeyProps {
   crypto?: any;
@@ -34,63 +31,10 @@ const HowtoBuyBitcoinTurkey = ({
   subTitle,
   information,
 }: HowtoBuyBitcoinTurkeyProps) => {
-  const t = useTranslations("turkeyPage.howToBuy");
-  const tHero = useTranslations("turkeyPage.hero");
-  const tc = useTranslations("coins");
 
-  const translatedPurpose =
-    purpose.toLowerCase() === "buy" ? tHero("buy") : tHero("sell");
 
-  const translatedCrypto = tc(crypto) || crypto;
 
-  const defaultSteps =
-    purpose.toLowerCase() === "buy"
-      ? [
-          {
-            id: 1,
-            title: t("steps.visit.title"),
-            description: t("steps.visit.desc", { crypto: translatedCrypto }),
-            image: "/images/turkey/holding-location-hand.png",
-            alt: "Location Icon",
-          },
-          {
-            id: 2,
-            title: t("steps.pay.title", { crypto: translatedCrypto }),
-            description: t("steps.pay.desc"),
-            image: "/images/turkey/secure-mobile-payment.png",
-            alt: "Payment Icon",
-          },
-          {
-            id: 3,
-            title: t("steps.get.title", { crypto: translatedCrypto }),
-            description: t("steps.get.desc", { crypto: translatedCrypto }),
-            image: "/images/turkey/crypto-hold-bitcoin.png",
-            alt: "Bitcoin Icon",
-          },
-        ]
-      : [
-          {
-            id: 1,
-            title: t("steps.visit.title"),
-            description: t("steps.visit.desc", { crypto: translatedCrypto }),
-            image: "/images/turkey/holding-location-hand.png",
-            alt: "Location Icon",
-          },
-          {
-            id: 2,
-            title: t("steps.transfer.title", { crypto: translatedCrypto }),
-            description: t("steps.transfer.desc", { crypto: translatedCrypto }),
-            image: "/images/turkey/crypto-exchange-3d-icon-illustration1.png",
-            alt: "Transfer Icon",
-          },
-          {
-            id: 3,
-            title: t("steps.getCash.title"),
-            description: t("steps.getCash.desc"),
-            image: "/images/turkey/3d-hand-holding-dollar-money 1.png",
-            alt: "Cash Icon",
-          },
-        ];
+
 
   // const displaySteps = steps || defaultSteps;
 
