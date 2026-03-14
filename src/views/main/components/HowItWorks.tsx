@@ -47,9 +47,8 @@ export function HowItWorks() {
             />
           </div>
         </div>
-
-        <TitleBanner title="Pallapay Payment Gateway" />
-        <ServicesGrid />
+          <TitleBanner title="Pallapay Payment Gateway" />
+          <ServicesGrid />
       </div>
     </div>
   );

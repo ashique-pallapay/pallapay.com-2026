@@ -13,7 +13,7 @@ import {
 import { AboutUsSection } from "@/components/base/AboutUsSection";
 import { VideoSection } from "@/components/base/VideoSection";
 import { useTranslations } from "next-intl";
-// import CryptoRamp from "@/components/base/CryptoRamp";
+import CryptoRamp from "@/components/base/CryptoRamp";
 // import { MainFooter } from "@/components/base/MainFooter";
 // import { useState } from "react";
 // import { clsx } from "clsx";
@@ -27,8 +27,8 @@ export function Main() {
       <MainHero />
       <TrustSlider />
       <HowItWorks />
+      <CryptoRamp />
       <BestSuitedFor />
-      {/* <CryptoRamp /> */}
       <WhyPallapay />
       <SolutionsSection />
       <InstantSettlementSection />

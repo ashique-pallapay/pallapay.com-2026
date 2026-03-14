@@ -53,7 +53,7 @@ export const ServiceCard = ({
       {/* Card content */}
       <div
         className={`relative flex flex-col md:flex-row w-full ${
-          !bgImage ? "bg-linear-to-b from-[#111] via-black to-[#3A3A3A]" : ""
+          !bgImage ? "bg-linear-to-b from-[#111] via-black to-[#3A3A3A]/60" : ""
         }`}
       >
         <div className="flex-1 flex flex-col justify-between p-5 lg:p-8 relative z-10">
@@ -101,8 +101,8 @@ export const ServiceCard = ({
 
 export default function ServicesGrid() {
   return (
-    <section className="bg-black md:py-16 px-1 lg:px-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6">
+    <section className="container bg-black md:mt-16! md:mb-10!">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6">
         <ServiceCard
           title="Crypto POS Machine"
           description="Accept cryptocurrency payments in your store using Pallapay crypto POS machine and receive settlements in fiat securely."

@@ -25,7 +25,6 @@ import {
 import BuyEthereumFastSecure from "@/components/base/BuyEthereumFastSecure";
 
 export function BuyEthereumInTurkey() {
-
   const keyFeaturesData = [
     {
       icon: <DollarSign className="w-6 h-6 text-black" />,
@@ -182,7 +181,6 @@ export function BuyEthereumInTurkey() {
           data={keyFeaturesData}
         />
       </div>
-
       <div className="container text-center mt-20! sm:mt-28!">
         <HowtoBuyBitcoinTurkey
           data={howToBuySteps}
